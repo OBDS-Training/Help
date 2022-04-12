@@ -28,7 +28,7 @@ command with your username and the name of the login node that you wish to log
 into.
 Briefly:
 
-```
+```bash
 ssh username@remote
 ```
 
@@ -42,7 +42,6 @@ When prompted for your password, type it and press the Return key.
 {{< alert icon="👉" text="For privacy and security reasons, the Terminal will not display your password as you type it." />}}
 
 {{< alert icon="👉" text="If you are having trouble typing your password correctly without seeing it, you can use a text editor to type it, then cut and paste it into the Terminal window." />}}
-
 
 ## Setting up an SSH key pair
 
@@ -60,7 +59,7 @@ ssh-keygen -t rsa -b 4096
 
 When prompted for a filename, press the Return key to accept the default filename.
 
-When prompted for a passphrase, it is recommended to type a password that is 
+When prompted for a passphrase, it is recommended to type a password that is
 secret yet memorable to you, as this will be the last line of defense if your
 someone gained access to your private SSH key file.
 Alternatively, press the Return key without entering a passphrase, leaving your
