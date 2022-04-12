@@ -1,7 +1,7 @@
 ---
 title: "Introduction"
-description: "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
-lead: "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
+description: "The MRC WIMM Center for Computational Biology provides High-Performance Computing services to biomedical researchers at the University of Oxford."
+lead: "The MRC WIMM Center for Computational Biology provides High-Performance Computing services to biomedical researchers at the University of Oxford."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
@@ -15,19 +15,9 @@ toc: true
 
 ## Get started
 
-There are two main ways to get started with Doks:
+{{< alert icon="👉" text="The MRC WIMM CCB services are available to members of staff and close collaborators." />}}
 
-### Tutorial
-
-{{< alert icon="👉" text="The Tutorial is intended for novice to intermediate users." />}}
-
-Step-by-step instructions on how to start a new Doks project. [Tutorial →](https://getdoks.org/tutorial/introduction/)
-
-### Quick Start
-
-{{< alert icon="👉" text="The Quick Start is intended for intermediate to advanced users." />}}
-
-One page summary of how to start a new Doks project. [Quick Start →]({{< relref "quick-start" >}})
+Apply for an account on the [CCB Account and Support](https://www.imm.ox.ac.uk/research/units-and-centres/mrc-wimm-centre-for-computational-biology/ccb-account) page.
 
 ## Go further
 
