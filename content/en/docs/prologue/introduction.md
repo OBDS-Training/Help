@@ -30,4 +30,4 @@ Contribute to this documentation on [GitHub →](https://github.com/kevinrue/wim
 
 ## Help
 
-Get help on Doks. [Help →]({{< relref "how-to-update" >}})
+Contacts for help. [Help →]({{< relref "contact" >}})

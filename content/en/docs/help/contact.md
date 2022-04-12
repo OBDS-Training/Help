@@ -15,8 +15,8 @@ toc: true
 
 ## Email
 
-For issues with the MRC WIMM CCB cluster,
-email <genmail@molbiol.ox.ac.uk> to open a ticket tracked by the MRC WIMM system administrators.
+For issues with the MRC WIMM CCB HPC cluster,
+email <genmail@molbiol.ox.ac.uk> to open a ticket tracked by the system administrators.
 
 ## GitHub
 
