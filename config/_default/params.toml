@@ -12,12 +12,12 @@ description = "The MRC WIMM Center for Computational Biology provides High-Perfo
 ## Open Graph
 images = ["mrc-wimm-ccb.png"]
 ogLocale = "en_US"
-domainTLD = "doks.netlify.app"
-titleHome = "Doks Theme"
+domainTLD = "kevinrue.github.io/wimm_ccb_docs"
+titleHome = "CCB Doks"
 
 ## Twitter Cards
-twitterSite = "@getdoks"
-twitterCreator = "@henkverlinde"
+twitterSite = "@MRC_WIMM"
+twitterCreator = "@KevinRUE67"
 
 ## JSON-LD
 # schemaType = "Person"
