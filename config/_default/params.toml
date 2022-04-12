@@ -12,7 +12,7 @@ description = "The MRC WIMM Center for Computational Biology provides High-Perfo
 ## Open Graph
 images = ["mrc-wimm-ccb.png"]
 ogLocale = "en_US"
-domainTLD = "kevinrue.github.io/wimm_ccb_docs"
+domainTLD = "kevinrue.github.io"
 titleHome = "CCB Doks"
 
 ## Twitter Cards
