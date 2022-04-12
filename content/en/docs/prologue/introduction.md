@@ -1,7 +1,7 @@
 ---
 title: "Introduction"
-description: "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
-lead: "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
+description: "The MRC WIMM Center for Computational Biology provides High-Performance Computing services to biomedical researchers at the University of Oxford."
+lead: "The MRC WIMM Center for Computational Biology provides High-Performance Computing services to biomedical researchers at the University of Oxford."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
@@ -15,44 +15,19 @@ toc: true
 
 ## Get started
 
-There are two main ways to get started with Doks:
+{{< alert icon="👉" text="The MRC WIMM CCB services are available to members of staff and close collaborators." />}}
 
-### Tutorial
-
-{{< alert icon="👉" text="The Tutorial is intended for novice to intermediate users." />}}
-
-Step-by-step instructions on how to start a new Doks project. [Tutorial →](https://getdoks.org/tutorial/introduction/)
-
-### Quick Start
-
-{{< alert icon="👉" text="The Quick Start is intended for intermediate to advanced users." />}}
-
-One page summary of how to start a new Doks project. [Quick Start →]({{< relref "quick-start" >}})
+Apply for an account on the [CCB Account and Support](https://www.imm.ox.ac.uk/research/units-and-centres/mrc-wimm-centre-for-computational-biology/ccb-account) page.
 
 ## Go further
 
-Recipes, Reference Guides, Extensions, and Showcase.
-
-### Recipes
-
-Get instructions on how to accomplish common tasks with Doks. [Recipes →](https://getdoks.org/docs/recipes/project-configuration/)
-
-### Reference Guides
-
-Learn how to customize Doks to fully make it your own. [Reference Guides →](https://getdoks.org/docs/reference-guides/security/)
-
-### Extensions
-
-Get instructions on how to add even more to Doks. [Extensions →](https://getdoks.org/docs/extensions/breadcrumb-navigation/)
-
-### Showcase
-
-See what others have build with Doks. [Showcase →](https://getdoks.org/showcase/electric-blocks/)
+Explore specific topics documented in the sections of the navigation menu on the left,
+or use the auto-completing search bar above to search by keyword.
 
 ## Contributing
 
-Find out how to contribute to Doks. [Contributing →](https://getdoks.org/docs/contributing/how-to-contribute/)
+Contribute to this documentation on [GitHub →](https://github.com/kevinrue/wimm_ccb_docs).
 
 ## Help
 
-Get help on Doks. [Help →]({{< relref "how-to-update" >}})
+Contacts for help. [Help →]({{< relref "contact" >}})
