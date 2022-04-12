@@ -1,4 +1,4 @@
-name: Hyas CI
+name: GitHub Pages
 
 on:
   push:
