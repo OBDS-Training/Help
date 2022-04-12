@@ -1,42 +1,42 @@
 # Meta Data for SEO
 
 ## Homepage
-title = "Doks"
+title = "CCB Doks"
 titleSeparator = "-"
-titleAddition = "Modern Documentation Theme"
-description = "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
+titleAddition = "MRC WIMM CCB Documentation"
+description = "The MRC WIMM Center for Computational Biology provides High-Performance Computing services to biomedical researchers at the University of Oxford."
 
 ## Documentation
 # docsVersion = "0.3"
 
 ## Open Graph
-images = ["doks.png"]
+images = ["mrc-wimm-ccb.png"]
 ogLocale = "en_US"
-domainTLD = "doks.netlify.app"
-titleHome = "Doks Theme"
+domainTLD = "kevinrue.github.io"
+titleHome = "CCB Doks"
 
 ## Twitter Cards
-twitterSite = "@getdoks"
-twitterCreator = "@henkverlinde"
+twitterSite = "@MRC_WIMM"
+twitterCreator = "@KevinRUE67"
 
 ## JSON-LD
 # schemaType = "Person"
 schemaType = "Organization"
-schemaName = "Doks"
-schemaAuthor = "Henk Verlinde"
-schemaAuthorTwitter = "https://twitter.com/henkverlinde"
-schemaAuthorLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
-schemaAuthorGitHub = "https://github.com/h-enk"
+schemaName = "MRC WIMM CCB"
+schemaAuthor = "Kevin Rue-Albrecht"
+schemaAuthorTwitter = "https://twitter.com/KevinRUE67"
+schemaAuthorLinkedIn = "https://www.linkedin.com/in/kevin-rue-albrecht/"
+schemaAuthorGitHub = "https://github.com/kevinrue"
 schemaLocale = "en-US"
-schemaLogo = "logo-doks.png"
+schemaLogo = "mrc-wimm-logo.jpeg"
 schemaLogoWidth = 512
 schemaLogoHeight = 512
-schemaImage = "doks.png"
+schemaImage = "mrc-wimm-ccb.png"
 schemaImageWidth = 1280
 schemaImageHeight = 640
-schemaTwitter = "https://twitter.com/getdoks"
+schemaTwitter = "https://twitter.com/mrc_wimm"
 schemaLinkedIn = ""
-schemaGitHub = "https://github.com/h-enk/doks"
+schemaGitHub = "https://github.com/kevinrue/wimm_ccb_docs"
 schemaSection = "blog"
 
 ## Sitelinks Search Box
@@ -57,7 +57,7 @@ smallLimit = "300"
 footer = "Powered by <a class=\"text-muted\" href=\"https://www.netlify.com/\">Netlify</a>, <a class=\"text-muted\" href=\"https://gohugo.io/\">Hugo</a>, and <a class=\"text-muted\" href=\"https://getdoks.org/\">Doks</a>"
 
 # Feed
-copyRight = "Copyright (c) 2020-2021 Henk Verlinde"
+copyRight = "Copyright (c) 2022-present Kevin Rue"
 
 # Alert
 alert = false
@@ -69,7 +69,7 @@ alertText = "Introducing the Doks child theme, several DX + UX updates, and more
 # repoHost [Github | Gitea | GitLab | Bitbucket | BitbucketServer ] is used for building the edit link based on git hoster
 repoHost = "GitHub"
 #repoHost = "Gitea"
-docsRepo = "https://github.com/h-enk/doks"
+docsRepo = "https://github.com/kevinrue/wimm_ccb_docs"
 docsRepoBranch = "master"
 docsRepoSubPath = ""
 editPage = false
