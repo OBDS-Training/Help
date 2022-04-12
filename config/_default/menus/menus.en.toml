@@ -51,10 +51,10 @@
   url = "docs/prologue/introduction/"
 
 [[main]]
-  name = "Quick Start"
+  name = "Introduction"
   weight = 40
-  identifier = "quick-start"
-  url = "docs/prologue/quick-start/"
+  identifier = "introduction"
+  url = "docs/prologue/introduction/"
   parent = "get-started"
 
 # [[main]]
