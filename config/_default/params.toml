@@ -3,14 +3,14 @@
 ## Homepage
 title = "CCB Doks"
 titleSeparator = "-"
-titleAddition = "Modern Documentation Theme"
-description = "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
+titleAddition = "MRC WIMM CCB Documentation"
+description = "The MRC WIMM Center for Computational Biology provides High-Performance Computing services to biomedical researchers at the University of Oxford."
 
 ## Documentation
 # docsVersion = "0.3"
 
 ## Open Graph
-images = ["doks.png"]
+images = ["mrc-wimm-ccb.png"]
 ogLocale = "en_US"
 domainTLD = "doks.netlify.app"
 titleHome = "Doks Theme"
