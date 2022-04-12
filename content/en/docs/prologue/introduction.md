@@ -21,27 +21,12 @@ Apply for an account on the [CCB Account and Support](https://www.imm.ox.ac.uk/r
 
 ## Go further
 
-Recipes, Reference Guides, Extensions, and Showcase.
-
-### Recipes
-
-Get instructions on how to accomplish common tasks with Doks. [Recipes →](https://getdoks.org/docs/recipes/project-configuration/)
-
-### Reference Guides
-
-Learn how to customize Doks to fully make it your own. [Reference Guides →](https://getdoks.org/docs/reference-guides/security/)
-
-### Extensions
-
-Get instructions on how to add even more to Doks. [Extensions →](https://getdoks.org/docs/extensions/breadcrumb-navigation/)
-
-### Showcase
-
-See what others have build with Doks. [Showcase →](https://getdoks.org/showcase/electric-blocks/)
+Explore specific topics documented in the sections of the navigation menu on the left,
+or use the auto-completing search bar above to search by keyword.
 
 ## Contributing
 
-Find out how to contribute to Doks. [Contributing →](https://getdoks.org/docs/contributing/how-to-contribute/)
+Contribute to this documentation on [GitHub →](https://github.com/kevinrue/wimm_ccb_docs).
 
 ## Help
 
