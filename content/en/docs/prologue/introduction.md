@@ -26,7 +26,7 @@ or use the auto-completing search bar above to search by keyword.
 
 ## Contributing
 
-Contribute to this documentation on [GitHub →](https://github.com/kevinrue/wimm_ccb_docs).
+Contribute to this documentation on [GitHub →](https://github.com/kevinrue/wimm_ccb_doks).
 
 ## Help
 
