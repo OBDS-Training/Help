@@ -21,4 +21,4 @@ email <genmail@molbiol.ox.ac.uk> to open a ticket tracked by the system administ
 ## GitHub
 
 For issues with this documentation,
-open a [GitHub issue →](https://github.com/kevinrue/wimm_ccb_docs/issues/new/choose).
+open a [GitHub issue →](https://github.com/kevinrue/wimm_ccb_doks/issues/new/choose).
