@@ -8,8 +8,8 @@ draft: false
 images: []
 menu:
   docs:
-    parent: "prologue"
-weight: 100
+    parent: "ssh"
+weight: 200
 toc: true
 ---
 
