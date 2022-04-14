@@ -17,7 +17,7 @@ toc: true
 
 {{< alert icon="👉" text="The MRC WIMM CCB services are available to members of staff and close collaborators." />}}
 
-Apply for an account on the [CCB Account and Support](https://www.imm.ox.ac.uk/research/units-and-centres/mrc-wimm-centre-for-computational-biology/ccb-account) page.
+Apply for an account on the [CCB Account and Support →](https://www.imm.ox.ac.uk/research/units-and-centres/mrc-wimm-centre-for-computational-biology/ccb-account) page.
 
 ## Go further
 
@@ -30,4 +30,4 @@ Contribute to this documentation on [GitHub →](https://github.com/kevinrue/wim
 
 ## Help
 
-Contacts for help. [Help →]({{< relref "contact" >}})
+Contacts for help. [Help]({{< relref "contact" >}})
