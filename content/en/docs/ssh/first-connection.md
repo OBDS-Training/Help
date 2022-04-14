@@ -24,8 +24,8 @@ The CCB HPC cluster has three login nodes that users can log into:
 ## Username and password
 
 To log into a login node, open a Terminal on your personal computer and use the `ssh`
-command with your username and the name of the login node that you wish to log
-into.
+command, combining your username, the `@` symbol, and the name of the login node that
+you wish to log into.
 Briefly:
 
 ```bash
