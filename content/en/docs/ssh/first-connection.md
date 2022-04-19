@@ -15,9 +15,9 @@ toc: true
 
 ## Username and password
 
-To log into a login node, open a Terminal on your personal computer and use the `ssh`
-command, combining your username, the `@` symbol, and the name of the login node that
-you wish to log into.
+To log into a login node, open a Terminal on your personal computer and use
+the `ssh` command, combining your username, the `@` symbol, and the name of
+the login node that you wish to log into.
 Conceptually:
 
 ```bash
@@ -33,5 +33,6 @@ When prompted for your password, type it and press the Return key.
 
 {{< alert icon="👉" text="For privacy and security reasons, the Terminal will not display your password as you type it. If you are having trouble typing your password correctly without seeing it, you can use a text editor to type it, then cut and paste it into the Terminal window when prompted." />}}
 
-You should now be logged in the MRC WIMM CCB high-performance computing (HPC) cluster.
+You should now be logged in the MRC WIMM CCB high-performance computing (HPC)
+cluster.
 Welcome!
