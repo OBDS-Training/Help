@@ -15,7 +15,7 @@ toc: true
 
 ## Log in with your username and password
 
-When your account is created on the CCB cluster, you will be sent an email 
+When your account is created on the CCB cluster, you will be sent an email
 including your unique username on the CCB cluster and a randomly generated
 password.
 
