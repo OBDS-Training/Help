@@ -5,7 +5,7 @@ lead: "SSH key pairs provide a more secure alternative to username and password 
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
-images: []
+images: ["ssh-key-pair.svg"]
 menu:
   docs:
     parent: "ssh"
@@ -22,6 +22,8 @@ using a pair of files; one file on your personal computer, one file on the
 cluster.
 Together, those two files identify your personal computer and the cluster to
 each other.
+
+![Illustration of SSH key pair.](ssh-key-pair.png)
 
 To create the SSH key pair, open a Terminal on your personal computer, and
 type:
