@@ -1,5 +1,5 @@
 ---
-title: "Setting up an SSH key pair"
+title: "Set up an SSH key pair"
 description: "SSH key pairs provide a more secure alternative to username and password for logging into remote systems."
 lead: "SSH key pairs provide a more secure alternative to username and password for logging into remote systems."
 date: 2020-10-06T08:48:57+00:00
@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "ssh"
-weight: 220
+weight: 230
 toc: true
 ---
 

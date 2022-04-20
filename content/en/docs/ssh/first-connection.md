@@ -19,7 +19,7 @@ When your account is created on the CCB cluster, you will be sent an email
 including your unique username on the CCB cluster and a randomly generated
 password.
 
-{{< alert icon="👉" text="You are encouraged to change your initial password on your first connection." />}}
+{{< alert icon="👉" text="You are encouraged to change your initial password on your first connection. More on that after we get you logged into the CCB cluster for the first time." />}}
 
 To log into a login node, open a Terminal on your personal computer and use
 the `ssh` command, combining your username, the `@` symbol, and the name of
