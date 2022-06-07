@@ -35,6 +35,10 @@ Replace `<username>` by your own username, and `<remote>` by one of the
 login nodes (see [General information](../general-information/#login-nodes)).
 When you have typed the command above, press the Return key to execute it.
 
+![Using the ssh command.](ssh-screenshot.png)
+
+<p align='center'><i>Using the `ssh` command.</i></p>
+
 If this is indeed your very first connection, you may be prompted to verify
 the authenticity of the host.
 If this happens, type `yes` and press the Return key to continue connecting.
