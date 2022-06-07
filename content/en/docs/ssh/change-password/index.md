@@ -22,7 +22,7 @@ and type from memory.
 
 It is highly recommended to change that initial password on your first
 connection to the CCB cluster.
-To do so, in a Terminal logged in the CCb cluster, type the command `passwd`
+To do so, in a Terminal logged in the CCB cluster, type the command `passwd`
 and press the Return key, as follows:
 
 ```bash
