@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "ssh"
-weight: 200
+weight: 300
 toc: true
 ---
 
