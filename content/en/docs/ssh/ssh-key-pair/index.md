@@ -145,7 +145,7 @@ using the `ssh` command.
 * The field `XAuthLocation` specifies the full pathname of the `xauth` program.
 
 More information about fields that may be configured is available on the page
-<https://linux.die.net/man/5/ssh_config>.
+[ssh_config(5) - Linux man page →](https://linux.die.net/man/5/ssh_config).
 
 MacOS-only fields:
 
@@ -154,10 +154,10 @@ MacOS-only fields:
 * The field `UseKeychain` specifies whether passphrases are stored in the keychain.
 
 More information about fields that may be configured for macOS is available on the page
-<https://man.openbsd.org/ssh_config>.
+[OpenBSD manual page server →](https://man.openbsd.org/ssh_config).
 
 More information on the field `UseKeychain` is available on the page
-<https://developer.apple.com/library/archive/technotes/tn2449/_index.html>.
+[Technical Note TN2449 →](https://developer.apple.com/library/archive/technotes/tn2449/_index.html).
 
 ## Log in with your SSH key pair
 

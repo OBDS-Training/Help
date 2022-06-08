@@ -23,8 +23,8 @@ specific to each host.
 In this section, we describe how to configure parameters that are specific
 to different hosts.
 
-Recommended parameters shared across all remote hosts are described in the page
-[Set up an SSH key pair](../ssh-key-pair/#configuring-the-ssh-client).
+Recommended parameters shared across all remote hosts are described in the earlier
+page [Set up an SSH key pair](../ssh-key-pair/#configuring-the-ssh-client).
 
 ## Configure a remote host
 
@@ -56,7 +56,7 @@ Those lines configure three remote hosts.
   However, four spaces are commonly used for readability.
 
 More information about fields that may be configured is available on the page
-<https://linux.die.net/man/5/ssh_config>.
+[ssh_config(5) - Linux man page →](https://linux.die.net/man/5/ssh_config).
 
 ## Connect to a configured remote host
 
@@ -77,6 +77,6 @@ Initially, the `ssh` command is typed in the prompt of the personal computer.
 Once the connection is established, the prompt of the remote host appears
 (in this case, `cbrglogin1`).
 
-![Connecting to a configured SSH host.](ssh-host.png)
+![Connecting to a configured SSH host.](ssh-screenshot.png)
 
 <p align='center'><i>Connecting to a configured SSH host.</i></p>
