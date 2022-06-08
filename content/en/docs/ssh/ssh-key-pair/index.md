@@ -63,6 +63,30 @@ and press the Return key.
 Finally, the Terminal should display a message indicating that the key pair was
 successfully created.
 
+## Adding the public key on the CCB cluster
+
+Finally, the public key needs to be copied to your account on the CCB cluster,
+so that the CCB cluster can prove its identity to the client.
+
+Conceptually, the command that you type in the Terminal should be structured as follows:
+
+```bash
+ssh-copy-id <username>@<remote>
+```
+
+Replace `<username>` by your own username, and `<remote>` by one of the
+login nodes (see [General information](../general-information/#login-nodes)).
+
+If the public key indeed does not exist on your CCB cluster account yet,
+you will be prompted for your password.
+Type it, and press the Return key.
+This adds the public key to the file `~/.ssh/authorized_keys` on your
+account on the CCB cluster.
+
+![Copying the public SSH key to the CCB cluster.](ssh-copy-id-screenshot.png)
+
+<p align='center'><i>Copying the public SSH key to the CCB cluster.</i></p>
+
 ## Configuring the SSH client
 
 Having generated the SSH key pair, you need to configure the SSH client
@@ -90,30 +114,6 @@ Host *
 ```
 
 {{< alert icon="👉" text="Do not include the lines that state 'macOS only' if you are a Windows or Linux user." />}}
-
-## Adding the public key on the CCB cluster
-
-Finally, the public key needs to be copied to your account on the CCB cluster,
-so that the CCB cluster can prove its identity to the client.
-
-Conceptually, the command that you type in the Terminal should be structured as follows:
-
-```bash
-ssh-copy-id <username>@<remote>
-```
-
-Replace `<username>` by your own username, and `<remote>` by one of the
-login nodes (see [General information](../general-information/#login-nodes)).
-
-If the public key indeed does not exist on your CCB cluster account yet,
-you will be prompted for your password.
-Type it, and press the Return key.
-This adds the public key to the file `~/.ssh/authorized_keys` on your
-account on the CCB cluster.
-
-![Copying the public SSH key to the CCB cluster.](ssh-copy-id-screenshot.png)
-
-<p align='center'><i>Copying the public SSH key to the CCB cluster.</i></p>
 
 ## Log in with your SSH key pair
 
