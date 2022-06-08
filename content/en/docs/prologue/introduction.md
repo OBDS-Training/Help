@@ -13,6 +13,16 @@ weight: 100
 toc: true
 ---
 
+## How to use this documentation
+
+This documentation is organised as a chronological progression through the typical setup
+of new users of the MRC WIMM CCB services.
+
+We encourage readers to follow instructions in this documentation in the order presented.
+
+Following instructions out of order or skipping instructions is likely to produce unexpected
+results.
+
 ## Get started
 
 {{< alert icon="👉" text="The MRC WIMM CCB services are available to members of staff and close collaborators." />}}
