@@ -50,13 +50,14 @@ if [ -f /etc/bashrc ]; then
         . /etc/bashrc
 fi
 
-# User specific aliases and functions
-alias emacs='emacs -nw'
-
 # Non-interactive shells inherit the path and other variables
 # from the calling shell, so this setup is not needed.
 # prevents conda env being reset when calling P.run()
 if [[ $PS1 ]]; then
+
+    # User specific aliases and functions
+    alias emacs='emacs -nw'
+    alias R='R --no-save'
 
     # Set umask for default file permissions
     umask 002
@@ -85,15 +86,6 @@ if [ -f /etc/bashrc ]; then
 fi
 ```
 
-Next the following chunk of code creates an `alias` that changes meaning of the
-`emacs` command to automatically apply the option `-nw`.
-This force the Emacs editor to open within the terminal rather than attempting to
-open it as a GUI application.
-
-```bash
-alias emacs='emacs -nw'
-```
-
 Next, an `if` statement is used to ensure that certain commands are only executed
 in interactive Bash session.
 
@@ -105,6 +97,21 @@ that are launched when you submit jobs to the queue manager on the cluster.
 if [[ $PS1 ]]; then
     <... commands ...>
 fi
+```
+
+Next the following chunk of code creates aliases, essentially shortcuts that
+summarise arbitrary commands into single-word commands.
+
+First, we change the meaning of the `emacs` command to automatically apply the option `-nw`.
+This force the Emacs editor to open within the terminal rather than attempting to
+open it as a GUI application.
+
+Then, we change the meaning of the `R` command to automatically apply the option `--no-save`.
+This force R to discard the workspace at the end of each session instead of saving it to a file.
+
+```bash
+alias emacs='emacs -nw'
+alias R='R --no-save'
 ```
 
 The following chunk of code controls the default permissions that are set on
