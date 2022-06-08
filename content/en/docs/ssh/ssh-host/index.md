@@ -77,6 +77,6 @@ Initially, the `ssh` command is typed in the prompt of the personal computer.
 Once the connection is established, the prompt of the remote host appears
 (in this case, `cbrglogin1`).
 
-![Connecting to a configured SSH host.](ssh-host.png)
+![Connecting to a configured SSH host.](ssh-screenshot.png)
 
 <p align='center'><i>Connecting to a configured SSH host.</i></p>
