@@ -28,10 +28,10 @@ Recommended parameters shared across all remote hosts are described in the page
 
 ## Configure a remote host
 
-On your personal computer, open the file `~/.ssh/config`, 
+On your personal computer, open the file `~/.ssh/config`,
 replace `<username>` by your own username and add the following lines:
 
-```
+```bash
 Host ccb1
     Hostname cbrglogin1.molbiol.ox.ac.uk
     User <username>
