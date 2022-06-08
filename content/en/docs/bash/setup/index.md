@@ -29,3 +29,9 @@ every time they log in, without the need to explicitly type them every time.
 However, you want to be mindful of the commands that you add in this file, as
 the automatic execution of those commands may have unintended consequences on the
 running of other programs (e.g., remote desktop applications).
+
+New accounts on the CCB cluster are created with a initial `~/.bashrc` file.
+It is common for the file to evolve over time, as many programs suggest
+additions as part of their installation and setup procedures.
+This page describes a version of the `~/.bashrc` that contains a small number
+of commands to ease your start on the CCB cluster.
