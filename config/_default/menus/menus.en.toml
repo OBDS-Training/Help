@@ -5,6 +5,24 @@
   url = "docs/prologue/"
 
 [[docs]]
+  name = "VPN"
+  weight = 20
+  identifier = "vpn"
+  url = "docs/vpn/"
+
+[[docs]]
+  name = "SSH"
+  weight = 30
+  identifier = "ssh"
+  url = "docs/ssh/"
+
+[[docs]]
+  name = "Bash"
+  weight = 40
+  identifier = "bash"
+  url = "docs/bash/"
+
+[[docs]]
   name = "Help"
   weight = 60
   identifier = "help"
