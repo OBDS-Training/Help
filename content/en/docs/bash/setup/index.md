@@ -33,5 +33,97 @@ running of other programs (e.g., remote desktop applications).
 New accounts on the CCB cluster are created with a initial `~/.bashrc` file.
 It is common for the file to evolve over time, as many programs suggest
 additions as part of their installation and setup procedures.
-This page describes a version of the `~/.bashrc` that contains a small number
+This page describes a version of the `~/.bashrc` file that contains a small number
 of commands to ease your start on the CCB cluster.
+
+## Contents
+
+We recommend to paste the contents below into your `~/.bashrc` file.
+
+{{< alert icon="👉" text="Carefully consider any difference between the contents below and the initial contents of the '.bashrc' file and whether you take responsibility for deleting any of the initial contents. This documentation may occasionally be out of date and the contents of the initial '.bashrc' file are carefully reviewed by system administrators." />}}
+
+```bash
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+        . /etc/bashrc
+fi
+
+# User specific aliases and functions
+alias emacs='emacs -nw'
+
+# Non-interactive shells inherit the path and other variables
+# from the calling shell, so this setup is not needed.
+# prevents conda env being reset when calling P.run()
+if [[ $PS1 ]]; then
+
+    # Set umask for default file permissions
+    umask 002
+
+    ### Load environment modules
+    # Load the latest version of Git (system version is old)
+    module load git/2.31.1
+
+fi # if PS1
+```
+
+## Description
+
+First, it is important to clarify that all the lines that start with the `#` symbol
+are comments that are only added for information purposes and future reference,
+without any impact on the functionality of the file.
+
+Next, the following chunk of code executes a central script that sets up
+system-wide functions and aliases.
+It is highly recommended to keep this as the first bit of code in your `.bashrc`
+at all times.
+
+```bash
+if [ -f /etc/bashrc ]; then
+        . /etc/bashrc
+fi
+```
+
+Next the following chunk of code creates an `alias` that changes meaning of the
+`emacs` command to automatically apply the option `-nw`.
+This force the Emacs editor to open within the terminal rather than attempting to
+open it as a GUI application.
+
+```bash
+alias emacs='emacs -nw'
+```
+
+Next, an `if` statement is used to ensure that certain commands are only executed
+in interactive Bash session.
+
+For instance, interactive session are those that are launched in your Terminal
+every time you log into the CCB cluster, while non-interactive session are those
+that are launched when you submit jobs to the queue manager on the cluster.
+
+```bash
+if [[ $PS1 ]]; then
+    <... commands ...>
+fi
+```
+
+The following chunk of code controls the default permissions that are set on
+any file or directory that you create on the CCB cluster.
+The value of `002` sets the permissions to:
+
+* read, write, and execute for you and your user group
+* read and write for every other user
+
+{{< alert icon="👉" text="The home directory and project directories that you are given access to have strict permissions. As such, other users do not have access to your home directory: they cannot see the list of files in your home directory nor their contents." />}}
+
+```bash
+umask 002
+```
+
+The following chunk of code uses the `module` command to put a version of the `git`
+program on the `PATH` that is more recent than the version originally installed with
+the operating system.
+
+```bash
+module load git/2.31.1
+```
