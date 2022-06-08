@@ -68,7 +68,8 @@ successfully created.
 Finally, the public key needs to be copied to your account on the CCB cluster,
 so that the CCB cluster can prove its identity to the client.
 
-Conceptually, the command that you type in the Terminal should be structured as follows:
+Conceptually, the command that you type in the Terminal on your personal computer
+should be structured as follows:
 
 ```bash
 ssh-copy-id <username>@<remote>
@@ -109,11 +110,54 @@ Host *
     ForwardAgent yes
     Compression yes
     XAuthLocation /opt/X11/bin/xauth
-    AddKeysToAgent yes               # macOS only
-    UseKeychain yes                  # macOS only
+    # macOS only
+    AddKeysToAgent yes
+    UseKeychain yes
 ```
 
-{{< alert icon="👉" text="Do not include the lines that state 'macOS only' if you are a Windows or Linux user." />}}
+{{< alert icon="👉" text="Do not include the lines after '# macOS only' if you are a Windows or Linux user." />}}
+
+Those lines configure parameters applied to any remote host that you log into
+using the `ssh` command.
+
+* The keyword `Host` creates a new set of parameters.
+* The pattern `*` matches all hostnames, making those parameters global defaults
+  unless overwritten in subsequent declarations.
+* The field `IdentityFile` specifies the path to the private SSH key file that
+  you created earlier on your personal computer.
+* The field `Port` specifies the port number to connect on the remote host.
+* The field `Protocol` specifies the protocol version of SSH to use.
+* The field `TCPKeepAlive` specifies whether TCP keepaline messages are regularly
+  sent, which is useful to notice it the connection dies at any point.
+* The field `ServerAliveInterval` sets a timeout interval in seconds after which
+  the client will request a response from the server if no data has been received
+  recently.
+* The field `ServerAliveCountMax` sets the number of server alive messages which
+  may be sent to the server without receiving any reply before `ssh` disconnects
+  from the server.
+* The field `ForwardX11` specifies whether X11 connections will be automatically
+  redirected over the secure channel of the `ssh` connection.
+* The field `ForwardX11Trusted` specifies whether remote X11 clients are given
+  full access to the original X11 display
+* The field `ForwardAgent` specifies whether the connection to the authentication
+  agent (if any) is forwarded to the remote machine.
+* The field `Compression` specifies whether to use compression.
+* The field `XAuthLocation` specifies the full pathname of the `xauth` program.
+
+More information about fields that may be configured is available on the page
+<https://linux.die.net/man/5/ssh_config>.
+
+MacOS-only fields:
+
+* The field `AddKeysToAgent` specifies whether keys should be automatically added
+  to a running `ssh-agent`.
+* The field `UseKeychain` specifies whether passphrases are stored in the keychain.
+
+More information about fields that may be configured for macOS is available on the page
+<https://man.openbsd.org/ssh_config>.
+
+More information on the field `UseKeychain` is available on the page
+<https://developer.apple.com/library/archive/technotes/tn2449/_index.html>.
 
 ## Log in with your SSH key pair
 
@@ -125,3 +169,9 @@ prompted to type this passphrase when the SSH key pair is used.
 ```bash
 ssh <username>@<remote>
 ```
+
+The screenshot below demonstrates the `ssh` command in action.
+
+![Connecting using the SSH key pair.](ssh-screenshot.png)
+
+<p align='center'><i>Connecting using the SSH key pair.</i></p>
