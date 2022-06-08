@@ -13,7 +13,7 @@ weight: 200
 toc: true
 ---
 
-## General information
+## Motivation
 
 The CCB cluster is accessible only from the University campus network.
 
