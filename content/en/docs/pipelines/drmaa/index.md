@@ -1,7 +1,7 @@
 ---
-title: "The DRMAA library"
-description: "Setting up the DRMAA library."
-lead: "Setting up the DRMAA library."
+title: "The DRMAA API"
+description: "Setting up the DRMAA API."
+lead: "Setting up the DRMAA API."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
@@ -27,8 +27,8 @@ This setup is a prerequisite for using [cgatcore →][cgatcore-github] pipelines
 
 ## Setup
 
-In your `~/.bashrc` file, add the following chunk of code to set the
-environment variable `DRMAA_LIBRARY_PATH`.
+On the CCB cluster, in your `~/.bashrc` file, add the following chunk of code
+to set the environment variable `DRMAA_LIBRARY_PATH`.
 
 {{< alert icon="👉" text="If your '.bashrc' file already contains the conditional statement 'if [[ $PS1 ]]', you can add only the 'export' statement within the existing bloc of code." />}}
 
