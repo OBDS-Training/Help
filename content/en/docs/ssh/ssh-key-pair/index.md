@@ -76,7 +76,7 @@ ssh-copy-id <username>@<remote>
 ```
 
 Replace `<username>` by your own username, and `<remote>` by one of the
-login nodes (see [General information](../general-information/#login-nodes)).
+login nodes (see [General information]({{< relref "general-information#login-nodes" >}})).
 
 If the public key indeed does not exist on your CCB cluster account yet,
 you will be prompted for your password.
@@ -145,7 +145,7 @@ using the `ssh` command.
 * The field `XAuthLocation` specifies the full pathname of the `xauth` program.
 
 More information about fields that may be configured is available on the page
-[ssh_config(5) - Linux man page →](https://linux.die.net/man/5/ssh_config).
+[ssh_config(5) - Linux man page →][ssh-config-linux].
 
 MacOS-only fields:
 
@@ -154,10 +154,10 @@ MacOS-only fields:
 * The field `UseKeychain` specifies whether passphrases are stored in the keychain.
 
 More information about fields that may be configured for macOS is available on the page
-[OpenBSD manual page server →](https://man.openbsd.org/ssh_config).
+[OpenBSD manual page server →][ssh-config-openbds].
 
 More information on the field `UseKeychain` is available on the page
-[Technical Note TN2449 →](https://developer.apple.com/library/archive/technotes/tn2449/_index.html).
+[Technical Note TN2449 →][usekeychain-technical-note].
 
 ## Log in with your SSH key pair
 
@@ -175,3 +175,9 @@ The screenshot below demonstrates the `ssh` command in action.
 ![Connecting using the SSH key pair.](ssh-screenshot.png)
 
 <p align='center'><i>Connecting using the SSH key pair.</i></p>
+
+<!-- Link definitions -->
+
+[ssh-config-linux]: https://linux.die.net/man/5/ssh_config
+[ssh-config-openbds]: https://man.openbsd.org/ssh_config
+[usekeychain-technical-note]: https://developer.apple.com/library/archive/technotes/tn2449/_index.html

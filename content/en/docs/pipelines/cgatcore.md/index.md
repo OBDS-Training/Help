@@ -46,4 +46,6 @@ of the queue to which jobs will be submitted using the DRMAA library.
 The field `tmpdir` defines the temporary directory used by cgatcore for writing
 temporary files during the execution of workflows.
 
+<!-- Link definitions -->
+
 [cgatcore-readthedocs]: https://cgat-core.readthedocs.io/en/latest/

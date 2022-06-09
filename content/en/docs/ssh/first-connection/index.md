@@ -32,7 +32,7 @@ ssh <username>@<remote>
 ```
 
 Replace `<username>` by your own username, and `<remote>` by one of the
-login nodes (see [General information](../general-information/#login-nodes)).
+login nodes (see [General information]({{< relref "general-information#login-nodes" >}})).
 When you have typed the command above, press the Return key to execute it.
 
 ![Using the ssh command.](ssh-screenshot.png)
@@ -50,3 +50,5 @@ When prompted for your password, type it and press the Return key.
 You should now be logged in the MRC WIMM CCB high-performance computing (HPC)
 cluster.
 Welcome!
+
+<!-- Link definitions -->

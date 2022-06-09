@@ -41,3 +41,5 @@ password twice, pressing the Return key after each password.
 
 You should then see a message indicating that your password was updated
 successfully.
+
+<!-- Link definitions -->

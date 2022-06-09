@@ -21,13 +21,13 @@ When your device is not directly connected to the University campus network
 (e.g., when you are working from home or travelling), the VPN Service allows
 you to access the University campus network, and thus the CCB cluster.
 
-The web page [Virtual private network (VPN) →](https://help.it.ox.ac.uk/vpn) provide the latest information
+The web page [Virtual private network (VPN) →][oxford-vpn] provide the latest information
 about requirements and instructions to set up recommended VPN clients.
 Most of the sections below refer to instructions on that page.
 
 ## Set up a VPN client
 
-On the web page [Virtual private network (VPN) →](https://help.it.ox.ac.uk/vpn), expand the section
+On the web page [Virtual private network (VPN) →][oxford-vpn], expand the section
 'Setup Cisco AnyConnect'.
 
 Click on the operating system for your device and follow the instructions.
@@ -50,7 +50,7 @@ display 'University VPN' in the dropdown menu.
 
 ## Connection
 
-On the web page [Virtual private network (VPN) →](https://help.it.ox.ac.uk/vpn), expand the section
+On the web page [Virtual private network (VPN) →][oxford-vpn], expand the section
 'Connect using Cisco AnyConnect'.
 
 The first time that you connect to the University VPN, you must type the
@@ -70,7 +70,7 @@ CCB cluster.
 
 ## Disconnection
 
-On the web page [Virtual private network (VPN) →](https://help.it.ox.ac.uk/vpn), expand the section
+On the web page [Virtual private network (VPN) →][oxford-vpn], expand the section
 'Disconnect using Cisco AnyConnect'.
 
 Your device will use the University VPN service until you disconnect.
@@ -91,10 +91,14 @@ your own internet connection again.
 
 ## Further reading
 
-On the web page [Virtual private network (VPN) →](https://help.it.ox.ac.uk/vpn), you can find useful information
+On the web page [Virtual private network (VPN) →][oxford-vpn], you can find useful information
 organised in various sections.
 
 The section 'FAQ' details frequently asked questions and answers.
 
 The section 'Setup an alternate VPN client' details alternatives to the
 Cisco AnyConnect VPN client.
+
+<!-- Link definitions -->
+
+[oxford-vpn]: https://help.it.ox.ac.uk/vpn

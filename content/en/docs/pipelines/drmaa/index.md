@@ -41,6 +41,8 @@ fi
 You are now ready to use the DRMAA library in [cgatcore →][cgatcore-github]
 pipelines.
 
+<!-- Link definitions -->
+
 [drmaa-org]: https://www.drmaa.org/
 [cgatcore-github]: https://github.com/cgat-developers/cgat-core
 [drmaa-python]: https://drmaa-python.readthedocs.io/en/latest/index.html
