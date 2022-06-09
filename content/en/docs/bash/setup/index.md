@@ -16,7 +16,7 @@ toc: true
 ## Motivation
 
 Every time you connect to the CCB cluster, you are given a new session in a
-Bash environment.
+Bash environment in your Terminal application.
 
 In those new sessions, you may find yourself repetitively typing the same set of
 commands to set up the environment of that session before you are able to work.
@@ -33,12 +33,17 @@ running of other programs (e.g., remote desktop applications).
 New accounts on the CCB cluster are created with a initial `~/.bashrc` file.
 It is common for the file to evolve over time, as many programs suggest
 additions as part of their installation and setup procedures.
-This page describes a version of the `~/.bashrc` file that contains a small number
-of commands to ease your start on the CCB cluster.
+
+In this page, we provide an example that contains elements specific to the WIMM
+CCB cluster, as well as aliases and optional elements that may not be relevant to
+all users.
 
 ## Contents
 
-We recommend to paste the contents below into your `~/.bashrc` file.
+Please carefully read the comments and review the elements that are relevant to
+you.
+You may choose to replace the entire contents of your `.bashrc` file, or select
+portions of the example below.
 
 {{< alert icon="👉" text="Carefully consider any difference between the contents below and the initial contents of the '.bashrc' file and whether you take responsibility for deleting any of the initial contents. This documentation may occasionally be out of date and the contents of the initial '.bashrc' file are carefully reviewed by system administrators." />}}
 
