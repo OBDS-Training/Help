@@ -45,4 +45,4 @@ Contacts for help. [Help]({{< relref "contact" >}})
 <!-- Link definitions -->
 
 [ccb-account-support]: https://www.imm.ox.ac.uk/research/units-and-centres/mrc-wimm-centre-for-computational-biology/ccb-account
-[github-repo]: https://github.com/kevinrue/wimm_ccb_doks
+[github-repo]: https://github.com/OBDS-Training/Help

@@ -1,4 +1,4 @@
-baseurl = "https://kevinrue.github.io/wimm_ccb_doks/"
+baseurl = "https://obds-training.github.io/Help/"
 canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
