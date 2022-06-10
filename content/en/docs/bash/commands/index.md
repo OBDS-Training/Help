@@ -81,4 +81,26 @@ ls -lh
 ls -l -h
 ```
 
+The `-t` option can be used in combination with the `-l` option to sort files
+by modification time (newest first).
+
+```bash
+ls -lt
+```
+
+The `-a` option can be used to reveal and include hidden files and directories.
+
+{{< alert icon="👉" text="Hidden files and directories have a name that start with the '.' symbol, e.g. '.ssh'." />}}
+
+```bash
+ls -a
+```
+
+Finally -- to clarify -- options and paths can be combined, to list the contents
+of a particular directory with specific options.
+
+```bash
+ls -lh ~/.ssh
+```
+
 <!-- Link definitions -->
