@@ -16,7 +16,7 @@ toc: true
 ## How to use this documentation
 
 This documentation is organised as a chronological progression through the typical setup
-of new users of the MRC WIMM CCB services.
+of new users of the [MRC WIMM CCB][mrc-wimm-ccb] services.
 
 We encourage readers to follow instructions in this documentation in the order presented.
 
@@ -44,5 +44,6 @@ Contacts for help. [Help]({{< relref "contact" >}})
 
 <!-- Link definitions -->
 
+[mrc-wimm-ccb]: https://www.imm.ox.ac.uk/research/units-and-centres/mrc-wimm-centre-for-computational-biology
 [ccb-account-support]: https://www.imm.ox.ac.uk/research/units-and-centres/mrc-wimm-centre-for-computational-biology/ccb-account
 [github-repo]: https://github.com/OBDS-Training/Help
