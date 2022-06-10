@@ -123,6 +123,7 @@ that directory.
 cd /       # absolute path (starts with '/')
 cd ~/.ssh  # relative path  (does not start with '/')
 ```
+
 {{< alert icon="👉" text="Use the 'ls' command to identify existing directories that you give to the 'cd' command." />}}
 
 The `..` shorthand refers to the parent directory of each directory on the system.

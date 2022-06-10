@@ -64,3 +64,5 @@ to the queue manager as follows.
 ```bash
 squeue -u $USER
 ```
+
+<!-- Link definitions -->
