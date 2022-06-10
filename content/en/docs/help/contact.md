@@ -25,4 +25,4 @@ For issues with this documentation, open a [GitHub issue →][github-issues].
 
 <!-- Link definitions -->
 
-[github-issues]: https://github.com/kevinrue/wimm_ccb_doks/issues/new/choose
+[github-issues]: https://github.com/OBDS-Training/Help/issues/new/choose

@@ -12,7 +12,7 @@ description = "The MRC WIMM Center for Computational Biology provides High-Perfo
 ## Open Graph
 images = ["mrc-wimm-ccb.png"]
 ogLocale = "en_US"
-domainTLD = "kevinrue.github.io"
+domainTLD = "https://obds-training.github.io/"
 titleHome = "CCB Doks"
 
 ## Twitter Cards
@@ -36,7 +36,7 @@ schemaImageWidth = 1280
 schemaImageHeight = 640
 schemaTwitter = "https://twitter.com/mrc_wimm"
 schemaLinkedIn = ""
-schemaGitHub = "https://github.com/kevinrue/wimm_ccb_doks"
+schemaGitHub = "https://github.com/OBDS-Training/Help"
 schemaSection = "blog"
 
 ## Sitelinks Search Box
@@ -69,7 +69,7 @@ alertText = "Introducing the Doks child theme, several DX + UX updates, and more
 # repoHost [Github | Gitea | GitLab | Bitbucket | BitbucketServer ] is used for building the edit link based on git hoster
 repoHost = "GitHub"
 #repoHost = "Gitea"
-docsRepo = "https://github.com/kevinrue/wimm_ccb_doks"
+docsRepo = "https://github.com/OBDS-Training/Help"
 docsRepoBranch = "master"
 docsRepoSubPath = ""
 editPage = false
