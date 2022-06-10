@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kevinrue.github.io/wimm_ccb_doks/sitemap.xml
+Sitemap: https://obds-training.github.io/Help/sitemap.xml
