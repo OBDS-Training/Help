@@ -1,7 +1,7 @@
 ---
-title: "Bash commands"
-description: "Essential Bash commands."
-lead: "Essential Bash commands."
+title: "Built-in commands"
+description: "A cheatsheet of built-in Bash commands."
+lead: "A cheatsheet of built-in Bash commands."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "bash"
-weight: 410
+weight: 420
 toc: true
 ---
 
