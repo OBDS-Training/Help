@@ -30,16 +30,36 @@ along with a brief description of their purpose and advice on best practices.
 The working directory is the directory relative to which commands typed in a
 Terminal are executed.
 
-When you log into the CCB cluster, the working directory is initially set to
-the user's home directory.
-
 The `pwd` command prints the current working directory.
 
 ```bash
-[username@cbrglogin1 ~]$ pwd
-/home/a/username
+pwd
 ```
 
+When you log into the CCB cluster, the working directory is initially set to
+the user's home directory.
+
 ## List directory contents
+
+Listing the contents of directories is essential to identify files that are
+available for use, as well as directories that can be navigated into.
+
+The `ls` command prints the list of files in a given directory.
+
+Alone, the `ls` command prints the list of files in the working directory.
+
+```bash
+ls
+```
+
+Given the path to an existing directory, the `ls` command prints the list of
+files in that particular directory.
+
+{{< alert icon="👉" text="The directory path can be absolute or relative to the working directory." />}}
+
+```bash
+ls /       # absolute path (starts with '/')
+ls ~/.ssh  # relative path  (does not start with '/')
+```
 
 <!-- Link definitions -->
