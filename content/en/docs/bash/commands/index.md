@@ -62,4 +62,23 @@ ls /       # absolute path (starts with '/')
 ls ~/.ssh  # relative path  (does not start with '/')
 ```
 
+The `ls` command also accepts a number of options.
+Most commonly, the `-l` option is used to display detailed information about
+each file, including permissions, file size, and the timestamp of the latest
+update to each file.
+
+```bash
+ls -l
+```
+
+Often, the `-h` option is added to display file sizes in human-readable format,
+adding units (e.g., K - kilobyte, M - megabyte, G - gigabyte).
+Multiple options can be combined under the same `-` symbol.
+The two forms below are equivalent.
+
+```bash
+ls -lh
+ls -l -h
+```
+
 <!-- Link definitions -->
