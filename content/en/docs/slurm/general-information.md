@@ -38,6 +38,8 @@ for sufficient resources to become available.
 | Batch nodes | 20 | 24 | 240GB |
 | Large nodes | 1 | 40 | 900GB |
 
+In addition, the cluster contains 4 x NVIDIA Titan RTX cards for parallel and multi-core tasks such as deep learning.
+
 ## Links
 
 - [SLURM Documentation][slurm-docs]
