@@ -44,11 +44,11 @@ In particular:
 * The field `NODES` indicates the number of nodes with each particular configuration
   in each partition.
 * The field `STATE` indicates the state of nodes in each partition; for instance:
-  - The value `alloc` indicates nodes allocated to one or more jobs.
-  - The value `idle` indicates nodes that are not allocated to any job.
-  - The value `mixed` indicates nodes where some CPUs are allocated a job
+  * The value `alloc` indicates nodes allocated to one or more jobs.
+  * The value `idle` indicates nodes that are not allocated to any job.
+  * The value `mixed` indicates nodes where some CPUs are allocated a job
     while others are idle.
-  - The value `drain` indicates nodes that are currently executing jobs,
+  * The value `drain` indicates nodes that are currently executing jobs,
     but do not accept new jobs, per administrator request
     (e.g., for maintenance).
 
