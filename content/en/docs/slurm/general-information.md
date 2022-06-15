@@ -33,10 +33,18 @@ for sufficient resources to become available.
 
 ## Resources
 
-| | Nodes | Cores (per node) | RAM (per node) |
-|-|-------|------------------|----------------|
-| Batch nodes | 20 | 24 | 240GB |
-| Large nodes | 1 | 40 | 900GB |
+The list of nodes and associated information can be obtained as follows.
+
+```bash
+sinfo --Node --long
+```
+
+The table below summarises the types of nodes available.
+
+|             | Nodes | Cores (per node) | RAM (per node) |
+|-------------|-------|------------------|----------------|
+| Large nodes | 1     | 40               | 900GB          |
+| Batch nodes | 20    | 24               | 240GB          |
 
 In addition, the cluster contains 4 x NVIDIA Titan RTX cards for parallel and multi-core tasks such as deep learning.
 
@@ -44,8 +52,10 @@ In addition, the cluster contains 4 x NVIDIA Titan RTX cards for parallel and mu
 
 - [SLURM Documentation][slurm-docs]
 - [Quick Start User Guide][slurm-quickstart]
+- [WIMM CCB Computing Infrastructure][ccb-computing]
 
 <!-- Link definitions -->
 
 [slurm-docs]: https://slurm.schedmd.com/
 [slurm-quickstart]: https://slurm.schedmd.com/quickstart.html
+[ccb-computing]: https://www.imm.ox.ac.uk/research/units-and-centres/mrc-wimm-centre-for-computational-biology/resources/computing
