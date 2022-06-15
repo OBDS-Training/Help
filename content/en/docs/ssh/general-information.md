@@ -26,4 +26,10 @@ The CCB cluster has three login nodes that users can log into:
 The CCB cluster includes a number of compute nodes where the majority of
 computations are run.
 
+Compute nodes cannot be logged into directly.
+Users are expected to interact with compute nodes through the
+[Slurm workload manager]({{< relref "/docs/slurm/general-information" >}}).
+
+{{< alert icon="👉" text="Users may log into compute nodes from any login node for debugging purposes." />}}
+
 <!-- Link definitions -->
