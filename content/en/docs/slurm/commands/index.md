@@ -40,7 +40,7 @@ The full list of fields and their description can be found in the
 
 In particular:
 
-* The asterisk symbol `*` indicates the default queue, to which jobs are submitted
+* The asterisk symbol `*` indicates the default partition, to which jobs are submitted
   when users don't request a specific queue.
 * The field `AVAIL` set to the value `up` indicates partitions that are accepting
   new jobs.
