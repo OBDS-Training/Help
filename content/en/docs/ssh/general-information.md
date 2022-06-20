@@ -1,5 +1,5 @@
 ---
-title: "General information"
+title: "SSH | General information"
 description: "General information about the MRC WIMM CCB high-performance computing (HPC) cluster."
 lead: "General information about the MRC WIMM CCB high-performance computing (HPC) cluster."
 date: 2020-10-06T08:48:57+00:00

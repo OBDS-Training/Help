@@ -1,5 +1,5 @@
 ---
-title: "First connection"
+title: "First SSH connection"
 description: "Connecting to the MRC WIMM CCB high-performance computing (HPC) cluster for the first time."
 lead: "Connecting to the MRC WIMM CCB high-performance computing (HPC) cluster for the first time."
 date: 2020-10-06T08:48:57+00:00

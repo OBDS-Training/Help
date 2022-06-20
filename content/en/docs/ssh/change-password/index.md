@@ -1,5 +1,5 @@
 ---
-title: "Change your password"
+title: "Change your SSH password"
 description: "The randomly generated password that you received by email should be replaced by a new secure and memorable password."
 lead: "The randomly generated password that you received by email should be replaced by a new secure and memorable password."
 date: 2020-10-06T08:48:57+00:00

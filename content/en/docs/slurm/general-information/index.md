@@ -1,5 +1,5 @@
 ---
-title: "General information"
+title: "Slurm | General information"
 description: "General information about the SLURM workload management system."
 lead: "General information about the SLURM workload management system."
 date: 2020-10-06T08:48:57+00:00
@@ -33,20 +33,27 @@ for sufficient resources to become available.
 
 ## Resources
 
-The list of nodes and associated information can be obtained as follows.
-
-```bash
-sinfo --Node --long
-```
-
-The table below summarises the types of nodes available.
+The table below summarises the types of compute nodes available.
 
 |             | Nodes | Cores (per node) | RAM (per node) |
 |-------------|-------|------------------|----------------|
 | Large nodes | 1     | 40               | 900GB          |
 | Batch nodes | 20    | 24               | 240GB          |
 
-In addition, the cluster contains 4 x NVIDIA Titan RTX cards for parallel and multi-core tasks such as deep learning.
+{{< alert icon="👉" text="In addition, the cluster contains 4 x NVIDIA Titan RTX cards for parallel and multi-core tasks such as deep learning." />}}
+
+The full list of compute nodes and associated information can be obtained as follows.
+
+```bash
+sinfo --Node --long
+```
+
+![Example output of the `sinfo --Node --long` command.](sinfo-node-long-screenshot.png)
+
+<p align='center'><i>Example output of the `sinfo --Node --long` command.</i></p>
+
+More information about individual compute nodes can be obtained using commands detailed
+in the page [Slurm commands]({{< relref "/docs/slurm/commands" >}}).
 
 ## Links
 
