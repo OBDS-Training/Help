@@ -29,6 +29,10 @@ Summary information about partitions (i.e., job queues) can be accessed as follo
 sinfo
 ```
 
+![Example output for the `sinfo` command.](sinfo-screenshot.png)
+
+<p align='center'><i>Example output for the `sinfo` command.</i></p>
+
 The `sinfo` command displays the name of partitions and additional information
 in a customisable list of fields.
 The full list of fields and their description can be found in the
@@ -36,10 +40,12 @@ The full list of fields and their description can be found in the
 
 In particular:
 
+* The asterisk symbol `*` indicates the default queue, to which jobs are submitted
+  when users don't request a specific queue.
 * The field `AVAIL` set to the value `up` indicates partitions that are accepting
   new jobs.
 * The field `TIMELIMIT` indicates the maximum time limit allowed for jobs submitted
-  to each partition.
+  to each partition (in the format hours:minutes:seconds).
   The value `infinite` is used to identify partitions without a job time limit.
 * The field `NODES` indicates the number of nodes with each particular configuration
   in each partition.
