@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "bash"
-weight: 520
+weight: 510
 toc: true
 ---
 
@@ -36,7 +36,7 @@ sinfo
 The `sinfo` command displays the name of partitions and additional information
 in a customisable list of fields.
 The full list of fields and their description can be found in the
-[Slurm documentation][sinfo-output-fields].
+[Slurm documentation →][sinfo-output-fields].
 
 In particular:
 
@@ -66,9 +66,14 @@ The full list of individual nodes and associated information can be obtained as 
 sinfo --Node --long
 ```
 
+![Example output of the `sinfo --Node --long` command.](sinfo-node-long-screenshot.png)
+
+<p align='center'><i>Example output of the `sinfo --Node --long` command.</i></p>
+
 In particular:
 
-* The `--Node` option reports a separate line for each node in each partition.
+* The `--Node` option reports a separate line for each node in each partition
+  (a node can be shared by multiple partitions).
 * The `--long` option reports more detailed information.
 
 More detailed information about the configuration of each individual nodes
