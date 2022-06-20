@@ -1,5 +1,5 @@
 ---
-title: "Setup"
+title: "VPN | Setup"
 description: "Setting up the VPN client."
 lead: "Setting up the VPN client."
 date: 2020-10-06T08:48:57+00:00

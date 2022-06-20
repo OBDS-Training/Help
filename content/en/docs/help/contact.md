@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "help"
-weight: 600
+weight: 700
 toc: true
 ---
 

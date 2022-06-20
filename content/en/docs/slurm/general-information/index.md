@@ -1,5 +1,5 @@
 ---
-title: "General information"
+title: "Slurm | General information"
 description: "General information about the SLURM workload management system."
 lead: "General information about the SLURM workload management system."
 date: 2020-10-06T08:48:57+00:00
