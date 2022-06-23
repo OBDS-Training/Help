@@ -29,9 +29,10 @@ package dependencies, installing the latest appropriate version of
 every dependency for the target package.
 
 In this section, we provide guidance to install and setup the Conda
-package management system for an individual user, we demonstrate
-how to install package in distinct environments, and how to activate
-environments before using the newly installed software packages.
+package management system for an individual user on the CCB cluster,
+we demonstrate how to install packages and create distinct environments,
+and how to activate environments before using the newly installed software
+packages on the command line.
 
 <!-- Link definitions -->
 
