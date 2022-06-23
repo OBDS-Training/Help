@@ -1,6 +1,6 @@
 ---
 title: "Installation"
-description: "Installing the Conda package management system. "
+description: "Installing the Conda package management system."
 lead: "Installing the Conda package management system."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
@@ -194,6 +194,32 @@ file after applying the edits described in this section.
 ![View of the final lines of the edited '.bashrc' file.](bashrc-edited.png)
 
 <p align='center'><i>View of the final lines of the edited '.bashrc' file.</i></p>
+
+## Test your installation
+
+To make the changes take effect, close the Terminal application, open a new Terminal
+application and log into the CCB cluster again.
+
+First of all, you should immediately see the additional prefix `(base)` at the
+start of your Bash prompt as soon as you log into the CCB cluster, indicating
+that the Conda `base` environment was activated successfully.
+
+![The Conda 'base' environment is automatically activated.](ssh-login-base.png)
+
+<p align='center'><i>The Conda 'base' environment is automatically activated.</i></p>
+
+You may also run the command `conda list`, which should return a list of the packages
+installed in the `base` environment.
+
+```bash
+conda list
+```
+
+![View of the first lines of output for the 'conda list' command.](conda-list.png)
+
+<p align='center'><i>View of the first lines of output for the 'conda list' command.</i></p>
+
+You have now a working installation of the Conda package management system! 
 
 <!-- Link definitions -->
 
