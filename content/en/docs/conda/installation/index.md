@@ -124,9 +124,76 @@ When prompted, type `yes` to allow the installer to run `conda init`.
 
 ## Edit your .bashrc file
 
+At the end of the previous section, we allowed the Miniconda installer to automatically
+add some contents to your `~/.bashrc` file.
+Those contents ensure that Conda is initialised every time you log into the CCB cluster
+over SSH.
+
 ![Automatically generated contents added to the '~/.bashrc' file.](bashrc-conda-init.png)
 
 <p align='center'><i>Automatically generated contents added to the '~/.bashrc' file.</i></p>
+
+However, those contents are initially added at the very end of the file, outside the
+block of code controlled by the statement `if [[ $PS1 ]]; then`
+(see section [The .bashrc file]({{< relref "/docs/bash/bashrc" >}})).
+This is an issue on the CCB cluster, as the `~/.bashrc` file is also executed in the
+non-interactive Bash sessions launched for each job submitted to the
+[Slurm workload management system]({{< relref "/docs/slurm/general-information" >}}),
+which may cause issues during the execution of jobs.
+
+To make sure that Conda is only initialised in interactive Bash sessions, you need to move
+those contents inside the block of code controlled by the statement `if [[ $PS1 ]]; then`.
+For clarity and readability, it is also recommend to indent those contents by four white
+spaces after they are moved.
+
+Conceptually:
+
+```bash
+if [[ $PS1 ]]; then
+
+    ## <other contents>
+
+    # >>> conda initialize >>>
+    # !! Contents within this block are managed by 'conda init' !!
+    __conda_setup="$('/home/a/<username>/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+    if [ $? -eq 0 ]; then
+        eval "$__conda_setup"
+    else
+        if [ -f "/home/a/<username>/miniconda3/etc/profile.d/conda.sh" ]; then
+            . "/home/a/<username>/miniconda3/etc/profile.d/conda.sh"
+        else
+            export PATH="/home/a/<username>/miniconda3/bin:$PATH"
+        fi
+    fi
+    unset __conda_setup
+    # <<< conda initialize <<<
+
+fi # if PS1
+```
+
+Note that in the example above, `<username>` represents your own username, and 
+`## <other contents>` represents other contents in that section of your own `~/.bashrc` file.
+
+{{< alert icon="👉" text="Do not copy from the example above. Instead, adjust the contents that were automatically generated in your own '~/.bashrc' file." />}}
+
+Lastly, add the following lines between the closing `<<< conda initialize <<<` line and the final
+`fi # if PS1` line.
+
+```bash
+    ## fix to get conda to pick up environments properly  https://github.com/conda/conda/issues/9392
+    conda deactivate
+    conda activate base
+```
+
+As the comment indicates, those lines address a known issue, making sure that the base Conda
+environment is activated in a way that all Conda environments are detected properly.
+
+The screenshot below exemplifies the expected appearance of the final lines of the `~/.bashrc`
+file after applying the edits described in this section.
+
+![View of the final lines of the edited '.bashrc' file.](bashrc-edited.png)
+
+<p align='center'><i>View of the final lines of the edited '.bashrc' file.</i></p>
 
 <!-- Link definitions -->
 
