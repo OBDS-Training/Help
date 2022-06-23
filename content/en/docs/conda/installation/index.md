@@ -90,6 +90,28 @@ of download links, and make sure that it matches the two values are exactly iden
 
 <p align='center'><i>Compare the output of the `sha256sum` command to the hash of the original file.</i></p>
 
+## Run the installer
+
+```bash
+bash <filename>
+```
+
+Replace `<filename>` by the name of the installer file that you just downloaded.
+
+When prompted, press `ENTER` (i.e., the Return key) to continue the installation process.
+
+![Running the Miniconda installer.](miniconda-installer-run.png)
+
+<p align='center'><i>Running the Miniconda installer.</i></p>
+
+Review the End User License Agreement (press the Space bar to scroll down), and
+when prompted, type `yes` to accept the license terms.
+
+When prompted, press `ENTER` to confirm your home directory as the location where
+Miniconda will be installed.
+
+
+
 <!-- Link definitions -->
 
 [conda-installation]: https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html
