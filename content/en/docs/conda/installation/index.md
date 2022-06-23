@@ -61,6 +61,35 @@ wget <url_in_clipboard>
 Instead of `<url_in_clipboard>`, paste the link address to the installer that you copied
 into your clipboard above.
 
+## Verify the installer hash
+
+While optional, we recommend to verify the integrity of the installer that you have just
+downloaded, to ensure that the file was not corrupted during the download process.
+
+In your Terminal application, type the `sha256sum` command followed by the name of the
+installer file that you just downloaded.
+
+For instance:
+
+```bash
+sha256sum <filename>
+```
+
+Replace `<filename>` by the name of the installer file that you just downloaded.
+
+![Example output of the `sha256sum` command.](sha256sum-installer.png)
+
+<p align='center'><i>Example output of the `sha256sum` command.</i></p>
+
+Compare the output of the command with the value of the field `SHA256 hash` in the table
+of download links, and make sure that it matches the two values are exactly identical.
+
+{{< alert icon="💡" text="A quick way is to copy the hash value printed buy the 'sha256sum' command and paste it in the search field of your web browser on the page of Conda documentation. If the values match, the value next to the file that you downloaded will be highlighted." />}}
+
+![Compare the output of the `sha256sum` command to the hash of the original file.](sha256-compare.png)
+
+<p align='center'><i>Compare the output of the `sha256sum` command to the hash of the original file.</i></p>
+
 <!-- Link definitions -->
 
 [conda-installation]: https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html
