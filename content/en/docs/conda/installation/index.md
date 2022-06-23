@@ -171,7 +171,7 @@ if [[ $PS1 ]]; then
 fi # if PS1
 ```
 
-Note that in the example above, `<username>` represents your own username, and 
+Note that in the example above, `<username>` represents your own username, and
 `## <other contents>` represents other contents in that section of your own `~/.bashrc` file.
 
 {{< alert icon="👉" text="Do not copy from the example above. Instead, adjust the contents that were automatically generated in your own '~/.bashrc' file." />}}
