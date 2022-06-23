@@ -31,5 +31,9 @@ if [[ $PS1 ]]; then
     fi
     unset __conda_setup
     # <<< conda initialize <<<
+
+    ## fix to get conda to pick up environments properly  https://github.com/conda/conda/issues/9392
+    conda deactivate
+    conda activate base
 fi # if PS1
 ```

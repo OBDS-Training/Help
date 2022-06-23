@@ -110,7 +110,17 @@ when prompted, type `yes` to accept the license terms.
 When prompted, press `ENTER` to confirm your home directory as the location where
 Miniconda will be installed.
 
+![Setting the installation directory for Miniconda.](miniconda-directory.png)
 
+<p align='center'><i>Setting the installation directory for Miniconda.</i></p>
+
+When prompted, type `yes` to allow the installer to run `conda init`.
+
+{{< alert icon="👉" text="This last action automatically edits your '~/.bashrc' file." />}}
+
+![Allowing the Miniconda installer to run 'conda init'.](miniconda-init.png)
+
+<p align='center'><i>Allowing the Miniconda installer to run 'conda init'.</i></p>
 
 <!-- Link definitions -->
 
