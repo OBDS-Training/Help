@@ -122,6 +122,12 @@ When prompted, type `yes` to allow the installer to run `conda init`.
 
 <p align='center'><i>Allowing the Miniconda installer to run 'conda init'.</i></p>
 
+## Edit your .bashrc file
+
+![Automatically generated contents added to the '~/.bashrc' file.](bashrc-conda-init.png)
+
+<p align='center'><i>Automatically generated contents added to the '~/.bashrc' file.</i></p>
+
 <!-- Link definitions -->
 
 [conda-installation]: https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html
