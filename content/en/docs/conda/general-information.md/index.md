@@ -34,7 +34,14 @@ we demonstrate how to install packages and create distinct environments,
 and how to activate environments before using the newly installed software
 packages on the command line.
 
+## Links
+
+- [Conda documentation website][conda-website]
+- [Conda documentation][conda-readthedocs]
+- [Miniconda documentation][miniconda-readthedocs]
+
 <!-- Link definitions -->
 
-[modules-readthedocs]: https://modules.readthedocs.io/en/latest/index.html
 [conda-website]: https://docs.conda.io/en/latest/
+[conda-readthedocs]: https://docs.conda.io/projects/conda/en/latest/
+[miniconda-readthedocs]: https://docs.conda.io/en/latest/miniconda.html
