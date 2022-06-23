@@ -15,7 +15,7 @@ toc: true
 
 ## Introduction
 
-The CCB cluster is high-performance computing system shared by many users
+The CCB cluster is a high-performance computing system shared by many users
 who run programs using a pool of computational resources to process data
 simultaneously.
 

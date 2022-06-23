@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "pipelines"
-weight: 600
+weight: 700
 toc: true
 ---
 
