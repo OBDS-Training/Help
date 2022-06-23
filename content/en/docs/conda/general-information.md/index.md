@@ -28,6 +28,10 @@ Additionally, when installing a package, Conda identifies and resolves
 package dependencies, installing the latest appropriate version of
 every dependency for the target package.
 
+In this section, we provide guidance to install and setup the Conda
+package management system for an individual user, we demonstrate
+how to install package in distinct environments, and how to activate
+environments before using the newly installed software packages.
 
 <!-- Link definitions -->
 
