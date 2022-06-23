@@ -219,7 +219,7 @@ conda list
 
 <p align='center'><i>View of the first lines of output for the 'conda list' command.</i></p>
 
-You have now a working installation of the Conda package management system! 
+You have now a working installation of the Conda package management system!
 
 <!-- Link definitions -->
 
