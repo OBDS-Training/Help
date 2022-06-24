@@ -79,13 +79,17 @@ which conda
 
 ## Deactivate the environment
 
+Before going further, we recommend deactivating the `base` environment.
+
+To do so, the `conda` command is used with the `deactivate` sub-command.
+
 ```bash
 conda deactivate
 ```
 
-![](test-interactively.png)
+<!-- ![](test-interactively.png) -->
 
-We deactivate before setting up and testing the alias in the next section.
+{{< alert icon="👉" text="Deactivating at this point will allow us to test again in the next section, after setting up a shortcut." />}}
 
 ## Create a shortcut
 
