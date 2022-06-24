@@ -1,5 +1,5 @@
 ---
-title: "Conda | General information"
+title: "Introduction to Conda"
 description: "General information about the Conda package management system."
 lead: "General information about the Conda package management system."
 date: 2020-10-06T08:48:57+00:00
@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "conda"
-weight: 600
+weight: 400
 toc: true
 ---
 

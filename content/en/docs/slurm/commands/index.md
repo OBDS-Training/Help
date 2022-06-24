@@ -8,8 +8,8 @@ draft: false
 images: []
 menu:
   docs:
-    parent: "bash"
-weight: 510
+    parent: "slurm"
+weight: 310
 toc: true
 ---
 

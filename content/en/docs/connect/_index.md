@@ -1,5 +1,5 @@
 ---
-title: "Connecting to CCB"
+title: "Connect to CCB"
 description: "Connecting Doks."
 lead: ""
 date: 2020-10-06T08:49:15+00:00
