@@ -1,5 +1,5 @@
 ---
-title: "Installation"
+title: "Installation (deprecated)"
 description: "Installing the Conda package management system."
 lead: "Installing the Conda package management system."
 date: 2020-10-06T08:48:57+00:00
@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "conda"
-weight: 610
+weight: 499
 toc: true
 ---
 
@@ -135,7 +135,7 @@ over SSH.
 
 However, those contents are initially added at the very end of the file, outside the
 block of code controlled by the statement `if [[ $PS1 ]]; then`
-(see section [The .bashrc file]({{< relref "/docs/bash/bashrc" >}})).
+(see section [The .bashrc file]({{< relref "/docs/linux/bashrc" >}})).
 This is an issue on the CCB cluster, as the `~/.bashrc` file is also executed in the
 non-interactive Bash sessions launched for each job submitted to the
 [Slurm workload management system]({{< relref "/docs/slurm/general-information" >}}),

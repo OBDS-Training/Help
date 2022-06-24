@@ -8,8 +8,8 @@ draft: false
 images: []
 menu:
   docs:
-    parent: "ssh"
-weight: 320
+    parent: "connect"
+weight: 140
 toc: true
 ---
 

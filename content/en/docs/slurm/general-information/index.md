@@ -1,7 +1,7 @@
 ---
-title: "Slurm | General information"
-description: "General information about the SLURM workload management system."
-lead: "General information about the SLURM workload management system."
+title: "HPC resources"
+description: "General information about the resources available through the Slurm workload management system on the CCB cluster."
+lead: "General information about the resources available through the Slurm workload management system on the CCB cluster."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "slurm"
-weight: 500
+weight: 300
 toc: true
 ---
 

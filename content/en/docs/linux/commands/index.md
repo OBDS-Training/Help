@@ -1,5 +1,5 @@
 ---
-title: "Built-in Bash commands"
+title: "Bash commands"
 description: "A cheatsheet of built-in Bash commands."
 lead: "A cheatsheet of built-in Bash commands."
 date: 2020-10-06T08:48:57+00:00
@@ -8,8 +8,8 @@ draft: false
 images: []
 menu:
   docs:
-    parent: "bash"
-weight: 410
+    parent: "linux"
+weight: 200
 toc: true
 ---
 

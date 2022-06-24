@@ -1,6 +1,6 @@
 ---
-title: "VPN"
-description: "VPN Doks."
+title: "Linux command line"
+description: "Linux Doks."
 lead: ""
 date: 2020-10-06T08:49:15+00:00
 lastmod: 2020-10-06T08:49:15+00:00

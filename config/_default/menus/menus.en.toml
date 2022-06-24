@@ -1,26 +1,32 @@
 [[docs]]
-  name = "Prologue"
+  name = "Connect to CCB"
   weight = 10
-  identifier = "prologue"
-  url = "docs/prologue/"
+  identifier = "connect"
+  url = "docs/connect/"
 
 [[docs]]
-  name = "VPN"
+  name = "Linux command line"
   weight = 20
-  identifier = "vpn"
-  url = "docs/vpn/"
+  identifier = "linux"
+  url = "docs/linux/"
 
 [[docs]]
-  name = "SSH"
+  name = "Slurm"
   weight = 30
-  identifier = "ssh"
-  url = "docs/ssh/"
+  identifier = "slurm"
+  url = "docs/slurm/"
 
 [[docs]]
-  name = "Bash"
+  name = "Conda"
   weight = 40
-  identifier = "bash"
-  url = "docs/bash/"
+  identifier = "conda"
+  url = "docs/conda/"
+
+[[docs]]
+  name = "Pipelines"
+  weight = 50
+  identifier = "pipelines"
+  url = "docs/pipelines/"
 
 [[docs]]
   name = "Help"
@@ -48,7 +54,7 @@
 
 [[main]]
   name = "Docs"
-  url = "docs/prologue/introduction/"
+  url = "docs/connect/introduction/"
 # url = "docs/1.0/prologue/introduction/"
   weight = 10
 
@@ -58,7 +64,7 @@
 #   weight = 15
 
 [[main]]
-  name = "Blog"
+  name = "News"
   url = "blog/"
   weight = 20
 
@@ -66,13 +72,27 @@
   name = "Get Started"
   weight = 30
   identifier = "get-started"
-  url = "docs/prologue/introduction/"
+  url = "docs/connect/introduction/"
 
 [[main]]
-  name = "Introduction"
-  weight = 40
-  identifier = "introduction"
-  url = "docs/prologue/introduction/"
+  name = "Connect"
+  weight = 31
+  identifier = "connect"
+  url = "docs/connect/introduction/"
+  parent = "get-started"
+
+[[main]]
+  name = "Linux command line"
+  weight = 32
+  identifier = "bash"
+  url = "docs/bash/commands/"
+  parent = "get-started"
+
+[[main]]
+  name = "News"
+  weight = 39
+  identifier = "news"
+  url = "blog"
   parent = "get-started"
 
 # [[main]]

@@ -8,8 +8,8 @@ draft: false
 images: []
 menu:
   docs:
-    parent: "bash"
-weight: 400
+    parent: "linux"
+weight: 220
 toc: true
 ---
 

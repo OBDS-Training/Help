@@ -8,8 +8,8 @@ draft: false
 images: []
 menu:
   docs:
-    parent: "ssh"
-weight: 330
+    parent: "connect"
+weight: 150
 toc: true
 ---
 
@@ -76,7 +76,7 @@ ssh-copy-id <username>@<remote>
 ```
 
 Replace `<username>` by your own username, and `<remote>` by one of the
-login nodes (see [General information]({{< relref "general-information#login-nodes" >}})).
+login nodes (see [General information]({{< relref "/docs/connect/ssh-first-connection#login-nodes" >}})).
 
 If the public key indeed does not exist on your CCB cluster account yet,
 you will be prompted for your password.

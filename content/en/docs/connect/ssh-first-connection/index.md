@@ -8,10 +8,18 @@ draft: false
 images: []
 menu:
   docs:
-    parent: "ssh"
-weight: 310
+    parent: "connect"
+weight: 130
 toc: true
 ---
+
+## Login nodes
+
+The CCB cluster has three login nodes that users can log into:
+
+- `cbrglogin1.molbiol.ox.ac.uk`
+- `cbrglogin2.molbiol.ox.ac.uk`
+- `cbrglogin3.molbiol.ox.ac.uk`
 
 ## Log in with your username and password
 
@@ -32,7 +40,7 @@ ssh <username>@<remote>
 ```
 
 Replace `<username>` by your own username, and `<remote>` by one of the
-login nodes (see [General information]({{< relref "general-information#login-nodes" >}})).
+login nodes (see [Login nodes]({{< relref "#login-nodes" >}}) section above).
 When you have typed the command above, press the Return key to execute it.
 
 ![Using the ssh command.](ssh-screenshot.png)
