@@ -1,5 +1,5 @@
 ---
-title: "VPN | Setup"
+title: "VPN setup"
 description: "Setting up the VPN client."
 lead: "Setting up the VPN client."
 date: 2020-10-06T08:48:57+00:00
@@ -8,8 +8,8 @@ draft: false
 images: []
 menu:
   docs:
-    parent: "vpn"
-weight: 200
+    parent: "connect"
+weight: 110
 toc: true
 ---
 
@@ -80,7 +80,7 @@ While connected, you will see an icon in your computer's system tray
 
 Click on it to reveal the application's menu.
 
-![Cisco AnyConnect - Application menu while connected.](cisco-connected-menu.png)
+![Cisco AnyConnect - Application menu while connected.](cisco-connected-menu.png) {widheg}
 
 <p align='center'><i>Cisco AnyConnect menu while connected.</i></p>
 

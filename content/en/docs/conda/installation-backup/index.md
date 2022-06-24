@@ -1,5 +1,5 @@
 ---
-title: "Installation"
+title: "Installation (backup)"
 description: "Installing the Conda package management system."
 lead: "Installing the Conda package management system."
 date: 2020-10-06T08:48:57+00:00
@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "conda"
-weight: 610
+weight: 699
 toc: true
 ---
 

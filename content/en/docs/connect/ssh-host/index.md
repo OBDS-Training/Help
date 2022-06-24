@@ -8,8 +8,8 @@ draft: false
 images: []
 menu:
   docs:
-    parent: "ssh"
-weight: 340
+    parent: "connect"
+weight: 160
 toc: true
 ---
 
@@ -38,11 +38,11 @@ Host ccb1
 
 Host ccb2
     Hostname cbrglogin2.molbiol.ox.ac.uk
-    User albrecht
+    User <username>
 
 Host ccb3
     Hostname cbrglogin3.molbiol.ox.ac.uk
-    User albrecht
+    User <username>
 ```
 
 Then, save and close the file.

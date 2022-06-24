@@ -1,5 +1,5 @@
 ---
-title: "Bash"
+title: "Linux command line"
 description: "Bash Doks."
 lead: ""
 date: 2020-10-06T08:49:15+00:00

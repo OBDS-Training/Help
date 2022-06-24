@@ -48,7 +48,7 @@
 
 [[main]]
   name = "Docs"
-  url = "docs/prologue/introduction/"
+  url = "docs/connect/introduction/"
 # url = "docs/1.0/prologue/introduction/"
   weight = 10
 
@@ -66,13 +66,13 @@
   name = "Get Started"
   weight = 30
   identifier = "get-started"
-  url = "docs/prologue/introduction/"
+  url = "docs/connect/introduction/"
 
 [[main]]
   name = "Introduction"
   weight = 40
   identifier = "introduction"
-  url = "docs/prologue/introduction/"
+  url = "docs/connect/introduction/"
   parent = "get-started"
 
 # [[main]]
