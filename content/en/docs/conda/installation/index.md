@@ -70,7 +70,7 @@ source ~/conda/etc/profile.d/conda.sh
 conda activate base
 ```
 
-![Screenshot](test-interactively.png)
+![Interactively testing a Conda installation.](test-interactively.png)
 
 The `which` command can also be used to verify that the `conda` command
 is found on the `PATH`, at the expected location (see screenshot below).
@@ -79,7 +79,7 @@ is found on the `PATH`, at the expected location (see screenshot below).
 which conda
 ```
 
-![Screenshot](conda-which.png)
+![Querying the location of the 'conda' executable.](conda-which.png)
 
 ## Deactivate the environment
 
@@ -90,8 +90,6 @@ To do so, the `conda` command is used with the `deactivate` sub-command.
 ```bash
 conda deactivate
 ```
-
-<!-- ![](test-interactively.png) -->
 
 {{< alert icon="👉" text="Deactivating at this point will allow us to test a new shortcut that we set up in the next section." />}}
 
@@ -119,7 +117,34 @@ source ~/.bashrc
 conda_activate_base
 ```
 
-![Screenshot](test-alias.png)
+![Testing the alias.](test-alias.png)
+
+## Next steps
+
+From this point, new instances of the Terminal application will automatically execute the 
+`~/.bashrc` file and define the alias.
+
+As a result, when you connect to the CCB cluster in new instances of the Terminal application,
+you will only need to call the alias by name (see screenshot below).
+
+```bash
+conda_activate_base
+```
+
+![Immediately use the alias after connecting over SSH.](ssh-and-alias.png)
+
+Furthermore, you should only call the alias once per Terminal application, as there is no
+benefit to activate the `base` environment multiple times per session.
+
+The only exception being if you deactivate the `base` environment and wish to re-activate it.
+
+```bash
+conda_activate_base
+conda deactivate
+conda_activate_base
+```
+
+![Sequentially activating and deactivating the Conda 'base' environment.](activate-deactivate.png)
 
 <!-- Link definitions -->
 
