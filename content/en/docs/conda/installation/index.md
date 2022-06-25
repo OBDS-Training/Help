@@ -63,7 +63,7 @@ Then, the `conda` command is used to activate the `base` environment that was
 created during the installation process.
 Again, this command is not expected to return any information in the Terminal.
 However, after that command completes, the prefix `(base)` should be visible
-at the start of the prompt (see screenshot below).
+at the start of the prompt.
 
 ```bash
 source ~/conda/etc/profile.d/conda.sh
@@ -73,7 +73,7 @@ conda activate base
 ![Interactively testing a Conda installation.](test-interactively.png)
 
 The `which` command can also be used to verify that the `conda` command
-is found on the `PATH`, at the expected location (see screenshot below).
+is found on the `PATH`, at the expected location.
 
 ```bash
 which conda
@@ -109,8 +109,7 @@ including the `alias` command that defines the new shortcut.
 
 Then, we test the newly defined alias by typing its name.
 This shortcut should have the same effect as typing the full command defined in the alias,
-activating the `base` Conda environment, and adding the `(base)` prefix to the prompt
-(see screenshot below).
+activating the `base` Conda environment, and adding the `(base)` prefix to the prompt.
 
 ```bash
 source ~/.bashrc
@@ -121,11 +120,11 @@ conda_activate_base
 
 ## Next steps
 
-From this point, new instances of the Terminal application will automatically execute the 
+From this point, new instances of the Terminal application will automatically execute the
 `~/.bashrc` file and define the alias.
 
 As a result, when you connect to the CCB cluster in new instances of the Terminal application,
-you will only need to call the alias by name (see screenshot below).
+you will only need to call the alias by name.
 
 ```bash
 conda_activate_base
