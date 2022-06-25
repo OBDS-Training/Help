@@ -30,6 +30,10 @@ For reference, the URL to the installer file was obtained from the
 
 Use `bash` to execute the installer file.
 
+```bash
+bash Miniconda3-latest-Linux-x86_64.sh -b -p ~/conda
+```
+
 The option `-b` runs the installer in 'batch' mode (without manual intervention).
 
 The option `-p` specifies the installation path, the location where Conda will
@@ -37,11 +41,7 @@ be installed.
 We recommend specifying `~/conda`, which will create a directory `conda` in your
 home directory.
 
-```bash
-bash Miniconda3-latest-Linux-x86_64.sh -b -p ~/conda
-```
-
-{{< alert icon="👉" text="Some of the instructions below expect on this installation path. If you decide to change it, be sure to adapt the following instructions accordingly." />}}
+{{< alert icon="👉" text="Some of the instructions below rely on this specific installation path. If you decide to change it, be sure to adapt the following instructions accordingly." />}}
 
 Once the installation successfully completes, you may want to delete the installer
 file.
