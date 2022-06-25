@@ -1,5 +1,5 @@
 ---
-title: "Installation"
+title: "Install Miniconda"
 description: "Installing the Conda package management system."
 lead: "Installing the Conda package management system."
 date: 2020-10-06T08:48:57+00:00
