@@ -57,9 +57,13 @@ as expected.
 
 First, the `source` command executes a script that makes Conda discoverable in the
 Bash environment of your Terminal application.
+This command is not expected to return any information in the Terminal.
 
 Then, the `conda` command is used to activate the `base` environment that was
 created during the installation process.
+Again, this command is not expected to return any information in the Terminal.
+However, after that command completes, the prefix `(base)` should be visible
+at the start of the prompt (see screenshot below).
 
 ```bash
 source ~/conda/etc/profile.d/conda.sh
@@ -69,7 +73,7 @@ conda activate base
 ![Screenshot](test-interactively.png)
 
 The `which` command can also be used to verify that the `conda` command
-is found on the `PATH`, in the expected location.
+is found on the `PATH`, at the expected location (see screenshot below).
 
 ```bash
 which conda
@@ -89,7 +93,7 @@ conda deactivate
 
 <!-- ![](test-interactively.png) -->
 
-{{< alert icon="👉" text="Deactivating at this point will allow us to test again in the next section, after setting up a shortcut." />}}
+{{< alert icon="👉" text="Deactivating at this point will allow us to test a new shortcut that we set up in the next section." />}}
 
 ## Create a shortcut
 
@@ -102,14 +106,20 @@ alias conda_activate_base='source ~/conda/etc/profile.d/conda.sh && conda activa
 
 ## Test the shortcut
 
-Source the `~/.bashrc` file and test the alias.
+First, we use the `source` command to execute the commands in `~/.bashrc` file,
+including the `alias` command that defines the new shortcut.
+
+Then, we test the newly defined alias by typing its name.
+This shortcut should have the same effect as typing the full command defined in the alias,
+activating the `base` Conda environment, and adding the `(base)` prefix to the prompt
+(see screenshot below).
 
 ```bash
 source ~/.bashrc
 conda_activate_base
 ```
 
-Screenshot.
+![Screenshot](test-alias.png)
 
 <!-- Link definitions -->
 
