@@ -58,6 +58,11 @@ conda config --add channels conda-forge
 conda config --add channels bioconda
 ```
 
+The `conda info` command (described above) can be used to verify the list of channels
+that are currently configured, among other pieces of information.
+
+![Section of 'conda info' output listing configured channels.](conda-info-channels.png)
+
 <!-- Link definitions -->
 
 [conda-channels]: https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/channels.html
