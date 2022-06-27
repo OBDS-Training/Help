@@ -114,8 +114,7 @@ conda search mamba
 
 The output of the `conda search` command includes key information for identifying the list of versions
 available and potentially selecting a specific build to install.
-
-Furthermore, the `Channel` column indicates the channel in which each package build is stored, which
+For instance, the `Channel` column indicates the channel in which each package build is stored, which
 can be especially important for packages available from different channels.
 
 <!-- Link definitions -->
