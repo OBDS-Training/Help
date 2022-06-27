@@ -13,6 +13,21 @@ weight: 430
 toc: true
 ---
 
+## Search available packages
+
+The `mamba search` command can be used to search for available packages and package versions
+programmatically.
+
+```bash
+mamba search pysam
+```
+
+The following websites can also be used to manually search packages available in individual
+channels:
+
+- `bioconda`: <https://anaconda.org/bioconda/repo/>
+- `conda-forge`: <https://conda-forge.org/feedstock-outputs/index.html>
+
 ## Install a specific package version
 
 To install a specific version of a package, add the `=` symbol, followed by the
@@ -24,7 +39,7 @@ For instance:
 mamba install pysam=0.19.1
 ```
 
-Use `mamba search` to identify the the list of versions available for a given package.
+Reminder: use `mamba search` to identify the the list of versions available for a given package.
 
 ```bash
 mamba search pysam
