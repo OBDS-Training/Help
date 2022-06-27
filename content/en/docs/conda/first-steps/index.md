@@ -100,6 +100,24 @@ proceed, by typing `y` and pressing the Return key when prompted.
 
 ![Example package plan for downloads produced by the 'conda update' command.](conda-update-download.png)
 
+## Search for packages
+
+The `conda search` command can be used to search for packages available in any of the configured channels.
+
+For instance, the example below demonstrates how to search for a Conda package called `mamba`.
+
+```bash
+conda search mamba
+```
+
+![Extract of an example output for the 'conda search' command.](conda-search.png)
+
+The output of the `conda search` command includes key information for identifying the list of versions
+available and potentially selecting a specific build to install.
+
+Furthermore, the `Channel` column indicates the channel in which each package build is stored, which
+can be especially important for packages available from different channels.
+
 <!-- Link definitions -->
 
 [conda-channels]: https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/channels.html
