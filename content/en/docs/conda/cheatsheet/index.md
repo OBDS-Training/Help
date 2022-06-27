@@ -19,7 +19,15 @@ To install a specific version of a package, add the `=` symbol, followed by the
 specific version number.
 
 ```bash
-conda install mamba=0.7.8
+mamba install pysam=0.19.1
 ```
+
+Use `mamba search` to identify the the list of versions available for a given package.
+
+```bash
+mamba search pysam
+```
+
+{{< alert icon="👉" text="The search returns package versions in alphanumeric order, meaning that the most recent versions will be present at the end of the output." />}}
 
 <!-- Link definitions -->
