@@ -18,6 +18,8 @@ toc: true
 To install a specific version of a package, add the `=` symbol, followed by the
 specific version number.
 
+For instance:
+
 ```bash
 mamba install pysam=0.19.1
 ```
@@ -29,5 +31,18 @@ mamba search pysam
 ```
 
 {{< alert icon="👉" text="The search returns package versions in alphanumeric order, meaning that the most recent versions will be present at the end of the output." />}}
+
+## Dry-run
+
+For several commands, the `--dry-run` option can be used to only display what would have been done,
+without actually doing anything.
+This can be particularly helpful to safely assess the impact of any command that is likely to 
+significantly alter the environment.
+
+For instance:
+
+```
+mamba install pysam --dry-run
+```
 
 <!-- Link definitions -->
