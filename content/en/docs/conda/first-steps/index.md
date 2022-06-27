@@ -140,6 +140,22 @@ which mamba
 
 ![Output of the `which` command for an executable that is currently not detected on the 'PATH'.](which-mamba-missing.png)
 
+## Install a package
+
+The `conda install` command can be used to install packages using the `conda` executable.
+
+However, the built-in Conda installer can be quite slow to identify and resolve dependencies
+between packages, which led to a re-implementation of the conda package manager in C++,
+distributed in the `mamba` package.
+
+To install the `mamba` package, use the command below.
+
+```bash
+conda install mamba
+```
+
+![Extract of an example output for the 'conda install mamba' command.](conda-install-mamba.png)
+
 <!-- Link definitions -->
 
 [conda-channels]: https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/channels.html
