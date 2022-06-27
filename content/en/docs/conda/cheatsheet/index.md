@@ -15,7 +15,7 @@ toc: true
 
 ## Search available packages
 
-The `mamba search` command can be used to search for available packages and package versions
+The `search` command can be used to search for available packages and package versions
 programmatically.
 
 For instance:
@@ -41,7 +41,7 @@ For instance:
 mamba install pysam=0.19.1
 ```
 
-Reminder: use `mamba search` to identify the the list of versions available for a given package.
+Reminder: use the `search` command to identify the the list of versions available for a given package.
 
 ```bash
 mamba search pysam
@@ -60,6 +60,16 @@ For instance:
 
 ```
 mamba install pysam --dry-run
+```
+
+## Remove packages
+
+The `remove` command can be used to remove installed packages from the environment.
+
+For instance:
+
+```bash
+mamba remove samtools
 ```
 
 <!-- Link definitions -->
