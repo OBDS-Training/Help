@@ -36,7 +36,7 @@ conda info
 
 ![Example output of the `conda info` command.](conda-info.png)
 
-{{< alert icon="👉" text="You should always include the output of the 'conda info' command with all your bug reports, as it provide important context for your own situation." />}}
+{{< alert icon="👉" text="You should always include the output of the 'conda info' command with all your bug reports, as that information provides important context for your own situation." />}}
 
 ## Configuration
 
