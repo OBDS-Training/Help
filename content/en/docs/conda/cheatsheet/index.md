@@ -53,12 +53,12 @@ mamba search pysam
 
 For several commands, the `--dry-run` option can be used to only display what would have been done,
 without actually doing anything.
-This can be particularly helpful to safely assess the impact of any command that is likely to 
+This can be particularly helpful to safely assess the impact of any command that is likely to
 significantly alter the environment.
 
 For instance:
 
-```
+```bash
 mamba install pysam --dry-run
 ```
 
