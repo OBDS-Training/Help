@@ -179,6 +179,19 @@ and working properly.
 
 ![Example output of the 'mamba --help' command.](mamba-help.png)
 
+## Using Mamba
+
+Mamba is implemented as a drop-in replacement for Conda.
+
+As such, in many cases, the `mamba` command can be used a replacement for the `conda` command.
+
+For instance:
+
+```bash
+mamba update --all
+mamba install <package>
+```
+
 <!-- Link definitions -->
 
 [conda-channels]: https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/channels.html
