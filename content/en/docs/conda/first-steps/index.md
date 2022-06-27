@@ -76,6 +76,10 @@ environment
 conda list
 ```
 
+![Example output of the `conda list` command.](conda-list.png)
+
+{{< alert icon="👉" text="The screenshot above represents an example output reporting package version numbers at a certain point in time. It is very likely and entirely normal that your own package version numbers differ from those." />}}
+
 ## Update packages
 
 The `conda update` command can be used to updates conda packages (in the current environment)
