@@ -67,7 +67,7 @@ that are currently configured, among other pieces of information.
 
 ![Section of 'conda info' output listing configured channels.](conda-info-channels.png)
 
-## List packages
+## List installed packages
 
 The `conda list` command can be used to list the packages installed in the current
 environment
@@ -80,7 +80,7 @@ conda list
 
 {{< alert icon="👉" text="The screenshot above represents an example output reporting package version numbers at a certain point in time. It is very likely and entirely normal that your own package version numbers differ from those." />}}
 
-## Update packages
+## Update installed packages
 
 The `conda update` command can be used to updates conda packages (in the current environment)
 to the latest compatible version.
@@ -100,14 +100,14 @@ proceed, by typing `y` and pressing the Return key when prompted.
 
 ![Example package plan for downloads produced by the 'conda update' command.](conda-update-download.png)
 
-## Update conda
+## Update Conda itself
 
 Part of the output of the `conda update` command may report whether a newer version of the `conda` package
 itself is available, alongside instructions to update that package.
 
 ![Instructions to update conda itself.](conda-update-conda.png)
 
-## Search for packages
+## Search available packages
 
 The `conda search` command can be used to search for packages available in any of the configured channels.
 
@@ -124,7 +124,7 @@ available and potentially selecting a specific build to install.
 For instance, the `Channel` column indicates the channel in which each package build is stored, which
 can be especially important for packages available from different channels.
 
-## Verify that a package is missing
+## Verify that a package is not installed
 
 The `conda list` command can be used with the name of a specific package, to list any version of that
 package installed in the environment.
