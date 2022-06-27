@@ -167,15 +167,27 @@ conda install mamba
 
 The `conda list` command can be used to list installed packages that contain a certain pattern in their name.
 
+```bash
+conda list mamba
+```
+
 ![Output of the 'conda list' command for a package that is installed in the environment.](conda-list-mamba-present.png)
 
 The Bash command `which` can be used to display the location of an executable that is detected on the `PATH`.
+
+```bash
+which mamba
+```
 
 ![Output of the `which` command for an executable that is detected on the 'PATH'.](which-mamba-missing.png)
 
 Alternatively, the `mamba` executable itself can be invoked, for instance with the `--help` option,
 to display the help page of the program, implictly verifying that the executable itself is installed
 and working properly.
+
+```bash
+mamba --help
+```
 
 ![Example output of the 'mamba --help' command.](mamba-help.png)
 
