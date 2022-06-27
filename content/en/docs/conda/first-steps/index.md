@@ -26,6 +26,8 @@ executable, along with a brief description of their purpose.
 conda --help
 ```
 
+![Example output of the `conda --help` command.](conda-help.png)
+
 The `conda info` command can be used to display information about your current installation.
 
 ```bash
