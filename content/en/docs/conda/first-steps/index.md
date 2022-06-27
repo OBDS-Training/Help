@@ -117,6 +117,29 @@ available and potentially selecting a specific build to install.
 For instance, the `Channel` column indicates the channel in which each package build is stored, which
 can be especially important for packages available from different channels.
 
+## Check if a package is installed
+
+The `conda list` command can be used with the name of a specific package, to list any version of that
+package installed in the environment.
+
+The output will be presented as a table, and the table will be empty (i.e., only column headers)
+if the package is not installed in the environment.
+
+```bash
+conda list mamba
+```
+
+![Output of the 'conda list' command for a package that is not currently installed in the environment.](conda-list-mamba-missing.png)
+
+Alternatively, the Bash command `which` can be used to check whether an executable known to be present
+in a Conda package is detected on the `PATH`.
+
+```bash
+which mamba
+```
+
+![Output of the `which` command for an executable that is currently not detected on the 'PATH'.](which-mamba-missing.png)
+
 <!-- Link definitions -->
 
 [conda-channels]: https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/channels.html
