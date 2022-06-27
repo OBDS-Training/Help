@@ -92,6 +92,14 @@ individual packages).
 conda update --all
 ```
 
+In particular, the command will produce a detailed plan, listing packages that may be downloaded to
+update those packages in the Conda environment.
+
+We recommend careful reviewing the information detailed in the package update plan before agreeing to
+proceed, by typing `y` and pressing the Return key when prompted.
+
+![Example package plan for downloads produced by the 'conda update' command.](conda-update-download.png)
+
 <!-- Link definitions -->
 
 [conda-channels]: https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/channels.html
