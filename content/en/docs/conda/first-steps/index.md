@@ -148,7 +148,7 @@ However, the built-in Conda installer can be quite slow to identify and resolve 
 between packages, which led to a re-implementation of the conda package manager in C++,
 distributed in the `mamba` package.
 
-To install the `mamba` package, use the command below.
+Install the `mamba` package using the command below.
 
 ```bash
 conda install mamba
