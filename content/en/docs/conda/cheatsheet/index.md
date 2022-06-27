@@ -18,6 +18,8 @@ toc: true
 The `mamba search` command can be used to search for available packages and package versions
 programmatically.
 
+For instance:
+
 ```bash
 mamba search pysam
 ```
