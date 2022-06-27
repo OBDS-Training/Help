@@ -63,6 +63,27 @@ that are currently configured, among other pieces of information.
 
 ![Section of 'conda info' output listing configured channels.](conda-info-channels.png)
 
+## List packages
+
+The `conda list` command can be used to list the packages installed in the current
+environment
+
+```bash
+conda list
+```
+
+## Update packages
+
+The `conda update` command can be used to updates conda packages (in the current environment)
+to the latest compatible version.
+
+The `--all` option checks all packages in the environment (rather than explicitly specifying
+individual packages).
+
+```bash
+conda update --all
+```
+
 <!-- Link definitions -->
 
 [conda-channels]: https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/channels.html
