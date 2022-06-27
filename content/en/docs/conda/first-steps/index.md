@@ -183,14 +183,19 @@ and working properly.
 
 Mamba is implemented as a drop-in replacement for Conda.
 
-As such, in many cases, the `mamba` command can be used a replacement for the `conda` command.
+As such, in many cases, the `mamba` command can be used a replacement for the `conda` command,
+to produce the same result much more rapidly.
 
-For instance:
+For instances:
 
 ```bash
+mamba info
 mamba update --all
+mamba search <package>
 mamba install <package>
 ```
+
+Replace `<package>` by the actual name of any package of interest to you.
 
 <!-- Link definitions -->
 
