@@ -100,6 +100,13 @@ proceed, by typing `y` and pressing the Return key when prompted.
 
 ![Example package plan for downloads produced by the 'conda update' command.](conda-update-download.png)
 
+## Update conda
+
+Part of the output of the `conda update` command may report whether a newer version of the `conda` package
+itself is available, alongside instructions to update that package.
+
+![Instructions to update conda itself.](conda-update-conda.png)
+
 ## Search for packages
 
 The `conda search` command can be used to search for packages available in any of the configured channels.
