@@ -21,12 +21,10 @@ Instead of typing your username and password, it is possible to log into your
 account on the CCB cluster using a pair of files;
 one file on your personal computer (the "private" key),
 one file on the CCB cluster (the "public" key).
-Together, those two files identify your personal computer and the cluster to
-each other.
+Together, those two files your personal computer and the cluster to identify
+themselves to each other.
 
 ![The concept of SSH key pair.](ssh-key-pair.png)
-
-<p align='center'><i>The concept of SSH key pair.</i></p>
 
 ## Creating an SSH key pair
 
@@ -38,35 +36,38 @@ ssh-keygen -t rsa -b 4096
 ```
 
 The option `-t rsa` is important to generate the right type of SSH key pair.
-The `-b 4096` option indicates the number of bits in the key; a minimum of 2048 is
-recommended, while larger values generally provide additional strength to the
+The option `-b 4096` indicates the number of bits in the key; a minimum of 2048
+is recommended, while larger values generally give additional strength to the
 key.
-
-![Generating an SSH key pair.](ssh-keygen-screenshot.png)
-
-<p align='center'><i>Generating an SSH key pair.</i></p>
 
 When prompted for a filename, immediately press the Return key to accept the
 default filename and location.
 
-When prompted for a passphrase, it is recommended to type a password that is
-secret yet memorable to you, as this will be the last line of defense if
-anyone maliciously acquired your private SSH key file.
+When prompted for a passphrase, we recommended typing a password that is
+secret yet memorable to you. This passphrase will be the last line of defense
+if anyone were to maliciously acquire your private SSH key file.
 Alternatively, you can press the Return key immediately without entering a
 passphrase, leaving your SSH key pair unprotected.
 
 {{< alert icon="👉" text="For privacy and security reasons, the Terminal will not display your passphrase as you type it." />}}
 
-When prompted to confirm your passphrase, type the same answer as you just did
-and press the Return key.
+When prompted to confirm your passphrase, type the same passphrase and press
+the Return key.
 
 Finally, the Terminal should display a message indicating that the key pair was
 successfully created.
 
+![Generating an SSH key pair.](ssh-keygen-screenshot.png)
+
+{{< alert icon="👉" text="You can ignore the key's randomart." />}}
+
 ## Adding the public key on the CCB cluster
 
-Finally, the public key needs to be copied to your account on the CCB cluster,
-so that the CCB cluster can prove its identity to the client.
+Finally, the public key
+-- generated and saved as a file on your own computer --
+needs to be copied to your account on the CCB cluster,
+so that the CCB cluster can prove its identity to the client
+(see [Motivation]({{< relref "#motivation" >}}) section above).
 
 Conceptually, the command that you type in the Terminal on your personal computer
 should be structured as follows:
@@ -86,15 +87,14 @@ account on the CCB cluster.
 
 ![Copying the public SSH key to the CCB cluster.](ssh-copy-id-screenshot.png)
 
-<p align='center'><i>Copying the public SSH key to the CCB cluster.</i></p>
-
 ## Configuring the SSH client
 
-Having generated the SSH key pair, you need to configure the SSH client
-so that it uses the private key when the `ssh` command is invoked,
-to prove its identity to the CCB cluster.
+Having set up the SSH key pair on your own computer and the CCB cluster,
+you need to configure the SSH client so that it uses the private key
+whenever you invoke the `ssh` command, to prove your identity to the CCB cluster,
+and _vice versa_.
 
-Open - or create - the file `~/.ssh/config` on your personal computer.
+Open (or create) the file `~/.ssh/config` on your personal computer.
 In that file, add the following lines:
 
 ```bash
@@ -159,7 +159,7 @@ More information about fields that may be configured for macOS is available on t
 More information on the field `UseKeychain` is available on the page
 [Technical Note TN2449 →][usekeychain-technical-note].
 
-## Log in with your SSH key pair
+## Log in using your SSH key pair
 
 You can now log into the CCB cluster using the same `ssh` command as before,
 without the need to type in your account password.
@@ -174,7 +174,7 @@ The screenshot below demonstrates the `ssh` command in action.
 
 ![Connecting using the SSH key pair.](ssh-screenshot.png)
 
-<p align='center'><i>Connecting using the SSH key pair.</i></p>
+{{< alert icon="👉" text="MacOS users may be prompted to type their optional passphrase only for the first connection. The macOS keychain is capable of remembering the passphrase and automatically using it for subsequent connections." />}}
 
 <!-- Link definitions -->
 
