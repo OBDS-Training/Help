@@ -1,7 +1,7 @@
 ---
 title: "VPN setup"
-description: "Setting up the VPN client."
-lead: "Setting up the VPN client."
+description: "A VPN client may be necessary to use the CCB services while travelling or to work from home."
+lead: "A VPN client may be necessary to use the CCB services while travelling or to work from home."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
