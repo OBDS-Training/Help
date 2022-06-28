@@ -42,12 +42,6 @@ topics.
 An auto-completing search bar is also available at the top of the page to search the website
 by key words.
 
-## Get started
-
-Apply for an account on the [CCB Account and Support →][ccb-account-support] page.
-
-{{< alert icon="👉" text="The MRC WIMM CCB services are available only to members of staff and close collaborators." />}}
-
 ## Contact us
 
 Refer to the [Help]({{< relref "contact" >}}) section for ways to contact us.
@@ -55,5 +49,3 @@ Refer to the [Help]({{< relref "contact" >}}) section for ways to contact us.
 <!-- Link definitions -->
 
 [mrc-wimm-ccb]: https://www.imm.ox.ac.uk/research/units-and-centres/mrc-wimm-centre-for-computational-biology
-[ccb-account-support]: https://www.imm.ox.ac.uk/research/units-and-centres/mrc-wimm-centre-for-computational-biology/ccb-account
-[github-repo]: https://github.com/OBDS-Training/Help

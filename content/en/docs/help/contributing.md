@@ -16,3 +16,7 @@ toc: true
 ## Contributing
 
 Contribute to this documentation on [GitHub →][github-repo].
+
+<!-- Link definitions -->
+
+[github-repo]: https://github.com/OBDS-Training/Help
