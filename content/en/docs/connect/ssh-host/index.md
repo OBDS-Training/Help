@@ -1,7 +1,7 @@
 ---
 title: "Configure an SSH host"
-description: "SSH hosts configures common parameters when connecting to certain hosts."
-lead: "SSH hosts configures common parameters when connecting to certain hosts."
+description: "SSH hosts configures common parameters when connecting to certain remote hosts."
+lead: "SSH hosts configures common parameters when connecting to certain remote hosts."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
@@ -78,8 +78,6 @@ Once the connection is established, the prompt of the remote host appears
 (in this case, `cbrglogin1`).
 
 ![Connecting to a configured SSH host.](ssh-screenshot.png)
-
-<p align='center'><i>Connecting to a configured SSH host.</i></p>
 
 <!-- Link definitions -->
 
