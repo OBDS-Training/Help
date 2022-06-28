@@ -1,7 +1,7 @@
 ---
 title: "Change your SSH password"
-description: "The randomly generated password that you received by email should be replaced by a new secure and memorable password."
-lead: "The randomly generated password that you received by email should be replaced by a new secure and memorable password."
+description: "The randomly generated password that you received by email should be replaced by a new, secure, and memorable password."
+lead: "The randomly generated password that you received by email should be replaced by a new, secure, and memorable password."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
@@ -29,9 +29,7 @@ and press the Return key, as follows:
 passwd
 ```
 
-![Changing your password.](passwd-screenshot.png)
-
-<p align='center'><i>Changing your password.</i></p>
+![Changing an SSH password.](passwd-screenshot.png)
 
 When prompted, first type your current password (the randomly generated
 password that you were given in the email), and then type your new desired
