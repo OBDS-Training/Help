@@ -50,19 +50,7 @@ sinfo --Node --long
 
 ![Example output of the `sinfo --Node --long` command.](sinfo-node-long-screenshot.png)
 
-<p align='center'><i>Example output of the `sinfo --Node --long` command.</i></p>
-
 More information about individual compute nodes can be obtained using commands detailed
 in the page [Slurm commands]({{< relref "/docs/slurm/commands" >}}).
 
-## Links
-
-- [SLURM Documentation][slurm-docs]
-- [Quick Start User Guide][slurm-quickstart]
-- [WIMM CCB Computing Infrastructure][ccb-computing]
-
 <!-- Link definitions -->
-
-[slurm-docs]: https://slurm.schedmd.com/
-[slurm-quickstart]: https://slurm.schedmd.com/quickstart.html
-[ccb-computing]: https://www.imm.ox.ac.uk/research/units-and-centres/mrc-wimm-centre-for-computational-biology/resources/computing

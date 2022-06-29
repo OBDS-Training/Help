@@ -41,7 +41,7 @@ conda info
 ## Configuration
 
 Conda packages are stored in different locations called _channels_.
-More information is available in the [Conda documentation][conda-channels].
+More information is available in the [Conda documentation →][conda-channels].
 
 Configured channels are searched in a specific order when installing packages,
 so it is important to configure which channels are searched and in which order.
@@ -52,9 +52,14 @@ We recommend the following channels, in decreasing order of priority:
 - `conda-forge`
 - `default`
 
-Adding new channels automatically puts them at the top of the priority list,
-so the commands below add channels from the lowest priority channel to the highest
-priority one, to produce the desired order of priority described above.
+In other words, Conda will attempt to install packages from the `bioconda` channel
+first, and then sequentially search the channels `conda-forge` and `defaults` when
+packages cannot be found in earlier channels in the priority list.
+
+Adding new channels automatically moves them to the top of the priority list.
+With that in mind, the commands below sequentially add channels from the lowest
+priority channel to the highest priority one, to produce the desired order of
+priority described above.
 
 ```bash
 conda config --add channels defaults
@@ -62,15 +67,15 @@ conda config --add channels conda-forge
 conda config --add channels bioconda
 ```
 
-The `conda info` command (described above) can be used to verify the list of channels
-that are currently configured, among other pieces of information.
+The `conda info` command (described earier on this page) can be used to verify
+the list of channels that are currently configured, among other pieces of information.
 
 ![Section of 'conda info' output listing configured channels.](conda-info-channels.png)
 
 ## List installed packages
 
 The `conda list` command can be used to list the packages installed in the current
-environment
+environment.
 
 ```bash
 conda list
@@ -92,8 +97,8 @@ individual packages).
 conda update --all
 ```
 
-In particular, the command will produce a detailed plan, listing packages that may be downloaded to
-update those packages in the Conda environment.
+In particular, the command will produce a detailed plan, listing packages that may be
+downloaded and updated in the Conda environment.
 
 We recommend careful reviewing the information detailed in the package update plan before agreeing to
 proceed, by typing `y` and pressing the Return key when prompted.
@@ -107,11 +112,20 @@ itself is available, alongside instructions to update that package.
 
 ![Instructions to update conda itself.](conda-update-conda.png)
 
+Follow those instructions when you are ready to update your Conda installation.
+
+```bash
+conda update -n base -c defaults conda
+```
+
+{{< alert icon="👉" text="In the example above, the option '-c' is used to override the list of channels used during this particular command, ensuring that the 'conda' package is obtained safely and exclusively from the channel 'defaults'." />}}
+
 ## Search available packages
 
 The `conda search` command can be used to search for packages available in any of the configured channels.
 
 For instance, the example below demonstrates how to search for a Conda package called `mamba`.
+Note that the list of results was rather long and only the first results are shown in the screenshot.
 
 ```bash
 conda search mamba
@@ -126,11 +140,11 @@ can be especially important for packages available from different channels.
 
 ## Verify that a package is not installed
 
-The `conda list` command can be used with the name of a specific package, to list any version of that
+The `conda list <package>` command can be used with the name of a specific package, to list any version of that
 package installed in the environment.
 
 The output will be presented as a table, and the table will be empty (i.e., only column headers)
-if the package is not installed in the environment.
+if the package is not currently installed in the environment.
 
 ```bash
 conda list mamba
@@ -149,13 +163,14 @@ which mamba
 
 ## Install a package
 
-The `conda install` command can be used to install packages using the `conda` executable.
+The `conda install` command can be used to install packages.
 
 However, the built-in Conda installer can be quite slow to identify and resolve dependencies
 between packages, which led to a re-implementation of the conda package manager in C++,
 distributed in the `mamba` package.
 
 Install the `mamba` package using the command below.
+Make sure to type `y` and press the Return key when prompted to proceed with the package plan.
 
 ```bash
 conda install mamba
@@ -165,7 +180,8 @@ conda install mamba
 
 ## Verify that a package is installed
 
-The `conda list` command can be used to list installed packages that contain a certain pattern in their name.
+In the example below, the `conda list <package>` command is used to list installed packages
+that contain the pattern `mamba` in their name.
 
 ```bash
 conda list mamba
@@ -173,7 +189,8 @@ conda list mamba
 
 ![Output of the 'conda list' command for a package that is installed in the environment.](conda-list-mamba-present.png)
 
-The Bash command `which` can be used to display the location of an executable that is detected on the `PATH`.
+In the example below, the Bash command `which` is used to display the location of the executable
+`mamba` that is now detected on the `PATH`.
 
 ```bash
 which mamba
@@ -195,8 +212,8 @@ mamba --help
 
 Mamba is implemented as a drop-in replacement for Conda.
 
-As such, in many cases, the `mamba` command can be used a replacement for the `conda` command,
-to produce the same result much more rapidly.
+In other words, the `mamba` executable can be used in many cases as a replacement
+for the `conda` executable, to produce the same result much more rapidly.
 
 For instances:
 

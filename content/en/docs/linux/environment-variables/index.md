@@ -58,11 +58,13 @@ The `echo` command can be used to display the value of `$USER`.
 echo $USER
 ```
 
-For instance, users can query the status of their own job submitted
-to the queue manager as follows.
+For instance, users create a directory named after their own username
+as follows.
+This is particularly useful to use a consistent naming of personal
+directories that is guaranteed to avoid any conflict with other usernames.
 
 ```bash
-squeue -u $USER
+mkdir $USER
 ```
 
 <!-- Link definitions -->

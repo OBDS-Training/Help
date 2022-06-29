@@ -1,7 +1,7 @@
 ---
 title: "First SSH connection"
-description: "Connecting to the MRC WIMM CCB high-performance computing (HPC) cluster for the first time."
-lead: "Connecting to the MRC WIMM CCB high-performance computing (HPC) cluster for the first time."
+description: "This page describes how to connect to the MRC WIMM CCB high-performance computing (HPC) cluster over SSH for the first time."
+lead: "This page describes how to connect to the MRC WIMM CCB high-performance computing (HPC) cluster over SSH for the first time."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
@@ -45,8 +45,6 @@ When you have typed the command above, press the Return key to execute it.
 
 ![Using the ssh command.](ssh-screenshot.png)
 
-<p align='center'><i>Using the `ssh` command.</i></p>
-
 If this is indeed your very first connection, you may be prompted to verify
 the authenticity of the host.
 If this happens, type `yes` and press the Return key to continue connecting.
@@ -57,6 +55,7 @@ When prompted for your password, type it and press the Return key.
 
 You should now be logged in the MRC WIMM CCB high-performance computing (HPC)
 cluster.
+
 Welcome!
 
 <!-- Link definitions -->

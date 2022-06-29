@@ -1,5 +1,5 @@
 ---
-title: "Links"
+title: "Links to external resources"
 description: "Links to external resources for further reading are gathered here."
 lead: "Links to external resources for further reading are gathered here."
 date: 2020-10-06T08:49:31+00:00

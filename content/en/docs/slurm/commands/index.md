@@ -23,7 +23,8 @@ along with a brief description of their purpose and advice on best practices.
 
 ## Partitions
 
-Summary information about partitions (i.e., job queues) can be accessed as follows.
+Summary information about partitions (i.e., individual job queues) can be accessed
+as follows.
 
 ```bash
 sinfo
@@ -31,18 +32,16 @@ sinfo
 
 ![Example output for the `sinfo` command.](sinfo-screenshot.png)
 
-<p align='center'><i>Example output for the `sinfo` command.</i></p>
-
-The `sinfo` command displays the name of partitions and additional information
-in a customisable list of fields.
+The `sinfo` command displays the name of partitions in the first column,
+and additional information in a customisable set of additional columns.
 The full list of fields and their description can be found in the
 [Slurm documentation →][sinfo-output-fields].
 
-In particular:
+In the example above:
 
 * The asterisk symbol `*` indicates the default partition, to which jobs are submitted
   when users don't request a specific queue.
-* The field `AVAIL` set to the value `up` indicates partitions that are accepting
+* The field `AVAIL` uses the value `up` to indicates partition that are accepting
   new jobs.
 * The field `TIMELIMIT` indicates the maximum time limit allowed for jobs submitted
   to each partition (in the format hours:minutes:seconds).
@@ -67,8 +66,6 @@ sinfo --Node --long
 ```
 
 ![Example output of the `sinfo --Node --long` command.](sinfo-node-long-screenshot.png)
-
-<p align='center'><i>Example output of the `sinfo --Node --long` command.</i></p>
 
 In particular:
 

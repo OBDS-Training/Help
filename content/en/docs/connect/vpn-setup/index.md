@@ -1,7 +1,7 @@
 ---
 title: "VPN setup"
-description: "Setting up the VPN client."
-lead: "Setting up the VPN client."
+description: "A VPN client may be necessary to use the CCB services while travelling or to work from home."
+lead: "A VPN client may be necessary to use the CCB services while travelling or to work from home."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "connect"
-weight: 110
+weight: 120
 toc: true
 ---
 
@@ -46,8 +46,6 @@ display 'University VPN' in the dropdown menu.
 
 ![Cisco AnyConnect.](cisco-anyconnect-screenshot.png)
 
-<p align='center'><i>Cisco AnyConnect VPN client.</i></p>
-
 ## Connection
 
 On the web page [Virtual private network (VPN) →][oxford-vpn], expand the section
@@ -62,8 +60,6 @@ and click the button 'Connect'.
 Then, when prompted, type in your username and password. Then, click 'OK'.
 
 ![Cisco AnyConnect - Username and password.](cisco-anyconnect-login-screenshot.png)
-
-<p align='center'><i>Connect using Cisco AnyConnect VPN client.</i></p>
 
 You are now connected to the University campus network, giving you access to the
 CCB cluster.
@@ -80,9 +76,7 @@ While connected, you will see an icon in your computer's system tray
 
 Click on it to reveal the application's menu.
 
-![Cisco AnyConnect - Application menu while connected.](cisco-connected-menu.png) {widheg}
-
-<p align='center'><i>Cisco AnyConnect menu while connected.</i></p>
+![Cisco AnyConnect - Application menu while connected.](cisco-connected-menu.png)
 
 In the menu, click 'Disconnect'.
 
@@ -91,8 +85,8 @@ your own internet connection again.
 
 ## Further reading
 
-On the web page [Virtual private network (VPN) →][oxford-vpn], you can find useful information
-organised in various sections.
+You can find useful information organised in various sections on the page
+[Virtual private network (VPN) →][oxford-vpn].
 
 The section 'FAQ' details frequently asked questions and answers.
 
