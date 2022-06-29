@@ -61,7 +61,7 @@ echo $USER
 For instance, users create a directory named after their own username
 as follows.
 This is particularly useful to use a consistent naming of personal
-directories that is guaranteed to avoid any conflict with other usernames. 
+directories that is guaranteed to avoid any conflict with other usernames.
 
 ```bash
 mkdir $USER
