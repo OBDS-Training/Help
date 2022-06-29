@@ -50,8 +50,6 @@ sinfo --Node --long
 
 ![Example output of the `sinfo --Node --long` command.](sinfo-node-long-screenshot.png)
 
-<p align='center'><i>Example output of the `sinfo --Node --long` command.</i></p>
-
 More information about individual compute nodes can be obtained using commands detailed
 in the page [Slurm commands]({{< relref "/docs/slurm/commands" >}}).
 
