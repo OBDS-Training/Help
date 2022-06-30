@@ -206,6 +206,53 @@ In particular:
   This option is essential to indicate that the entire environment
   must be removed.
 
+## Create an environment from a YAML file
+
+Conda supports the the YAML file format for describing Conda environments, as well
+the desired channel priority list and environment name.
+
+For instance:
+
+```yaml
+name: obds_demo_yaml
+channels:
+- bioconda
+- conda-forge
+- defaults
+dependencies:
+- python
+- r-base
+```
+
+Create a file named `obds_demo.yaml`, use copy and paste to fill it with the contents above,
+and save and close the file (for instance, use `nano`).
+
+```bash
+nano ~/obds_demo.yaml
+```
+
+Then, the `mamba install` command can be used to create an environment using that file,
+as follows:
+
+```bash
+mamba env create -f ~/obds_demo.yaml
+```
+
+It is possible to override the name of the environment specified in the YAML using the
+option `-n`, to give a different name to the new environment.
+
+For instance:
+
+```bash
+mamba env create -n obds_demo_from_yaml -f ~/obds_demo.yaml
+```
+
+Again, the `conda activate` command can be used to activate the new environment.
+
+```bash
+conda activate obds_demo_yaml
+```
+
 <!-- Link definitions -->
 
 [conda-concepts-environments]: https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/environments.html
