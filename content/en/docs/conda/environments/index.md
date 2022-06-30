@@ -32,7 +32,7 @@ list of available sub-commands.
 
 <!-- Screenshot -->
 
-## List environments
+## List environments
 
 The `conda env` command can be used to list existing Conda environments
 (for the current user).
