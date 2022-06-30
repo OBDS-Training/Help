@@ -214,7 +214,7 @@ the desired channel priority list and environment name.
 For instance:
 
 ```yaml
-name: obds_demo_yaml
+name: ccb_demo_yaml
 channels:
 - bioconda
 - conda-forge
@@ -224,18 +224,18 @@ dependencies:
 - r-base
 ```
 
-Create a file named `obds_demo.yaml`, use copy and paste to fill it with the contents above,
+Create a file named `ccb_demo.yaml`, use copy and paste to fill it with the contents above,
 and save and close the file (for instance, use `nano`).
 
 ```bash
-nano ~/obds_demo.yaml
+nano ~/ccb_demo.yaml
 ```
 
 Then, the `mamba install` command can be used to create an environment using that file,
 as follows:
 
 ```bash
-mamba env create -f ~/obds_demo.yaml
+mamba env create -f ~/ccb_demo.yaml
 ```
 
 It is possible to override the name of the environment specified in the YAML using the
@@ -244,13 +244,32 @@ option `-n`, to give a different name to the new environment.
 For instance:
 
 ```bash
-mamba env create -n obds_demo_from_yaml -f ~/obds_demo.yaml
+mamba env create -n ccb_demo_from_yaml -f ~/ccb_demo.yaml
 ```
 
 Again, the `conda activate` command can be used to activate the new environment.
 
 ```bash
-conda activate obds_demo_yaml
+conda activate ccb_demo_yaml
+```
+
+## Export an environment to a YAML file
+
+The `conda env export` command can be used to export the specifications of an environment
+to a YAML file that may be saved for the record, or shared and used to replicate that
+environment elsewhere.
+
+For instance, the contents in YAML format can be viewed as follows:
+
+```bash
+mamba env export -n ccb_demo_env
+```
+
+The output of the command above can be redirected to a file using the `>` symbol,
+as follows:
+
+```bash
+mamba env export -n ccb_demo_env > ~/ccb_demo_env.yaml
 ```
 
 <!-- Link definitions -->
