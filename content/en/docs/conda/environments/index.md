@@ -94,6 +94,8 @@ In effect, a Conda environment is a directory that contains a specific collectio
 of conda packages.
 Activating an environment loads all the packages that are installed in the directory
 associated with that environment.
+More information on Conda environments is available in the
+[Conda documentation][conda-concepts-environments].
 
 The `conda activate <name>` command can be used to activate an environment
 using the name of that environment.
@@ -107,4 +109,50 @@ conda activate ccb_demo_env
 
 <!-- Screenshot -->
 
+Separately, the `mamba list` command can be used to verify that the new environment
+does not contain any installed package yet.
+
+```bash
+mamba list
+```
+
+<!-- Screenshot -->
+
+## Install packages in an environment
+
+The `mamba install` command can be used to install packages in the active environment
+exactly as in the `base` environment.
+
+For instance, the most recent version of the Python interpreter available in the
+configured Conda channels can be installed as follows:
+
+```bash
+mamba install python
+```
+
+<!-- Screenshot -->
+
+Remember to type `Y` and press the Return key when prompted to proceed with the
+package installation plan.
+
+The `mamba list` command can be used to verify that the Conda environment now includes
+the `python` package, as well as its dependencies automatically identified and installed.
+
+```bash
+mamba list
+```
+
+<!-- Screenshot -->
+
+The Bash command `which` can also be used to verify that the `python` executable is
+now available from within the Conda environment.
+
+```bash
+which python
+```
+
+<!-- Screenshot -->
+
 <!-- Link definitions -->
+
+[conda-concepts-environments]: https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/environments.html
