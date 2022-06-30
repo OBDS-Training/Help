@@ -123,8 +123,8 @@ mamba list
 The `mamba install` command can be used to install packages in the active environment
 exactly as in the `base` environment.
 
-For instance, the most recent version of the `python` and `r-base` package available
-in the configured Conda channels can be installed as follows:
+For instance, the most recent version of the `python` and `r-base` packages available
+can be installed as follows:
 
 ```bash
 mamba install python r-base
@@ -136,7 +136,7 @@ Remember to type `Y` and press the Return key when prompted to proceed with the
 package installation plan.
 
 The `mamba list` command can be used to verify that the Conda environment now includes
-the `python` package, as well as its dependencies automatically identified and installed.
+the requested packages, as well as their dependencies.
 
 ```bash
 mamba list
@@ -144,11 +144,12 @@ mamba list
 
 <!-- Screenshot -->
 
-The Bash command `which` can also be used to verify that the `python` executable is
-now available from within the Conda environment.
+The Bash command `which` can also be used to verify that the `python` and `R`
+executable files are now available from within the Conda environment.
 
 ```bash
 which python
+which R
 ```
 
 <!-- Screenshot -->
@@ -170,7 +171,40 @@ mamba create -n ccb_demo_env_2 python r-base
 
 <!-- Screenshot -->
 
-{{< alert icon="👉" text="To use the new environment, remember to activate it using the 'conda activate' command, as the new environment is not automatically activated." />}}
+Again, the `conda activate` command must be used to manually activate the new environment
+before it can be used.
+Then, the Bash command `which` can be used to verify that the two executable files are
+found in the new environment.
+
+```bash
+conda activate ccb_demo_env_2
+which python
+which R
+```
+
+<!-- Screenshot -->
+
+## Remove an environment
+
+The `conda remove` command can be used to remove environments that are not needed anymore
+(e.g., test environment, completed project).
+
+```bash
+conda deactivate
+mamba remove --name ccb_demo_env_2 --all 
+```
+
+Importantly, if the environment that you wish to remove is active, make sure to deactivate it
+first, using the command `conda deactivate`.
+
+Then, the `mamba remove` command can be used with a number of options.
+In particular:
+
+- The option `--name` specifies the name of the environment to remove.
+- The option `--all` indicates that all packages in that environment
+  must be removed.
+  This option is essential to indicate that the entire environment
+  must be removed.
 
 <!-- Link definitions -->
 
