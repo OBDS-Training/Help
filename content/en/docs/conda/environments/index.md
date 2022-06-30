@@ -123,11 +123,11 @@ mamba list
 The `mamba install` command can be used to install packages in the active environment
 exactly as in the `base` environment.
 
-For instance, the most recent version of the Python interpreter available in the
-configured Conda channels can be installed as follows:
+For instance, the most recent version of the `python` and `r-base` package available
+in the configured Conda channels can be installed as follows:
 
 ```bash
-mamba install python
+mamba install python r-base
 ```
 
 <!-- Screenshot -->
@@ -152,6 +152,21 @@ which python
 ```
 
 <!-- Screenshot -->
+
+## Create an environment from a list of packages
+
+The two steps of
+(1) creating a new environment,
+and (2) installing packages in that new environment;
+can be combined into a single command.
+
+For instance, a new environment named `ccb_demo_env_2` can be created while
+immediately installing the latest version of the `python` and `r-base` packages
+as follows:
+
+```bash
+mamba create -n ccb_demo_env_2 python r-base
+```
 
 <!-- Link definitions -->
 
