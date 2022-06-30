@@ -30,12 +30,20 @@ Conda environments.
 The `conda env --help` command can be used to display the help page and the
 list of available sub-commands.
 
+```bash
+conda env --help
+```
+
 <!-- Screenshot -->
 
 ## List environments
 
-The `conda env` command can be used to list existing Conda environments
+The `conda env list` command can be used to list existing Conda environments
 (for the current user).
+
+```bash
+conda env list
+```
 
 <!-- Screenshot -->
 
