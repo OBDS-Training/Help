@@ -168,6 +168,10 @@ as follows:
 mamba create -n ccb_demo_env_2 python r-base
 ```
 
+<!-- Screenshot -->
+
+{{< alert icon="👉" text="To use the new environment, remember to activate it using the 'conda activate' command, as the new environment is not automatically activated." />}}
+
 <!-- Link definitions -->
 
 [conda-concepts-environments]: https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/environments.html
