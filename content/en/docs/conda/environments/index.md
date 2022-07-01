@@ -123,7 +123,7 @@ as follows:
 conda activate ccb_demo_env
 ```
 
-<!-- Screenshot -->
+![Example output of the command 'conda activate ccb_demo_env'.](conda-activate-ccb_demo_env.png)
 
 Separately, the `mamba list` command can be used to verify that the new environment
 does not contain any installed package yet.
