@@ -172,14 +172,18 @@ which python
 which R
 ```
 
-<!-- Screenshot -->
+![Displaying the path to the executable files 'python' and 'R'.](which-python-r.png)
+
+{{< alert icon="👉" text="Incidentally, the example screenshot above reveals that Conda created an alias for the 'R' command, which automatically adds the '--no-save' option. This forces R sessions to quit without saving the R workspace." />}}
 
 ## Create an environment from a list of packages
 
-The two steps of
-(1) creating a new environment,
-and (2) installing packages in that new environment;
-can be combined into a single command.
+In the previous sections, we have demonstrated two separate steps:
+
+1. creating a new environment
+2. installing packages in that new environment
+
+Those two steps can be combined into a single command.
 
 For instance, a new environment named `ccb_demo_env_2` can be created while
 immediately installing the latest version of the `python` and `r-base` packages
@@ -189,7 +193,7 @@ as follows:
 mamba create -n ccb_demo_env_2 python r-base
 ```
 
-<!-- Screenshot -->
+![Simultaneously creating an environment and installing packages in that environment.](mamba-install-create-environment.png)
 
 Again, the `conda activate` command must be used to manually activate the new environment
 before it can be used.
