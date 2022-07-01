@@ -77,7 +77,7 @@ The `mamba create` command can be used to create a new environment.
 mamba create -n ccb_demo_env
 ```
 
-<!-- Screenshot -->
+![Example output of the command 'mamba env create -n ccb_demo_env'.](mamba-env-create.png)
 
 In particular:
 
@@ -92,7 +92,15 @@ the new environment was created.
 mamba env list
 ```
 
-<!-- Screenshot -->
+![Example output of the command 'mamba env list' including the environment 'ccb_demo_env'.](mamba-env-list-ccb_demo_env.png)
+
+In particular:
+
+- Each environment is listed on a separate line, indicating its name
+  and the location of its directory in the filesystem.
+- The `*` symbol indicates the environment that is currently active.
+  Newly created environments are not automatically activated.
+  In this example, the `base` environment is still active at this point.
 
 ## Activate an environment
 
