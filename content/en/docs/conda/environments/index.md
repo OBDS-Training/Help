@@ -206,17 +206,12 @@ which python
 which R
 ```
 
-<!-- Screenshot -->
+![Activating the newly created 'ccb_demo_env_2' environment, then displaying the path to the executable files 'python' and 'R'.](conda-activate-ccb_demo_env_2.png)
 
 ## Remove an environment
 
 The `conda remove` command can be used to remove environments that are not needed anymore
 (e.g., test environment, completed project).
-
-```bash
-conda deactivate
-mamba remove --name ccb_demo_env_2 --all 
-```
 
 Importantly, if the environment that you wish to remove is active, make sure to deactivate it
 first, using the command `conda deactivate`.
@@ -229,6 +224,22 @@ In particular:
   must be removed.
   This option is essential to indicate that the entire environment
   must be removed.
+
+```bash
+conda deactivate
+mamba remove --name ccb_demo_env_2 --all 
+```
+
+![Deactivating and removing the environment named 'ccb_demo_env_2'.](conda-deactivate-remove.png)
+
+The `mamba env list` command can be used to verify that the environment removed is indeed
+not listed anymore.
+
+```bash
+mamba env list
+```
+
+![Displaying the list of environments after removing the environment named 'ccb_demo_env_2'.](mamba-env-list-removed.png)
 
 ## Create an environment from a YAML file
 
