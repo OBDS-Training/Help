@@ -148,7 +148,7 @@ mamba install python r-base
 
 ![Installing packages in the active environment.](mamba-install-active-environment.png)
 
-{{< alert icon="👉" text="Due to the considerable number of dependencies that need to be installed, the screenshot above only displays a the first lines of the package installation plan." />}}
+{{< alert icon="👉" text="Due to the considerable number of dependencies that need to be installed, the screenshot above only displays the first lines of the package installation plan." />}}
 
 Remember to type `Y` and press the Return key when prompted to proceed with the
 package installation plan.
@@ -161,6 +161,8 @@ mamba list
 ```
 
 ![Displaying the list of packages installed in the 'ccb_demo_env' environment after installing the packages 'python' and 'r-base'.](mamba-list-ccb_demo_env-installed.png)
+
+{{< alert icon="👉" text="Due to the considerable number of packges installed in the environment, the screenshot above only displays the first lines of output." />}}
 
 The Bash command `which` can also be used to verify that the `python` and `R`
 executable files are now available from within the Conda environment.
