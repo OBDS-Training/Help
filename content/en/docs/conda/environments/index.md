@@ -32,7 +32,17 @@ A notable exception is the `mamba` package that we recommend installing
 directly in the `base` environment
 (see section [First steps with Conda]({{< relref "/docs/conda/first-steps" >}})).
 
+{{< alert icon="👉" text="This section demonstrates the creation and management of Conda environments using a number of demonstration environments. Feel free to remove all those environments at the end of this section." />}}
+
 ## Get started
+
+Remember to activate the `base` Conda environment.
+
+For instance, using the alias defined on the page [Install Miniconda]({{< relref "/docs/conda/installation#create-a-shortcut" >}}):
+
+```bash
+conda_activate_base
+```
 
 The `conda env` command includes a set of sub-commands to create and manage
 Conda environments.
@@ -46,18 +56,18 @@ list of available sub-commands.
 mamba env --help
 ```
 
-<!-- Screenshot -->
+![Displaying the help page of the 'mamba env' command.](mamba-env-help.png)
 
 ## List environments
 
-The `conda env list` command can be used to list existing Conda environments
+The `mamba env list` command can be used to list existing Conda environments
 (for the current user).
 
 ```bash
 mamba env list
 ```
 
-<!-- Screenshot -->
+![Displaying the list of Conda environments that currently exist.](mamba-env-list.png)
 
 {{< alert icon="👉" text="Conda environments are private to each user. Users cannot see each other's Conda environments." />}}
 
@@ -69,7 +79,7 @@ The `mamba create` command can be used to create a new environment.
 mamba create -n ccb_demo_env
 ```
 
-<!-- Screenshot -->
+![Creating a new environment named 'ccb_demo_env'.](mamba-env-create.png)
 
 In particular:
 
@@ -84,7 +94,15 @@ the new environment was created.
 mamba env list
 ```
 
-<!-- Screenshot -->
+![Displaying the list of Conda environments that exist after creating the environment 'ccb_demo_env'.](mamba-env-list-ccb_demo_env.png)
+
+In particular:
+
+- Each environment is listed on a separate line, indicating its name
+  and the location of its directory in the filesystem.
+- The `*` symbol indicates the environment that is currently active.
+  Newly created environments are not automatically activated.
+  In this example, the `base` environment is still active at this point.
 
 ## Activate an environment
 
@@ -107,7 +125,7 @@ as follows:
 conda activate ccb_demo_env
 ```
 
-<!-- Screenshot -->
+![Activating the newly created 'ccb_demo_env' environment.](conda-activate-ccb_demo_env.png)
 
 Separately, the `mamba list` command can be used to verify that the new environment
 does not contain any installed package yet.
@@ -116,7 +134,7 @@ does not contain any installed package yet.
 mamba list
 ```
 
-<!-- Screenshot -->
+![Initially, the newly created 'ccb_demo_env' environment does not contain any installed package.](mamba-list-ccb_demo_env.png)
 
 ## Install packages in an environment
 
@@ -130,7 +148,9 @@ can be installed as follows:
 mamba install python r-base
 ```
 
-<!-- Screenshot -->
+![Installing packages in the active environment.](mamba-install-active-environment.png)
+
+{{< alert icon="👉" text="Due to the considerable number of dependencies that need to be installed, the screenshot above only displays the first lines of the package installation plan." />}}
 
 Remember to type `Y` and press the Return key when prompted to proceed with the
 package installation plan.
@@ -142,7 +162,9 @@ the requested packages, as well as their dependencies.
 mamba list
 ```
 
-<!-- Screenshot -->
+![Displaying the list of packages installed in the 'ccb_demo_env' environment after installing the packages 'python' and 'r-base'.](mamba-list-ccb_demo_env-installed.png)
+
+{{< alert icon="👉" text="Due to the considerable number of packges installed in the environment, the screenshot above only displays the first lines of output." />}}
 
 The Bash command `which` can also be used to verify that the `python` and `R`
 executable files are now available from within the Conda environment.
@@ -152,14 +174,18 @@ which python
 which R
 ```
 
-<!-- Screenshot -->
+![Displaying the path to the executable files 'python' and 'R'.](which-python-r.png)
+
+{{< alert icon="👉" text="Incidentally, the example screenshot above reveals that Conda created an alias for the 'R' command, which automatically adds the '--no-save' option. This forces R sessions to quit without saving the R workspace." />}}
 
 ## Create an environment from a list of packages
 
-The two steps of
-(1) creating a new environment,
-and (2) installing packages in that new environment;
-can be combined into a single command.
+In the previous sections, we have demonstrated two separate steps:
+
+1. creating a new environment
+2. installing packages in that new environment
+
+Those two steps can be combined into a single command.
 
 For instance, a new environment named `ccb_demo_env_2` can be created while
 immediately installing the latest version of the `python` and `r-base` packages
@@ -169,7 +195,7 @@ as follows:
 mamba create -n ccb_demo_env_2 python r-base
 ```
 
-<!-- Screenshot -->
+![Simultaneously creating an environment and installing packages in that environment.](mamba-install-create-environment.png)
 
 Again, the `conda activate` command must be used to manually activate the new environment
 before it can be used.
@@ -182,17 +208,12 @@ which python
 which R
 ```
 
-<!-- Screenshot -->
+![Activating the newly created 'ccb_demo_env_2' environment, then displaying the path to the executable files 'python' and 'R'.](conda-activate-ccb_demo_env_2.png)
 
 ## Remove an environment
 
 The `conda remove` command can be used to remove environments that are not needed anymore
 (e.g., test environment, completed project).
-
-```bash
-conda deactivate
-mamba remove --name ccb_demo_env_2 --all 
-```
 
 Importantly, if the environment that you wish to remove is active, make sure to deactivate it
 first, using the command `conda deactivate`.
@@ -205,6 +226,24 @@ In particular:
   must be removed.
   This option is essential to indicate that the entire environment
   must be removed.
+
+```bash
+conda deactivate
+mamba remove --name ccb_demo_env_2 --all 
+```
+
+![Deactivating and removing the environment named 'ccb_demo_env_2'.](conda-deactivate-remove.png)
+
+The `mamba env list` command can be used to verify that the environment removed is indeed
+not listed anymore.
+
+```bash
+mamba env list
+```
+
+![Displaying the list of environments after removing the environment named 'ccb_demo_env_2'.](mamba-env-list-removed.png)
+
+{{< alert icon="👉" text="We recommend practicing and getting comfortable with the creation and removal of environments. In doubt, it is often much easier and safer to remove an environment and start over." />}}
 
 ## Create an environment from a YAML file
 
@@ -231,12 +270,18 @@ and save and close the file (for instance, use `nano`).
 nano ~/ccb_demo.yaml
 ```
 
+![Creatin and editing the file '~/ccb_demo.yaml' using the 'nano' editor.](nano-ccb_demo_yaml.png)
+
+{{< alert icon="👉" text="The name of the file itself does not matter, but we recommend using the same name as the environment that it is used to create." />}}
+
 Then, the `mamba install` command can be used to create an environment using that file,
 as follows:
 
 ```bash
 mamba env create -f ~/ccb_demo.yaml
 ```
+
+![Creating an environment from a list of packages specified in a YAML file.](mamba-env-create-from-yaml.png)
 
 It is possible to override the name of the environment specified in the YAML using the
 option `-n`, to give a different name to the new environment.
@@ -247,6 +292,8 @@ For instance:
 mamba env create -n ccb_demo_from_yaml -f ~/ccb_demo.yaml
 ```
 
+{{< alert icon="👉" text="For traceability, we generally recommend using the name of the enviroment defined in the YAML file." />}}
+
 Again, the `conda activate` command can be used to activate the new environment.
 
 ```bash
@@ -255,9 +302,11 @@ conda activate ccb_demo_yaml
 
 ## Export an environment to a YAML file
 
-The `conda env export` command can be used to export the specifications of an environment
-to a YAML file that may be saved for the record, or shared and used to replicate that
-environment elsewhere.
+The `mamba env export` command can be used to display the specifications of an environment
+(i.e., name, version, and build of packages installed in the environment).
+Those specifications are extremely valuable for reproducibility, as they can be exported
+to a YAML file that may be saved for the record, or shared and used to replicate the very
+same environment elsewhere.
 
 For instance, the contents in YAML format can be viewed as follows:
 
@@ -265,12 +314,32 @@ For instance, the contents in YAML format can be viewed as follows:
 mamba env export -n ccb_demo_env
 ```
 
+![Exporting the specifications of an environment.](mamba-env-export.png)
+
+In particular:
+
+- The option `-n` specifies the name of the environment to export.
+
 The output of the command above can be redirected to a file using the `>` symbol,
 as follows:
 
 ```bash
 mamba env export -n ccb_demo_env > ~/ccb_demo_env.yaml
 ```
+
+The exported file can then be used to re-create the environment elsewhere as demonstrated in section
+[Create an environment from a YAML file]({{< relref "#create-an-environment-from-a-yaml-file" >}}).
+
+## Cleanup
+
+Thank you for reading through this section.
+Feel free to remove all demonstration environments before moving on to the next section.
+
+Remember:
+
+- Use `mamba env list` to display the list of existing environments.
+- Use `mamba remove --name <environment_name> --all` to remove an environment
+  (replace `<environment_name>` by the name of the environment).
 
 <!-- Link definitions -->
 
