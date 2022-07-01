@@ -58,14 +58,14 @@ mamba env --help
 
 ## List environments
 
-The `conda env list` command can be used to list existing Conda environments
+The `mamba env list` command can be used to list existing Conda environments
 (for the current user).
 
 ```bash
 mamba env list
 ```
 
-<!-- Screenshot -->
+![Example output of the 'mamba env list' command.](mamba-env-list.png)
 
 {{< alert icon="👉" text="Conda environments are private to each user. Users cannot see each other's Conda environments." />}}
 
