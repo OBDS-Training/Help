@@ -34,6 +34,14 @@ directly in the `base` environment
 
 ## Get started
 
+Remember to activate the `base` Conda environment.
+
+For instance, using the alias defined on the page [Install Miniconda]({{< relref "/docs/conda/installation#create-a-shortcut" >}}):
+
+```bash
+conda_activate_base
+```
+
 The `conda env` command includes a set of sub-commands to create and manage
 Conda environments.
 
@@ -46,7 +54,7 @@ list of available sub-commands.
 mamba env --help
 ```
 
-<!-- Screenshot -->
+![Example output of the 'mamba env --help' command.](mamba-env-help.png)
 
 ## List environments
 
