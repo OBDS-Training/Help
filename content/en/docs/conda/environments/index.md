@@ -54,7 +54,7 @@ list of available sub-commands.
 mamba env --help
 ```
 
-![Example output of the 'mamba env --help' command.](mamba-env-help.png)
+![Displaying the help page of the 'mamba env' command.](mamba-env-help.png)
 
 ## List environments
 
@@ -65,7 +65,7 @@ The `mamba env list` command can be used to list existing Conda environments
 mamba env list
 ```
 
-![Example output of the 'mamba env list' command.](mamba-env-list.png)
+![Displaying the list of Conda environments that currently exist.](mamba-env-list.png)
 
 {{< alert icon="👉" text="Conda environments are private to each user. Users cannot see each other's Conda environments." />}}
 
@@ -77,7 +77,7 @@ The `mamba create` command can be used to create a new environment.
 mamba create -n ccb_demo_env
 ```
 
-![Example output of the command 'mamba env create -n ccb_demo_env'.](mamba-env-create.png)
+![Creating a new environment named 'ccb_demo_env'.](mamba-env-create.png)
 
 In particular:
 
@@ -92,7 +92,7 @@ the new environment was created.
 mamba env list
 ```
 
-![Example output of the command 'mamba env list' including the environment 'ccb_demo_env'.](mamba-env-list-ccb_demo_env.png)
+![Displaying the list of Conda environments that exist after creating the environment 'ccb_demo_env'.](mamba-env-list-ccb_demo_env.png)
 
 In particular:
 
@@ -123,7 +123,7 @@ as follows:
 conda activate ccb_demo_env
 ```
 
-![Example output of the command 'conda activate ccb_demo_env'.](conda-activate-ccb_demo_env.png)
+![Activating the newly created 'ccb_demo_env' environment.](conda-activate-ccb_demo_env.png)
 
 Separately, the `mamba list` command can be used to verify that the new environment
 does not contain any installed package yet.
@@ -132,7 +132,7 @@ does not contain any installed package yet.
 mamba list
 ```
 
-<!-- Screenshot -->
+![Initially, the newly created 'ccb_demo_env' environment does not contain any installed package.](mamba-list-ccb_demo_env.png)
 
 ## Install packages in an environment
 
@@ -146,7 +146,9 @@ can be installed as follows:
 mamba install python r-base
 ```
 
-<!-- Screenshot -->
+![Installing packages in the active environment.](mamba-install-active-environment.png)
+
+{{< alert icon="👉" text="Due to the considerable number of dependencies that need to be installed, the screenshot above only displays a the first lines of the package installation plan." />}}
 
 Remember to type `Y` and press the Return key when prompted to proceed with the
 package installation plan.
@@ -158,7 +160,7 @@ the requested packages, as well as their dependencies.
 mamba list
 ```
 
-<!-- Screenshot -->
+![Displaying the list of packages installed in the 'ccb_demo_env' environment after installing the packages 'python' and 'r-base'.](mamba-list-ccb_demo_env-installed.png)
 
 The Bash command `which` can also be used to verify that the `python` and `R`
 executable files are now available from within the Conda environment.
