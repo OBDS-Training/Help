@@ -32,6 +32,8 @@ A notable exception is the `mamba` package that we recommend installing
 directly in the `base` environment
 (see section [First steps with Conda]({{< relref "/docs/conda/first-steps" >}})).
 
+{{< alert icon="👉" text="This section demonstrates the creation and management of Conda environments using a number of demonstration environments. Feel free to remove all those environments at the end of this section." />}}
+
 ## Get started
 
 Remember to activate the `base` Conda environment.
@@ -241,6 +243,8 @@ mamba env list
 
 ![Displaying the list of environments after removing the environment named 'ccb_demo_env_2'.](mamba-env-list-removed.png)
 
+{{< alert icon="👉" text="We recommend practicing and getting comfortable with the creation and removal of environments. In doubt, it is often much easier and safer to remove an environment and start over." />}}
+
 ## Create an environment from a YAML file
 
 Conda supports the the YAML file format for describing Conda environments, as well
@@ -266,12 +270,18 @@ and save and close the file (for instance, use `nano`).
 nano ~/ccb_demo.yaml
 ```
 
+![Creatin and editing the file '~/ccb_demo.yaml' using the 'nano' editor.](nano-ccb_demo_yaml.png)
+
+{{< alert icon="👉" text="The name of the file itself does not matter, but we recommend using the same name as the environment that it is used to create." />}}
+
 Then, the `mamba install` command can be used to create an environment using that file,
 as follows:
 
 ```bash
 mamba env create -f ~/ccb_demo.yaml
 ```
+
+![Creating an environment from a list of packages specified in a YAML file.](mamba-env-create-from-yaml.png)
 
 It is possible to override the name of the environment specified in the YAML using the
 option `-n`, to give a different name to the new environment.
@@ -282,6 +292,8 @@ For instance:
 mamba env create -n ccb_demo_from_yaml -f ~/ccb_demo.yaml
 ```
 
+{{< alert icon="👉" text="For traceability, we generally recommend using the name of the enviroment defined in the YAML file." />}}
+
 Again, the `conda activate` command can be used to activate the new environment.
 
 ```bash
@@ -290,9 +302,11 @@ conda activate ccb_demo_yaml
 
 ## Export an environment to a YAML file
 
-The `conda env export` command can be used to export the specifications of an environment
-to a YAML file that may be saved for the record, or shared and used to replicate that
-environment elsewhere.
+The `mamba env export` command can be used to display the specifications of an environment
+(i.e., name, version, and build of packages installed in the environment).
+Those specifications are extremely valuable for reproducibility, as they can be exported
+to a YAML file that may be saved for the record, or shared and used to replicate the very
+same environment elsewhere.
 
 For instance, the contents in YAML format can be viewed as follows:
 
@@ -300,12 +314,32 @@ For instance, the contents in YAML format can be viewed as follows:
 mamba env export -n ccb_demo_env
 ```
 
+![Exporting the specifications of an environment.](mamba-env-export.png)
+
+In particular:
+
+- The option `-n` specifies the name of the environment to export.
+
 The output of the command above can be redirected to a file using the `>` symbol,
 as follows:
 
 ```bash
 mamba env export -n ccb_demo_env > ~/ccb_demo_env.yaml
 ```
+
+The exported file can then be used to re-create the environment elsewhere as demonstrated in section
+[Create an environment from a YAML file]({{< relref "#create-an-environment-from-a-yaml-file" >}}).
+
+## Cleanup
+
+Thank you for reading through this section.
+Feel free to remove all demonstration environments before moving on to the next section.
+
+Remember:
+
+- Use `mamba env list` to display the list of existing environments.
+- Use `mamba remove --name <environment_name> --all` to remove an environment
+  (replace `<environment_name>` by the name of the environment).
 
 <!-- Link definitions -->
 
