@@ -327,19 +327,29 @@ as follows:
 mamba env export -n ccb_demo_env > ~/ccb_demo_env.yaml
 ```
 
-The exported file can then be used to re-create the environment elsewhere as demonstrated in section
+The exported file can then be used to re-create the environment elsewhere
+as demonstrated in section
 [Create an environment from a YAML file]({{< relref "#create-an-environment-from-a-yaml-file" >}}).
 
 ## Cleanup
 
 Thank you for reading through this section.
-Feel free to remove all demonstration environments before moving on to the next section.
+Using what you have learned, feel free to remove all demonstration environments
+before moving on to the next section.
 
 Remember:
 
 - Use `mamba env list` to display the list of existing environments.
 - Use `mamba remove --name <environment_name> --all` to remove an environment
   (replace `<environment_name>` by the name of the environment).
+
+For instance:
+
+```bash
+mamba env list
+mamba remove --name ccb_demo_env --all
+mamba remove --name ccb_demo_yaml --all
+```
 
 <!-- Link definitions -->
 
