@@ -15,9 +15,9 @@ toc: true
 
 ## University of Oxford
 
-* [MRC Weatherall Institute of Molecular Medicine][mrc-wimm]
-* [MRC WIMM Centre for Computational Biology][mrc-wimm-ccb]
-* [IT Help][it-help]
+- [MRC Weatherall Institute of Molecular Medicine][mrc-wimm]
+- [MRC WIMM Centre for Computational Biology][mrc-wimm-ccb]
+- [IT Help][it-help]
 
 ## Conda
 
