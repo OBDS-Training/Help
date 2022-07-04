@@ -15,12 +15,21 @@ toc: true
 
 ## University of Oxford
 
-* [MRC Weatherall Institute of Molecular Medicine][mrc-wimm]
-* [MRC WIMM Centre for Computational Biology][mrc-wimm-ccb]
-* [IT Help][it-help]
+- [MRC Weatherall Institute of Molecular Medicine][mrc-wimm]
+- [MRC WIMM Centre for Computational Biology][mrc-wimm-ccb]
+- [IT Help][it-help]
+
+## Conda
+
+- [Conda documentation website][conda-website]
+- [Conda documentation][conda-readthedocs]
+- [Miniconda documentation][miniconda-readthedocs]
 
 <!-- Link definitions -->
 
 [mrc-wimm]: https://www.imm.ox.ac.uk/
 [mrc-wimm-ccb]: https://www.imm.ox.ac.uk/research/units-and-centres/mrc-wimm-centre-for-computational-biology
 [it-help]: https://help.it.ox.ac.uk/
+[conda-website]: https://docs.conda.io/en/latest/
+[conda-readthedocs]: https://docs.conda.io/projects/conda/en/latest/
+[miniconda-readthedocs]: https://docs.conda.io/en/latest/miniconda.html

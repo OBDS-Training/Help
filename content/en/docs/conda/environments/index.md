@@ -327,19 +327,63 @@ as follows:
 mamba env export -n ccb_demo_env > ~/ccb_demo_env.yaml
 ```
 
-The exported file can then be used to re-create the environment elsewhere as demonstrated in section
+The exported file can then be used to re-create the environment elsewhere
+as demonstrated in section
 [Create an environment from a YAML file]({{< relref "#create-an-environment-from-a-yaml-file" >}}).
 
 ## Cleanup
 
 Thank you for reading through this section.
-Feel free to remove all demonstration environments before moving on to the next section.
+Using what you have learned, feel free to remove all demonstration environments
+before moving on to the next section.
 
 Remember:
 
 - Use `mamba env list` to display the list of existing environments.
 - Use `mamba remove --name <environment_name> --all` to remove an environment
   (replace `<environment_name>` by the name of the environment).
+
+For instance:
+
+```bash
+mamba env list
+mamba remove --name ccb_demo_env --all
+mamba remove --name ccb_demo_yaml --all
+```
+
+## Final words
+
+At this point, you have seen the essential commands to create and manage
+Conda environments on a daily basis.
+
+To recapitulate:
+
+- `mamba env list` lists the existing environments.
+- `mamba create -n <name>` creates an environment called `<name>`.
+- `conda activate <name>` activates the (existing) environment
+  called `<name>`.
+- `mamba install <name1> <name2>` installs the Conda packages
+  `<name1>` `<name2>` in the active environment.
+- `conda deactivate` deactivates the active environment.
+- `mamba remove --name <name> --all` removes the environment
+  called `<name>` and all its packages.
+- `mamba env export -n <name>` exports the environment called `<name>`
+  to a format that can be saved to a file and used to restore the
+  environment elsewhere through `mamba env create -f <file>`.
+
+Remember that those commands offer a number of additional options
+that are not detailed in this section.
+Refer to the help page of the individual commands for further
+information (Use `conda <command> --help` and `mamba <command> --help`).
+
+This documentation includes a
+[Conda cheatsheet]({{< relref "/docs/conda/cheatsheet" >}})
+that describes commands and options relevant to common scenarios
+faced by users in their daily work.
+Feel free to [Contribute]({{< relref "/docs/help/contributing" >}})!
+
+Finally, this documentation also includes a number of links to
+[External resources about Conda]({{< relref "/docs/help/links#conda" >}}).
 
 <!-- Link definitions -->
 
