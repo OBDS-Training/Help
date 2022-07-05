@@ -1,7 +1,7 @@
 ---
 title: "First SSH connection"
-description: "This page describes how to connect to the MRC WIMM CCB high-performance computing (HPC) cluster over SSH for the first time."
-lead: "This page describes how to connect to the MRC WIMM CCB high-performance computing (HPC) cluster over SSH for the first time."
+description: "This page describes how to connect to the MRC WIMM CCB high-performance computing (HPC) cluster over SSH for the first time, using the username and password that were sent to you when you account was created."
+lead: "This page describes how to connect to the MRC WIMM CCB high-performance computing (HPC) cluster over SSH for the first time, using the username and password that were sent to you when you account was created."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
@@ -26,8 +26,6 @@ The CCB cluster has three login nodes that users can log into:
 When your account is created on the CCB cluster, you will be sent an email
 including your unique username on the CCB cluster and a randomly generated
 password.
-
-{{< alert icon="👉" text="You are encouraged to change your initial password on your first connection. More on that after we get you logged into the CCB cluster for the first time." />}}
 
 To log into a login node, open a Terminal on your personal computer and use
 the `ssh` command, combining your username, the `@` symbol, and the name of
@@ -57,5 +55,13 @@ You should now be logged in the MRC WIMM CCB high-performance computing (HPC)
 cluster.
 
 Welcome!
+
+## Log out
+
+To log out of the CCB cluster, you can use any of the following methods:
+
+- Type `exit` and press the Return key.
+- Type `logout` and press the Return key.
+- Press the Control and D keys simultaneously.
 
 <!-- Link definitions -->
