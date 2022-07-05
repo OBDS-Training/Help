@@ -1,7 +1,7 @@
 ---
 title: "Apply for an account"
-description: "Use "
-lead: "This page provides guidance on the use of this documentation."
+description: "This page provides guidance and links to apply for a CCB account."
+lead: "This page provides guidance and links to apply for a CCB account."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
