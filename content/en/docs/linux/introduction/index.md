@@ -25,6 +25,9 @@ If you have gone through the earlier section
 [Connect to CCB]({{< relref "/docs/connect/" >}}),
 then congratulations: you have been using Bash already!
 
+Once logged into the CCB cluster, commands typed in a Terminal application
+are run in a Bash environment.
+
 From the moment you typed commands such as `ssh` and `passwd` in the Terminal
 application, you have been working in a Bash session, and issuing commands
 to the operating system from that Bash session.
@@ -36,6 +39,7 @@ Once connected to the CCB cluster, you can use built-in Bash commands to:
 - list and navigate directories in the filesystem
 - create, edit, remove, open and execute files
 - create and remove directories
+- ...and much more!
 
 In the following pages, this documentation introduces commonly used built-in
 Bash commands and options, and describing best practices on the CCB cluster.
