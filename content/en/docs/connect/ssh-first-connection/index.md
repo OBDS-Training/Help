@@ -1,7 +1,7 @@
 ---
 title: "First SSH connection"
-description: "This page describes how to connect to the MRC WIMM CCB high-performance computing (HPC) cluster over SSH for the first time, using the username and password that were sent to you when you account was created."
-lead: "This page describes how to connect to the MRC WIMM CCB high-performance computing (HPC) cluster over SSH for the first time, using the username and password that were sent to you when you account was created."
+description: "Users connecting to the CCB cluster for the first time must use the username and password send to them by email when their account was created."
+lead: "Users connecting to the CCB cluster for the first time must use the username and password send to them by email when their account was created."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false

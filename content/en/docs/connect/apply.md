@@ -1,7 +1,7 @@
 ---
 title: "Apply for an account"
-description: "This page provides guidance and links to apply for a CCB account."
-lead: "This page provides guidance and links to apply for a CCB account."
+description: "Current Oxford academics, students and staff are entitled to hold a CCB account. However, they must explicitly apply to create it."
+lead: "Current Oxford academics, students and staff are entitled to hold a CCB account. However, they must explicitly apply to create it."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
