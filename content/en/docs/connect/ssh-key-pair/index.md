@@ -28,20 +28,22 @@ themselves to each other.
 
 ## Creating an SSH key pair
 
-To create the SSH key pair, open a Terminal on your personal computer, and
-type:
+To create the SSH key pair, open a Terminal session on your personal computer
+(i.e., not logged into the CCB cluster), and type:
 
 ```bash
 ssh-keygen -t rsa -b 4096
 ```
 
-The option `-t rsa` is important to generate the right type of SSH key pair.
-The option `-b 4096` indicates the number of bits in the key; a minimum of 2048
+In particular:
+
+- The option `-t rsa` is important to generate the right type of SSH key pair.
+- The option `-b 4096` indicates the number of bits in the key; a minimum of 2048
 is recommended, while larger values generally give additional strength to the
 key.
 
-When prompted for a filename, immediately press the Return key to accept the
-default filename and location.
+When prompted for a filename, do not type anything, and immediately press the
+Return key to accept the default filename and location.
 
 When prompted for a passphrase, we recommended typing a password that is
 secret yet memorable to you. This passphrase will be the last line of defense
@@ -174,7 +176,7 @@ The screenshot below demonstrates the `ssh` command in action.
 
 ![Connecting using the SSH key pair.](ssh-screenshot.png)
 
-{{< alert icon="👉" text="MacOS users may be prompted to type their optional passphrase only for the first connection. The macOS keychain is capable of remembering the passphrase and automatically using it for subsequent connections." />}}
+{{< alert icon="👉" text="MacOS users may be prompted to type their optional passphrase only for the first connection. The macOS keychain is capable of remembering the passphrase and automatically using it for subsequent connections, which is why the the screenshot above does not prompt the user for the passphrase." />}}
 
 <!-- Link definitions -->
 
