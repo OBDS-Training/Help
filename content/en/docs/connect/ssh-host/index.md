@@ -17,8 +17,8 @@ toc: true
 
 When regularly connecting to one or more remote hosts, it can be tedious to type
 or even remember all the parameters in the `ssh` command.
-Moreover some parameters remain the same for all remote hosts, while others are
-specific to each host.
+Moreover, some parameters are common for multiple or all remote hosts,
+while other parameters are specific to individual hosts.
 
 In this section, we describe how to configure parameters that are specific
 to different hosts.

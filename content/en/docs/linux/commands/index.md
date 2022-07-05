@@ -9,21 +9,68 @@ images: []
 menu:
   docs:
     parent: "linux"
-weight: 200
+weight: 230
 toc: true
 ---
 
-## Motivation
+## Overview
 
-Once logged into the CCB cluster, commands typed in a Terminal application
-are run in a Bash environment.
+This page is broadly arranged from completely safe command that purely display information,
+to more advanced commands that modify files, directories, and the session environment.
 
-Bash is the shell, or command language interpreter, for the GNU operating system.
-The Bash interpreter includes a number of built-in commands that allow users to
-navigate and manage directories and files on the CCB cluster.
+## man
 
-In this page, we provide a cheatsheet of the most commonly used commands
-along with a brief description of their purpose and advice on best practices.
+The `man <page>` command can be used to print the reference manual page `<page>`.
+
+For instance, the reference manual page for the command `pwd` can be displayed as follows:
+
+```bash
+man pwd
+```
+
+![Manual page for the 'pwd' command.](man-pwd.png)
+
+{{< alert icon="👉" text="The manual page is open in an interactive viewer in the Terminal application. To close that interactive viewer, press the `Q` key." />}}
+
+Incidentally, the reference manual page for the command `pwd` is opened as follows:
+
+```bash
+man man
+```
+
+The ability to access, read, and understand manual pages is one of the first essential skills
+to develop as a Bash user.
+A lot of information and advice on Bash commands, tips and tricks, is available throughout the Internet.
+However, the manual pages accessed through the `man` command correspond to the current version
+of each command available on the CCB cluster, and should be considered as the reference above any
+other source of information.
+
+## type
+
+The `type <name>` command can be used to identify how `<name>` would be interpreted
+if used as a command.
+
+```bash
+type pwd
+type less
+```
+
+![Displaying the type of commands.](type.png)
+
+Identifying commands that are Bash built-in or additional command from third-party
+software can be helpful to understand and investigate bugs and unexpected
+behaviours.
+
+## which
+
+The `which <program>` command can be used to display the full path to the
+command `<program>`.
+
+```bash
+which man
+```
+
+![Displaying the full path to the executable file for the command 'man'.](which-man.png)
 
 ## pwd
 

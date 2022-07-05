@@ -1,7 +1,7 @@
 ---
 title: "VPN setup"
-description: "A VPN client may be necessary to use the CCB services while travelling or to work from home."
-lead: "A VPN client may be necessary to use the CCB services while travelling or to work from home."
+description: "The CCB cluster is accessible only from the University campus network. A VPN client is necessary to use the CCB services while travelling or working from home."
+lead: "The CCB cluster is accessible only from the University campus network. A VPN client is necessary to use the CCB services while travelling or working from home."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
@@ -15,8 +15,6 @@ toc: true
 
 ## Motivation
 
-The CCB cluster is accessible only from the University campus network.
-
 When your device is not directly connected to the University campus network
 (e.g., when you are working from home or travelling), the VPN Service allows
 you to access the University campus network, and thus the CCB cluster.
@@ -28,7 +26,7 @@ Most of the sections below refer to instructions on that page.
 ## Set up a VPN client
 
 On the web page [Virtual private network (VPN) →][oxford-vpn], expand the section
-'Setup Cisco AnyConnect'.
+'How to setup Cisco AnyConnect'.
 
 Click on the operating system for your device and follow the instructions.
 

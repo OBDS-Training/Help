@@ -1,7 +1,7 @@
 ---
 title: "Introduction"
-description: "This page provides guidance on the use of this documentation."
-lead: "This page provides guidance on the use of this documentation."
+description: "Welcome to the MRC WIMM CCB cluster. This page provides guidance on the use of this documentation."
+lead: "Welcome to the MRC WIMM CCB cluster. This page provides guidance on the use of this documentation."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
@@ -12,6 +12,21 @@ menu:
 weight: 100
 toc: true
 ---
+
+## What this documentation is
+
+This documentation describes the user-facing MRC WIMM CCB cluster infrastructure,
+how to connect to the CCB cluster, and best practices for using common software
+on the cluster.
+
+This documentation focuses on introductory scenarios and simple use cases.
+For further reading, trusted sources of information are listed on the page
+[Links to external resources]({{< relref "/docs/help/links" >}}).
+
+## Who this documentation is for
+
+This documentation is written for members of staff entitled to hold a CCB account.
+Find out more on the page [Apply for an account]({{< relref "/docs/connect/apply" >}}).
 
 ## How to use this documentation
 
@@ -24,7 +39,7 @@ We encourage readers to follow instructions in this documentation in the order p
 
 Many parts of this documentation include screenshots for illustrative purposes.
 In those screenshots, user-specific directories and parameters are highlighted and
-blurred for clarity and privacy.
+blurred for privacy and to avoid confusion as much as possible.
 Furthermore, it is very likely that you notice slight differences between those screenshots
 and your own experience, especially with respect to new versions of software packages becoming
 available.
@@ -35,9 +50,9 @@ where necessary.
 
 ## Go further
 
-Experienced users and those revisiting this website to refresh their knowledge can use the
-navigation menu on the left to explore specific topics or use cheatsheets available on various
-topics.
+Experienced users and those revisiting this website to refresh their knowledge are welcome to use
+the navigation menu on the left to explore specific topics or use the various cheatsheets
+available.
 
 An auto-completing search bar is also available at the top of the page to search the website
 by key words.
