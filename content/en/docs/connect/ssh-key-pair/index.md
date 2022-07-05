@@ -21,7 +21,7 @@ Instead of typing your username and password, it is possible to log into your
 account on the CCB cluster using a pair of files;
 one file on your personal computer (the "private" key),
 one file on the CCB cluster (the "public" key).
-Together, those two files your personal computer and the cluster to identify
+Together, those two files enable your personal computer and the cluster to identify
 themselves to each other.
 
 ![The concept of SSH key pair.](ssh-key-pair.png)
