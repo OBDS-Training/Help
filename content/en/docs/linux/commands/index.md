@@ -20,7 +20,8 @@ to more advanced commands that modify files, directories, and the session enviro
 
 ## man
 
-The `man <command>` command prints the manual page (i.e., documentation) for the command `<command>`.
+The `man <command>` command can be used to print the manual page (i.e., documentation)
+for the command `<command>`.
 
 For instance, the manual page for the command `pwd` can be displayed as follows:
 
@@ -38,6 +39,22 @@ A lot of information and advice on Bash commands, tips and tricks, is available 
 However, the manual pages accessed through the `man` command correspond to the current version
 of each command available on the CCB cluster, and should be considered as the reference above any
 other source of information.
+
+## type
+
+The `type <name>` command can be used to identify how `<name>` would be interpreted
+if used as a command.
+
+```bash
+type pwd
+type less
+```
+
+![Displaying the type of commands.](type.png)
+
+Identifying commands that are Bash built-in or additional command from third-party
+software can be helpful to understand and investigate bugs and unexpected
+behaviours.
 
 ## pwd
 
