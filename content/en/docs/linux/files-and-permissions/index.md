@@ -71,7 +71,7 @@ cd /usr/local/bin
 - The symbol `~` (tilde) refers to the home directory of the current user.
 - The `/` symbol (forward slash) refers to the root directory of the filesystem.
 
-## Working directory
+## The working directory
 
 The current working directory is always indicated in the prompt of the Linux shell.
 
