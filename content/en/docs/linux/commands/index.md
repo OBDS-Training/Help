@@ -45,6 +45,8 @@ However, the manual pages accessed through the `man` command correspond to the c
 of each command available on the CCB cluster, and should be considered as the reference above any
 other source of information.
 
+{{< alert icon="👉" text="The 'man' command is entirely harmless. Do not hesitate to experiment and get comfortable with it!" />}}
+
 ## type
 
 The `type <name>` command can be used to identify how `<name>` would be interpreted
@@ -61,6 +63,8 @@ Identifying commands that are Bash built-in or additional command from third-par
 software can be helpful to understand and investigate bugs and unexpected
 behaviours.
 
+{{< alert icon="👉" text="The 'type' command is entirely harmless. Do not hesitate to experiment and get comfortable with it!" />}}
+
 ## which
 
 The `which <program>` command can be used to display the full path to the
@@ -71,6 +75,8 @@ which man
 ```
 
 ![Displaying the full path to the executable file for the command 'man'.](which-man.png)
+
+{{< alert icon="👉" text="The 'which' command is entirely harmless. Do not hesitate to experiment and get comfortable with it!" />}}
 
 ## pwd
 
@@ -87,6 +93,8 @@ pwd
 
 When you log into the CCB cluster, the working directory is initially set to
 the user's home directory.
+
+{{< alert icon="👉" text="The 'pwd' command is entirely harmless. Do not hesitate to experiment and get comfortable with it!" />}}
 
 ## ls
 
@@ -169,6 +177,8 @@ ls -ltah ~/.ssh
 
 ![Listing the contents of a specific directory using a number of options.](ls-ltah-ssh.png)
 
+{{< alert icon="👉" text="The 'ls' command is entirely harmless. Do not hesitate to experiment and get comfortable with it!" />}}
+
 ## cd
 
 Changing the working directory is often essential to run commands in the
@@ -207,5 +217,7 @@ cd ..
 cd ../..
 cd ../../another_directory
 ```
+
+{{< alert icon="👉" text="The 'cd' command is entirely harmless. Do not hesitate to experiment and get comfortable with it! Invalid 'cd' command will only display an error message and keep the working directory unchanged." />}}
 
 <!-- Link definitions -->
