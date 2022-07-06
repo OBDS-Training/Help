@@ -113,7 +113,8 @@ represent permissions for three groups of users:
 
 - first triplet: the user who owns the file
 - second triplet: the user group assigned to the file
-- third triplet: every other user who does not belong in the two groups above
+- third triplet: every other user who is not the file owner and
+  does not belong to the user group assigned to the file.
 
 Each triplet is interpreted as follows:
 
