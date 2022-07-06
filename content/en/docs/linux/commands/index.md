@@ -74,14 +74,16 @@ which man
 
 ## pwd
 
-The working directory is the directory relative to which commands typed in a
-Terminal are executed.
+The working directory is the directory where the Bash session is currently
+located, and relative to which commands typed in a Terminal are executed.
 
 The `pwd` command prints the current working directory.
 
 ```bash
 pwd
 ```
+
+![Displaying the working directory.](pwd.png)
 
 When you log into the CCB cluster, the working directory is initially set to
 the user's home directory.
@@ -93,11 +95,16 @@ available for use, as well as directories that can be navigated into.
 
 The `ls` command prints the list of files in a given directory.
 
-Alone, the `ls` command prints the list of files in the working directory.
+Alone, the `ls` command prints the list of files and directories in the
+working directory.
 
 ```bash
 ls
 ```
+
+![Listing file and directories in the current directory.](ls.png)
+
+{{< alert icon="👉" text="Colors are used to indicate the type of each file (directory: dark blue; file: black; symbolic link: light blue)." />}}
 
 Given the path to an existing directory, the `ls` command prints the list of
 files in that particular directory.
@@ -118,6 +125,8 @@ update to each file.
 ls -l
 ```
 
+![Listing file and directories with detailed information.](ls-l.png)
+
 Often, the `-h` option is added to display file sizes in human-readable format,
 adding units (e.g., K - kilobyte, M - megabyte, G - gigabyte).
 Multiple options can be combined under the same `-` symbol.
@@ -128,6 +137,8 @@ ls -lh
 ls -l -h
 ```
 
+![Listing file and directories with file size in human-readable units.](ls-lh.png)
+
 The `-t` option can be used in combination with the `-l` option to sort files
 by modification time (newest first).
 
@@ -135,20 +146,28 @@ by modification time (newest first).
 ls -lt
 ```
 
-The `-a` option can be used to reveal and include hidden files and directories.
+![Listing file and directories from the most recently edited to the least recently edited.](ls-lt.png)
 
-{{< alert icon="👉" text="Hidden files and directories have a name that start with the '.' symbol, e.g. '.ssh'." />}}
+{{< alert icon="👉" text="The timestamp indicating the more recent edit to each file is displayed as the field directly on the left on each filename." />}}
+
+The `-a` option can be used to reveal and include hidden files and directories.
 
 ```bash
 ls -a
 ```
 
+![Listing hidden files and directories.](ls-a.png)
+
+{{< alert icon="👉" text="Hidden files and directories have a name that start with the '.' symbol, e.g. '.ssh'." />}}
+
 Finally -- to clarify -- options and paths can be combined, to list the contents
 of a particular directory with specific options.
 
 ```bash
-ls -lh ~/.ssh
+ls -ltah ~/.ssh
 ```
+
+![Listing the contents of a specific directory using a number of options.](ls-ltah-ssh.png)
 
 ## cd
 
