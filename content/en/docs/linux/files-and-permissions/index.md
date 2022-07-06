@@ -89,8 +89,9 @@ is restricted to the appropriate users.
 
 Each file is owned by exactly one user (indicated in the the column highlighted as 'username' below).
 
-Moreover, each user can belong to a number of user groups, and each file can be assigned
-to a particular user group (indicated in the the column highlighted as 'usergroup' below)
+Moreover, each user can belong to a number of user groups,
+and each file is assigned to a particular user group
+(indicated in the the column highlighted as 'usergroup' below)
 that can be given its own set of permissions on that file.
 
 File permissions can be displayed using the `ls -l` command.
