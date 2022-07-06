@@ -15,6 +15,8 @@ toc: true
 
 ## Display the contents of a file
 
+### Full contents
+
 The `cat <file>` command can be used to display the entire contents of a file
 in the Terminal application.
 
@@ -25,5 +27,7 @@ cat file2.csv
 ```
 
 ![Displaying the contents of a file.](cat.png)
+
+{{< alert icon="👉" text="While the 'cat' command is entirely harmless, it is highly inefficient for very large files and may freeze the Terminal application. If that happens, you may interrupt the command using the 'Control' and 'C' keyboard shortcut." />}}
 
 <!-- Link definitions -->
