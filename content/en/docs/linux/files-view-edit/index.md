@@ -30,4 +30,20 @@ cat file2.csv
 
 {{< alert icon="👉" text="While the 'cat' command is entirely harmless, it is highly inefficient for very large files and may freeze the Terminal application. If that happens, you may interrupt the command using the 'Control' and 'C' keyboard shortcut." />}}
 
+### First lines
+
+The `head <file>` command be used to display the first few lines of a file.
+
+The number of lines displayed can be controlled using the `-n` option.
+In the absence of option, the first 10 lines are shown by default.
+
+Example usage:
+
+```bash
+head file2.csv
+head -n 3 file2.csv
+```
+
+![Displaying the first lines of a file.](head.png)
+
 <!-- Link definitions -->
