@@ -174,21 +174,25 @@ ls -ltah ~/.ssh
 Changing the working directory is often essential to run commands in the
 appropriate working directory.
 
+Given the path to an existing directory, the `cd` command changes the working directory to
+that directory.
+
+```bash
+cd /       # absolute path (starts with '/')
+cd ~/.ssh  # relative path  (does not start with '/')
+```
+
+![Changing directory using a relative path.](cd-ccb_demo.png)
+
+{{< alert icon="👉" text="The directory path can be absolute or relative to the current working directory." />}}
+
 Alone, the `cd` command changes the working directory to the user's home directory.
 
 ```bash
 cd
 ```
 
-Given the path to an existing directory, the `cd` command changes the working directory to
-that directory.
-
-{{< alert icon="👉" text="The directory path can be absolute or relative to the current working directory." />}}
-
-```bash
-cd /       # absolute path (starts with '/')
-cd ~/.ssh  # relative path  (does not start with '/')
-```
+![Changing directory to the user home directory.](cd-home.png)
 
 {{< alert icon="👉" text="Use the 'ls' command to identify existing directories that you give to the 'cd' command." />}}
 
