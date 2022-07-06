@@ -46,4 +46,16 @@ head -n 3 file2.csv
 
 ![Displaying the first lines of a file.](head.png)
 
+### Last lines
+
+The `tail <file>` command be used to display the last few lines of a file.
+
+This command works very much like the `head` command.
+
+```bash
+tail -n 3 file2.csv
+```
+
+![Displaying the lanes lines of a file.](tail.png)
+
 <!-- Link definitions -->
