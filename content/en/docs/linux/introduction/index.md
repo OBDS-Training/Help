@@ -95,8 +95,12 @@ local/bin
 
 ### Working directory
 
-The current working directory is always indicated in the prompt of the Linux shell
-(highlighted in red below).
+The current working directory is always indicated in the prompt of the Linux shell.
+
+In the example below, the prompt initially indicates the working directory to be
+the home directory  (represented by the symbol `~`, highlighted in red below).
+After using the `cd` command to change directory, the prompt then indicates the new
+working directory.
 
 ![The prompt indicates the working directory.](prompt-working-directory.png)
 
