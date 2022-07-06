@@ -52,6 +52,8 @@ make up the Linux filesystem.
 
 ## Working with Linux file paths
 
+### Absolute and relative paths
+
 Absolute file paths start from the 'root' directory, represented by the `/` symbol.
 
 For instance, in the illustration above, the following file and directory paths are valid:
@@ -81,6 +83,15 @@ local/bin
 ../bin/bash
 ../etc/crontab
 ```
+
+{{< alert icon="👉" text="The '..' shortcut can be used multiple times in the same path, to navigate multiple levels closer to the 'root' directory (e.g., '../../bin')." />}}
+
+### Shortcuts
+
+- The symbol `.` (full stop) refers to the current directory.
+- The shortcut `..` (two consecutive full stop symbols) refers to the parent directory.
+- The symbol `~` (tilde) refers to the home directory of the current user.
+- The `/` symbol (forward slash) refers to the root directory of the filesystem.
 
 ## What is Bash?
 
