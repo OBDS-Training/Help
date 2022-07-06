@@ -82,4 +82,54 @@ working directory.
 
 ![The prompt indicates the working directory.](prompt-working-directory.png)
 
+## File permissions
+
+File permissions are critical to ensure that access to individual files and directories
+is restricted to the appropriate users.
+
+Each file is owned by exactly one user (indicated in the the column highlighted as 'username' below).
+
+Moreover, each user can belong to a number of user groups, and each file can be assigned
+to a particular user group (indicated in the the column highlighted as 'usergroup' below)
+that can be given its own set of permissions on that file.
+
+File permissions can be displayed using the `ls -l` command.
+In the example below, the options `-a` and `-F` are added to display hidden files
+and append a symbol indicating the type of each file.
+
+![The 'ls -l' command displays file permissions.](file-permissions.png)
+
+For a single file, permissions are indicated as a sequence of characters
+(e.g. `drwxrwxr-x`).
+
+The first character is either `d` if the file is a directory,
+or `-` if it is a regular file.
+
+The remaining sequence of characters is read in triplets that
+represent permissions for three groups of users:
+
+- first triplet: the user who owns the file
+- second triplet: the user group assigned to the file
+- third triplet: every other user who does not belong in the two groups above
+
+Each triplet is interpreted as follows:
+
+- The character `r` indicates that the corresponding user(s) have
+  _read_ access to the file (i.e., they can open the file).
+- The character `w` indicates that the corresponding user(s) have
+  _write_ access to the file (i.e., they can edit the file).
+- The character `x` indicates that the corresponding user(s) have
+  _execute_ access to the file (i.e., they can run the file as a program).
+- The character `-` indicates that the corresponding user(s) do
+  not have the corresponding permission on that file.
+
+For directories, the permission are better described as follows:
+
+- The 'read' permission indicates the permission to
+  list the contents of the directory.
+- The 'write' permission indicates the permission to
+  create or edit files in that directory.
+- The 'execute' permission indicates the permission to
+  navigate (i.e., change directory) into that directory.
+
 <!-- Link definitions -->
