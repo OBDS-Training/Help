@@ -43,7 +43,7 @@ The first directory in that tree is called 'root',
 and it is represented by the symbol `/` (forward slash).
 
 The schema below illustrates some of the core directories and files that
-make up the Linux filesystem.
+make up a typical Linux filesystem.
 
 ![The Linux filesystem.](linux-filesystem.png)
 <!-- Source: https://linuxfoundation.org/blog/classic-sysadmin-the-linux-filesystem-explained/ (Google Search) -->
