@@ -173,5 +173,4 @@ simultaneously from both the user group and other users:
 chmod go-rwx file1.txt
 ```
 
-
 <!-- Link definitions -->

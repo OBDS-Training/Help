@@ -31,7 +31,6 @@ More technical differences include:
 - File paths are separated by `/` (forward slash) on Linux (and macOS),
   while they are separated by `\` (back slash) on MS Windows.
 
-
 ## The Linux file system
 
 In the Linux filesystem, everything is a file.
