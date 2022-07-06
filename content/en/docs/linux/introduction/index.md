@@ -34,8 +34,21 @@ More technical differences include:
 
 ## The Linux file system
 
+In the Linux filesystem, everything is a file.
+
+A directory is a file that contains the list of files and directories that it contains.
+
+As a result, files organised in a tree structure.
+The first directory in that tree is called 'root',
+and it is represented by the symbol `/` (forward slash).
+
+The schema below illustrates some of the core directories and files that
+make up the Linux filesystem.
+
 ![The Linux filesystem.](linux-filesystem.png)
 <!-- Source: https://linuxfoundation.org/blog/classic-sysadmin-the-linux-filesystem-explained/ (Google Search) -->
+
+{{< alert icon="👉" text="On the CCB cluster, the directories and files that are essential to the operating system are protected; users do not have permission to access or edit those files." />}}
 
 ## What is Bash?
 
