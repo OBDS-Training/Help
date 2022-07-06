@@ -78,6 +78,19 @@ which man
 
 {{< alert icon="👉" text="The 'which' command is entirely harmless. Do not hesitate to experiment and get comfortable with it!" />}}
 
+## groups
+
+The `groups` command can be used to print the user groups that a user belongs to.
+
+Alone, the `groups` command display the list of user groups that current user belongs to.
+
+```bash
+groups
+```
+
+The `groups <username>` command can also be given a username, in which case it will display
+the list of user groups that particular user belongs to.
+
 ## pwd
 
 The working directory is the directory where the Bash session is currently

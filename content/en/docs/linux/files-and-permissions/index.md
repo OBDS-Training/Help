@@ -94,6 +94,8 @@ and each file is assigned to exactly one user group
 (indicated in the the column highlighted as 'usergroup' below)
 that can be given its own set of permissions on that file.
 
+{{< alert icon="👉" text="To list the user groups that you belong to, use the command 'groups'." />}}
+
 File permissions can be displayed using the `ls -l` command.
 In the example below, the options `-a` and `-F` are added to display hidden files
 and append a symbol indicating the type of each file.
