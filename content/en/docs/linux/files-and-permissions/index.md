@@ -136,4 +136,42 @@ For directories, the permission are better described as follows:
 - The 'execute' permission indicates the permission to
   navigate (i.e., change directory) into that directory.
 
+## Changing file permissions
+
+The `chmod <permissions> <file_or_directory>` command can be used to modify
+the permissions on individual files and directories.
+
+The `chmod` command takes two arguments:
+
+- the permissions to modify
+- the set of files and directories affected by those changes
+
+The permissions to modify are declared using the following syntax:
+
+- `u` for user, `g` for group, `o` for other
+- `-` for removing permissions, `+` for adding permissions
+- `r` for read, `w` for `write`, `x` for execute
+- `,` for separating multiple sets of changes
+
+For instance, the following command illustrates how the `chmod` command
+can be used to simultaneously:
+
+- remove write permission for the user who owns the file (i.e., `u-w`)
+- add execute permission for the user group assigned to the file (i.e., `g+x`)
+- remove read permission for every other user (i.e., `o-r`)
+
+```bash
+chmod u-w,g+x,o-r file1.txt 
+```
+
+When the same permissions are applied to multiple groups, the command
+may be simplified by combining the characters representing those groups together.
+In the following example, read, write and execute permissions are all removed
+simultaneously from both the user group and other users:
+
+```bash
+chmod go-rwx file1.txt
+```
+
+
 <!-- Link definitions -->
