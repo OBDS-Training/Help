@@ -58,4 +58,35 @@ tail -n 3 file2.csv
 
 ![Displaying the lanes lines of a file.](tail.png)
 
+## Interactively scroll through files
+
+### more
+
+The `more <file>` command can be used to scroll through a file
+unidirectionally from top to bottom.
+
+While the viewer is active in a Terminal application,
+pressing the `Space` bar scrolls down one screen worth down
+the contents of the file.
+
+Once the end the file is reached, the interactive viewer
+automatically terminates and returns the Linux prompt to the user.
+
+### less
+
+The `less <file>` command provides similar yet more extensive
+functionality over the `more` command ("less is more").
+
+While the viewer is active, the `Up` and `Down` arrow keys can be used
+to scroll one line up or down the contents of the file.
+
+The `Left` and `Right` arrow keys can be used to scroll one screen worth
+left or right across the contents of the file.
+
+Similarly to the `more` command, the `Space` bar can be used to scroll
+one screen worth down the contents of the file.
+
+The `Q` key can be pressed to close the interactive viewer
+(reaching the end of the file will not automatically close the interactive viewer).
+
 <!-- Link definitions -->
