@@ -218,6 +218,24 @@ cd ../..
 cd ../../another_directory
 ```
 
-{{< alert icon="👉" text="The 'cd' command is entirely harmless. Do not hesitate to experiment and get comfortable with it! Invalid 'cd' command will only display an error message and keep the working directory unchanged." />}}
+{{< alert icon="👉" text="The 'cd' command is entirely harmless. Do not hesitate to experiment and get comfortable with it!" />}}
+
+## realpath
+
+The `realpath` command can be used to resolve the absolute file path to a specific
+file or directory in the filesystem.
+
+In many cases, files and directories may be referred to through any valid path.
+However, in some cases, it may be necessary to identify and use the 'real' path
+to a file or directory, meaning the unambiguous absolute path to that file from the
+root directory.
+
+```bash
+realpath file1.txt
+```
+
+![Resolving the absolute path to a file.](realpath.png)
+
+{{< alert icon="👉" text="The 'realpath' command is entirely harmless. Do not hesitate to experiment and get comfortable with it!" />}}
 
 <!-- Link definitions -->
