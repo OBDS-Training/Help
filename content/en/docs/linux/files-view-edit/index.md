@@ -204,10 +204,7 @@ To create new files, those commands must be given a filename that does not exist
 For instance:
 
 ```bash
-ls -l
 nano new_file.txt
-# edit and save the file
-ls -l
 ```
 
 ![Creating a new file using 'nano'.](nano-new-file.png)
