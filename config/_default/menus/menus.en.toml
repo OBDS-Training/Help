@@ -8,7 +8,7 @@
   name = "Linux command line"
   weight = 20
   identifier = "linux"
-  url = "docs/linux/"
+  url = "docs/linux/introduction"
 
 [[docs]]
   name = "Slurm"
@@ -85,7 +85,7 @@
   name = "Linux command line"
   weight = 32
   identifier = "bash"
-  url = "docs/bash/commands/"
+  url = "docs/linux/introduction"
   parent = "get-started"
 
 [[main]]
