@@ -114,6 +114,8 @@ To save edits made to a file:
 - When prompted for the 'File Name to Write', immediately press the
   Return key to use the current file name.
 
+![Saving changes in the 'nano' text editor.](nano-save.png)
+
 To close a file without saving the edits:
 
 - Press the `Control` and `X` keys simultaneously to initiate the exit
@@ -151,6 +153,10 @@ To save edits made to a file:
   to initiate a command,
   then `Control` and `S` simultaneously to save the file.
 
+![Saving changes in the 'emacs' text editor.](emacs-save.png)
+
+{{< alert icon="👉" text="In the screenshot above, the command prompt circled in red displays 'C-x-' to indicate that the keys 'Control' and 'X' were pressed simultaneously, and that the prompt await another keyboard shortcut to complete the command." />}}
+
 To close a file:
 
 - Press the `Control` and `X` keys simultaneously
@@ -159,10 +165,34 @@ To close a file:
 
 {{< alert icon="👉" text="To save changes and exit the editor, successively follow the instructions to first save edits, and then instructions to close the file. To close the editor without saving changes, only follow the instructions to close a file." />}}
 
-
 ### vim
 
-TODO
+The `vim <file>` command can be used to open an interactive text editor
+in the Terminal application.
+
+![The 'vim' text editor.](vim.png)
+
+In particular:
+
+- The arrow keys can be used to move the cursor through the file.
+- The editor initially opens the file in _Read-only_ mode.
+  To edit the file, press the `I` key to enter _Edit_ mode.
+- To disable _Edit_ mode, press the `Esc` key to return to
+  _Read-only_ mode.
+
+To save edits made to a file:
+
+- Press the `:` key to open a prompt for commands within the editor.
+  Then, type `wq` to _write_ the file and _quit_ the application
+  (press the Return key to execute the command).
+
+![Saving changes in the 'vim' text editor.](vim-save.png)
+
+To close a file without saving the edits:
+
+- Press the `:` key to open a prompt for commands within the editor.
+  Then, type `q!` _force quit_ the application (the `!` symbol
+  forces the command to override warnings of unsaved changes).
 
 <!-- Link definitions -->
 
