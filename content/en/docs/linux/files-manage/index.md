@@ -19,6 +19,8 @@ The `touch <file>` command can be used to create new empty files.
 
 Multiple files can be created in a single command.
 
+For instance:
+
 ```bash
 touch a.txt b.csv
 ```
@@ -32,6 +34,8 @@ touch a.txt b.csv
 The `mkdir` command can be used to create new directories.
 
 Multiple directories can be created in a single command.
+
+For instance:
 
 ```bash
 mkdir dir1 dir2
