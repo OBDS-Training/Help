@@ -29,6 +29,9 @@ touch a.txt b.csv
 
 {{< alert icon="👉" text="In the screenshot above, the zeroes highlighted in red indicate that the new files are empty (i.e., size of 0 bytes)" />}}
 
+If a file already exists, the `touch` command does not edit the contents of the file,
+but update the timestamp of the latest edit to the current date-time.
+
 ## Creating directories
 
 The `mkdir` command can be used to create new directories.
