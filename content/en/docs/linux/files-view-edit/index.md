@@ -196,22 +196,6 @@ To close a file without saving the edits:
 
 ## Creating new files
 
-### touch
-
-The `touch <file>` command can be used to create new empty files.
-
-```bash
-ls -lh
-touch a.txt b.csv
-ls -lh
-```
-
-![Creating files using the 'touch' command.](touch.png)
-
-{{< alert icon="👉" text="In the screenshot above, the zeroes highlighted in red indicate that the new files are empty (i.e., size of 0 bytes)" />}}
-
-### Text editors
-
 Text editors such as `nano`, `emacs`, and `vim` can be used to create new files,
 immediately opening those files in an interactive text editor.
 
