@@ -27,7 +27,7 @@ touch a.txt b.csv
 
 ![Creating files using the 'touch' command.](touch.png)
 
-{{< alert icon="👉" text="In the screenshot above, the zeroes highlighted in red indicate that the new files are empty (i.e., size of 0 bytes)" />}}
+{{< alert icon="👉" text="In the screenshot above, the zeroes highlighted in red indicate that the new files are empty (i.e., size of 0 bytes)." />}}
 
 If a file already exists, the `touch` command does not edit the contents of the file,
 but update the timestamp of the latest edit to the current date-time.
@@ -45,6 +45,35 @@ mkdir dir1 dir2
 ```
 
 ![Creating directories using the 'mkdir' command.](mkdir.png)
+
+## Copying files
+
+The `cp` command can be used to make a copy of a file.
+
+The command requires two arguments:
+
+- first, the filepath to the original file
+- second, the path to the file where the copy must be made
+
+For instance:
+
+```bash
+cp a.txt a_copy.txt
+```
+
+{{< alert icon="👉" text="If the filename of the copy already exists, that file will be overwritten." />}}
+
+## Copying directories
+
+The `cp` command can be used with the option `-r` to _recursively_ copy a directory
+and its contents to a new directory.
+
+Similarly to the copy of files the command requires two arguments:
+
+- first, the location of the original directory
+- second, the path to the new directory to create as a copy.
+
+{{< alert icon="👉" text="If the directory to create already exists, the copy will be created inside that existing directory." />}}
 
 <!-- Link definitions -->
 
