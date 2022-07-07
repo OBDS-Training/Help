@@ -194,6 +194,20 @@ To close a file without saving the edits:
   Then, type `q!` _force quit_ the application (the `!` symbol
   forces the command to override warnings of unsaved changes).
 
+## Creating new files
+
+The `touch <file>` command can be used to create new empty files.
+
+```bash
+ls -lh
+touch a.txt b.csv
+ls -lh
+```
+
+![Creating files using the 'touch' command.](touch.png)
+
+{{< alert icon="👉" text="In the screenshot above, the zeroes highlighted in red indicate that the new files are empty (i.e., size of 0 bytes)" />}}
+
 <!-- Link definitions -->
 
 [gnu-emacs-reference-card]: https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf
