@@ -133,10 +133,37 @@ To save the new version of the file under a different name:
 
 ### emacs
 
-TODO
+The `emacs <file>` command can be used to open an interactive text editor
+in the Terminal application.
+
+![The 'emacs' text editor.](emacs.png)
+
+In particular:
+
+- The arrow keys can be used to move the cursor through the file.
+- The [GNU Emacs Reference Card][gnu-emacs-reference-card]
+  list many keyboard shortcuts that make Emacs one of the most
+  efficient text editors in Terminal applications.
+
+To save edits made to a file:
+
+- Press the `Control` and `X` keys simultaneously
+  to initiate a command,
+  then `Control` and `S` simultaneously to save the file.
+
+To close a file:
+
+- Press the `Control` and `X` keys simultaneously
+  to initiate a command,
+  then `Control` and `C` simultaneously to close the file.
+
+{{< alert icon="👉" text="To save changes and exit the editor, successively follow the instructions to first save edits, and then instructions to close the file. To close the editor without saving changes, only follow the instructions to close a file." />}}
+
 
 ### vim
 
 TODO
 
 <!-- Link definitions -->
+
+[gnu-emacs-reference-card]: https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf
