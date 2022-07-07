@@ -89,4 +89,54 @@ one screen worth down the contents of the file.
 The `Q` key can be pressed to close the interactive viewer
 (reaching the end of the file will not automatically close the interactive viewer).
 
+## Editing files in the Terminal
+
+### nano
+
+The `nano <file>` command can be used to open an interactive text editor
+in the Terminal application.
+
+![The 'nano' text editor.](nano.png)
+
+In particular:
+
+- The arrow keys can be used to move the cursor through the file.
+- Common keyboard shortcuts are displayed at the bottom of the editor.
+- The `^` symbol represents the `Control` key.
+- For instance, `^X` indicates that pressing the `Control` and `X` keys
+  simultaneously will exit the interactive text editor.
+
+To save edits made to a file:
+
+- Press the `Control` and `X` keys simultaneously to initiate the exit
+  from the editor.
+- When prompted whether to 'Save modified buffer', press `Y` to confirm.
+- When prompted for the 'File Name to Write', immediately press the
+  Return key to use the current file name.
+
+To close a file without saving the edits:
+
+- Press the `Control` and `X` keys simultaneously to initiate the exit
+  from the editor.
+- When prompted whether to 'Save modified buffer', press `N` to discard
+  the changes.
+
+To save the new version of the file under a different name:
+
+- Press the `Control` and `X` keys simultaneously to initiate the exit
+  from the editor.
+- When prompted whether to 'Save modified buffer', press `Y` to confirm.
+- When prompted for the 'File Name to Write',
+  edit the file name as needed,
+  and press the Return key to write the modified file under the new filename.
+  The original file will be left unchanged.
+
+### emacs
+
+TODO
+
+### vim
+
+TODO
+
 <!-- Link definitions -->
