@@ -179,13 +179,25 @@ The option `-r` indicates that the directory must be remove _recursively_,
 meaning that any content in the directory will be removed as well.
 Refer to the `rmdir` command below for a safer alternative.
 
-{{< alert icon="👉" text="The option '-r' must be used even if the directory is empty." />}}
-
 ```bash
 rm -r dir1
 ```
 
 ![Removing a directory using the 'rm -r' command.](rm-r-dir.png)
+
+{{< alert icon="👉" text="The option '-r' must be used even if the directory is empty." />}}
+
+As a safer alternative, the `rmdir` command can be used to remove empty directories.
+
+In the example below, the `rmdir` command is asked to remove two directories.
+However, one of those directories is not empty, and only the empty directory is
+actually removed.
+
+```bash
+rmdir dir1 dir2
+```
+
+![Removing an empty directory using the 'rmdir' command.](rmdir.png)
 
 <!-- Link definitions -->
 
