@@ -75,6 +75,40 @@ Similarly to the copy of files the command requires two arguments:
 
 {{< alert icon="👉" text="If the directory to create already exists, the copy will be created inside that existing directory." />}}
 
+## Moving and renaming files
+
+The `mv` command can be used to both move and rename files.
+
+In particular, renaming a file can be seen as moving the file from one name to another,
+within the same directory.
+Meanwhile, a file can be moved to another directory, either keeping the name of the file
+or renaming the file at the same time.
+
+For instance, a file `file1.txt` can be renamed to `file1.csv` as follows:
+
+```bash
+mv file1.txt file1.csv
+```
+
+![Renaming a file using the 'mv' command.](mv-rename.png)
+
+On the other hand, moving a file `file1.txt` to another directory
+-- without renaming the file itself --
+can be done as follows:
+
+```bash
+mv file1.txt ../another_demo_dir/
+```
+
+![Moving a file using the 'mv' command.](mv-move.png)
+
+Remember that absolute paths may be used, both for the file to move
+and the directory to move it into:
+
+```bash
+mv /path/to/file1.txt /path/to/new/directory
+```
+
 <!-- Link definitions -->
 
 [gnu-emacs-reference-card]: https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf
