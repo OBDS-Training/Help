@@ -38,6 +38,8 @@ available for use, as well as directories that can be navigated into.
 
 The `ls` command prints the list of files in a given directory.
 
+### Examples
+
 Alone, the `ls` command prints the list of files and directories in the
 working directory.
 
@@ -113,6 +115,21 @@ ls -ltah ~/.ssh
 ![Listing the contents of a specific directory using a number of options.](ls-ltah-ssh.png)
 
 {{< alert icon="👉" text="The 'ls' command is entirely harmless. Do not hesitate to experiment and get comfortable with it!" />}}
+
+### Cheatsheet
+
+Common options are listed below, in alphabetical order of the option flag.
+
+| Option | Long option | Descrition |
+|:------:|:----------- | ---------- |
+|  `-a`  | `--all`     | Display all files including hidden files. |
+|  `-d`  | `--directory` | Display information about a directory instead of listing the contents of that directory. Usually combined with option `-l`. |
+|  `-F`  | `--classify` | Append an indicator to the end of each listed name (e.g., `/` for a directory) |
+|  `-h`  | `--human-readable` | Combine with option `-l` to display file sizes in human readable format rather than bytes. |
+|  `-l`  |             | Display information in long format. |
+|  `-r`  | `--reverse` | Display results in reverse order. See also options `-S` and `-t` |
+|  `-s`  |             | Sort by file size. |
+|  `-t`  |             | Sort by latest modification time. |
 
 ## Change directory
 
