@@ -50,3 +50,21 @@ to move at any point in the future:
 - Symbolic link that use relative paths will point to a new location if
   the symbolic link itself is moved, relative to the new location of the
   symbolic link.
+
+## Creating hard links
+
+The `ln` command can be used to create links.
+
+Hard links are created when the option `-s` is _not_ used.
+
+The command must be given the name of the (existing) target file first,
+and the name of the link second.
+
+For instance, a _hard link_ to a file `file1.txt` named `link1.csv` can
+be created as follows:
+
+```bash
+ln file1.txt link1.csv
+```
+
+![Creating hard links using the 'ln' command.](ln-hard.png)
