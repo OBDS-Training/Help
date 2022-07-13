@@ -185,6 +185,8 @@ it means that the path that you have typed so far is ambiguous.
 You need to type more characters manually to disambiguate the path
 before attempting to use autocompletion again.
 
+![Using autocompletion to predict directory names.](autocomplete-path.png)
+
 If nothing appears after having pressed TAB twice, then you likely are
 in the first scenario: the path that you have typed so far does not exist.
 You might want to proofread what you typed so far, but the fastest way
