@@ -68,3 +68,19 @@ ln file1.txt link1.csv
 ```
 
 ![Creating hard links using the 'ln' command.](ln-hard.png)
+
+## Creating soft links
+
+Soft links are created using the same command `ln` as hard links,
+while adding the option `-s`.
+
+For instance, a _soft link_ to a file `file1.txt` named `link1.csv` can
+be created as follows:
+
+```bash
+ln -s file1.txt link1.csv
+```
+
+![Creating soft links using the 'ln' command.](ln-soft.png)
+
+<!-- Link definitions -->
