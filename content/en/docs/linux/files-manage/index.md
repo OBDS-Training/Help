@@ -109,6 +109,15 @@ and the directory to move it into:
 mv /path/to/file1.txt /path/to/new/directory
 ```
 
+Finally, a file can be moved to another directory and renamed
+in a single command as follows:
+
+```bash
+mv file1.txt ../another_demo_dir/file1.csv
+```
+
+{{< alert icon="👉" text="If the destination file path already exists, the file at that path will be overwritten by the file that is moved in its place." />}}
+
 <!-- Link definitions -->
 
 [gnu-emacs-reference-card]: https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf
