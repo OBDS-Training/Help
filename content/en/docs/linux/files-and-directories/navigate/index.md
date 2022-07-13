@@ -1,5 +1,5 @@
 ---
-title: "Navigate directories and files"
+title: "Navigate directories"
 description: "Changing directory and listing the contents of directories."
 lead: "Changing directory and listing the contents of directories."
 date: 2020-10-06T08:48:57+00:00
@@ -8,8 +8,8 @@ draft: false
 images: []
 menu:
   docs:
-    parent: "linux"
-weight: 240
+    parent: "files-and-directories"
+weight: 210
 toc: true
 ---
 
@@ -175,7 +175,7 @@ cd ../../another_directory
 
 ## Final advice
 
-Use [Autocompletion]({{< relref "/docs/linux/autocompletion" >}})!
+Use [Autocompletion]({{< relref "/docs/linux/essentials/autocompletion" >}})!
 
 Briefly, the tabulation key (TAB) may be pressed after typing the first few
 characters of the name of a valid directory, allowing the Bash session to

@@ -1,0 +1,15 @@
+---
+title: "Configuration"
+description: ""
+lead: ""
+date: 2020-10-06T08:49:15+00:00
+lastmod: 2020-10-06T08:49:15+00:00
+draft: false
+images: []
+menu:
+  docs:
+    parent: "linux"
+    identifier: "profile-and-configuration"
+weight: 220
+toc: true
+---

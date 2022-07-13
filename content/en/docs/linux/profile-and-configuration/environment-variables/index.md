@@ -8,8 +8,8 @@ draft: false
 images: []
 menu:
   docs:
-    parent: "linux"
-weight: 280
+    parent: "profile-and-configuration"
+weight: 220
 toc: true
 ---
 
