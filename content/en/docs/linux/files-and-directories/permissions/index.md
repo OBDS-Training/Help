@@ -8,8 +8,8 @@ draft: false
 images: []
 menu:
   docs:
-    parent: "linux"
-weight: 250
+    parent: "files-and-directories"
+weight: 211
 toc: true
 ---
 

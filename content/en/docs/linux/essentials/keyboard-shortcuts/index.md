@@ -8,8 +8,8 @@ draft: false
 images: []
 menu:
   docs:
-    parent: "linux"
-weight: 220
+    parent: "essentials"
+weight: 202
 toc: true
 ---
 
