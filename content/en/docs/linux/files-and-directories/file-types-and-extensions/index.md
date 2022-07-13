@@ -56,6 +56,8 @@ Examples of bioinformatics file formats include, among many others:
 - `.sam` -- alignments of sequences to a reference genome.
 - `.gtf`, `.bed` -- genomic coordinates of sequence features (e.g., exons, peaks).
 
+{{< alert icon="👉" text="Renaming a file and changing its file extension will not cause any error if the new file extension does not match the format of the contents. A mismatch between file extension and contents may only be detected when the file is actively used by a program that relies on the file extension and subsequently fails to parse the contents of the file." />}}
+
 <!-- Link definitions -->
 
 [sam-file-format]: https://software.broadinstitute.org/software/igv/SAM
