@@ -144,6 +144,28 @@ mv dir1 dir2
 
 {{< alert icon="👉" text="The  directory 'dir1' is now located inside the directory 'dir2'." />}}
 
+## Removing files and directories
+
+The `rm` command can be used to remove files and directories.
+
+```bash
+rm file1.txt
+```
+
+![Removing a file using the 'rm' command.](rm-file.png)
+
+Multiple files can be removed in a single command,
+stating individual filenames and/or using the wildcard symbol `*`.
+
+For instance, the next command demonstrates how to remove
+the files named `file1.txt` and `file1.csv`,
+along with all files whose names start with `file2`
+and all files that end with `.csv`:
+
+```bash
+rm file1.txt file1.csv file2* *.csv
+```
+
 <!-- Link definitions -->
 
 [gnu-emacs-reference-card]: https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf
