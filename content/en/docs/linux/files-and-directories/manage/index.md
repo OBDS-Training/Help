@@ -142,7 +142,74 @@ mv dir1 dir2
 
 ![Moving a directory using the 'mv' command.](mv-dir-move.png)
 
-{{< alert icon="👉" text="The  directory 'dir1' is now located inside the directory 'dir2'." />}}
+{{< alert icon="👉" text="The directory 'dir1' is now located inside the directory 'dir2'." />}}
+
+## Removing files and directories
+
+The `rm` command can be used to remove files and directories.
+
+### Files
+
+For files, the `rm` command takes the name(s) of one or more file(s)
+to remove.
+
+```bash
+rm file1.txt
+```
+
+![Removing a file using the 'rm' command.](rm-file.png)
+
+Multiple files can be removed in a single command,
+stating individual filenames and/or using the wildcard symbol `*`.
+
+For instance, the next command demonstrates how to remove
+the files named `file1.txt` and `file1.csv`,
+along with all files whose names start with `file2`
+and all files that end with `.csv`:
+
+```bash
+rm file1.txt file1.csv file2* *.csv
+```
+
+### Directories
+
+For directories, the `rm` command must be used with the option `-r`.
+
+The option `-r` indicates that the directory must be remove _recursively_,
+meaning that any content in the directory will be removed as well.
+Refer to the `rmdir` command below for a safer alternative.
+
+```bash
+rm -r dir1
+```
+
+![Removing a directory using the 'rm -r' command.](rm-r-dir.png)
+
+{{< alert icon="👉" text="The option '-r' must be used even if the directory is empty." />}}
+
+As a safer alternative, the `rmdir` command can be used to remove empty directories.
+
+In the example below, the `rmdir` command is asked to remove two directories.
+However, one of those directories is not empty, and only the empty directory is
+actually removed.
+
+```bash
+rmdir dir1 dir2
+```
+
+![Removing an empty directory using the 'rmdir' command.](rmdir.png)
+
+### Cheatsheet
+
+Common options for the `rm` command are listed below,
+in alphabetical order of the option flag.
+
+| Option | Long option | Descrition |
+|:------:|:----------- | ---------- |
+|  `-i`  | `--interactive` | Interactively prompt the user for confirmation before deleting files. Without this option, files are silently deleted. |
+|  `-r`  | `--recursive` | Recursively delete directories. This option is required to delete directories. |
+|  `-f`  | `--force`   | Do not prompt and ignore errors due to nonexistent files. This overrides the `-i` option. |
+|  `-v`  | `--verbose` | Display informative messages as deletions are performed. |
 
 <!-- Link definitions -->
 

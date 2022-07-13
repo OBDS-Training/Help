@@ -1,5 +1,5 @@
 ---
-title: "Links"
+title: "Link to files and directories"
 description: "Create and manage links to files and directories."
 lead: "Create and manage links to files and directories."
 date: 2020-10-06T08:48:57+00:00
