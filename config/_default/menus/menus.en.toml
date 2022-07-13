@@ -75,7 +75,7 @@
   url = "docs/connect/introduction/"
 
 [[main]]
-  name = "Connect"
+  name = "Connect to CCB"
   weight = 31
   identifier = "connect"
   url = "docs/connect/introduction/"
@@ -85,7 +85,7 @@
   name = "Linux command line"
   weight = 32
   identifier = "bash"
-  url = "docs/linux/introduction"
+  url = "docs/linux/essentials/introduction"
   parent = "get-started"
 
 [[main]]
