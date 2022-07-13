@@ -130,6 +130,8 @@ mv dir1 dir2
 
 ![Renaming a directory using the 'mv' command.](mv-dir-rename.png)
 
+{{< alert icon="👉" text="The name of the directory has changed from 'dir1' to 'dir2', while the contents of the directory remain the same." />}}
+
 However, if the the new directory already exist, the Bash session
 will then interpret the command as a request to _move_ the first directory
 into the second one.
@@ -139,6 +141,8 @@ mv dir1 dir2
 ```
 
 ![Moving a directory using the 'mv' command.](mv-dir-move.png)
+
+{{< alert icon="👉" text="The  directory 'dir1' is now located inside the directory 'dir2'." />}}
 
 <!-- Link definitions -->
 
