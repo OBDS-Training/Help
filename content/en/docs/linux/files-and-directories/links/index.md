@@ -67,7 +67,7 @@ be created as follows:
 ln file1.txt link1.csv
 ```
 
-![Creating hard links using the 'ln' command.](ln-hard.png)
+![Creating a hard link using the 'ln' command.](ln-hard.png)
 
 ## Creating soft links
 
@@ -81,6 +81,15 @@ be created as follows:
 ln -s file1.txt link1.csv
 ```
 
-![Creating soft links using the 'ln' command.](ln-soft.png)
+![Creating a soft link to a file using the 'ln' command.](ln-soft.png)
+
+Similarly, the example below demonstrates the creation of a _soft link_
+named `link1` to a directory named `dir1`.
+
+```bash
+ln -s dir1 link1
+```
+
+![Creating a soft link to a directory using the 'ln' command.](ln-soft-dir.png)
 
 <!-- Link definitions -->
