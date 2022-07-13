@@ -29,6 +29,13 @@ as there will not be any path leading to that file in the filesystem anymore.
 As long as one hard link exist, the file will continue to exist and remain
 accessible (subject to read, write, and execute permission).
 
+Symbolic links overcome two major disadvantages of hard links:
+
+- Hard links cannot span across physical devices (i.e., disks).
+  The CCB cluster is composed of many nodes and disks, making hard links
+  unsuitable to many situations.
+- Hard links cannot reference directories but only files.
+
 Symbolic links become unusable if the original file is moved or deleted.
 That is, unless the symbolic link is updated to point to the new location
 of the target file.
@@ -43,10 +50,3 @@ to move at any point in the future:
 - Symbolic link that use relative paths will point to a new location if
   the symbolic link itself is moved, relative to the new location of the
   symbolic link.
-
-Separately, symbolic links overcome two major disadvantages of hard links:
-
-- Hard links cannot span across physical devices (i.e., disks).
-  The CCB cluster is composed of many nodes and disks, making hard links
-  unsuitable to many situations.
-- Hard links cannot reference directories but only files.
