@@ -142,11 +142,16 @@ mv dir1 dir2
 
 ![Moving a directory using the 'mv' command.](mv-dir-move.png)
 
-{{< alert icon="👉" text="The  directory 'dir1' is now located inside the directory 'dir2'." />}}
+{{< alert icon="👉" text="The directory 'dir1' is now located inside the directory 'dir2'." />}}
 
 ## Removing files and directories
 
 The `rm` command can be used to remove files and directories.
+
+### Files
+
+For files, the `rm` command takes the name(s) of one or more file(s)
+to remove.
 
 ```bash
 rm file1.txt
@@ -165,6 +170,22 @@ and all files that end with `.csv`:
 ```bash
 rm file1.txt file1.csv file2* *.csv
 ```
+
+### Directories
+
+For directories, the `rm` command must be used with the option `-r`.
+
+The option `-r` indicates that the directory must be remove _recursively_,
+meaning that any content in the directory will be removed as well.
+Refer to the `rmdir` command below for a safer alternative.
+
+{{< alert icon="👉" text="The option '-r' must be used even if the directory is empty." />}}
+
+```bash
+rm -r dir1
+```
+
+![Removing a directory using the 'rm -r' command.](rm-r-dir.png)
 
 <!-- Link definitions -->
 
