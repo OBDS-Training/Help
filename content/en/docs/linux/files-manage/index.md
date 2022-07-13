@@ -118,6 +118,18 @@ mv file1.txt ../another_demo_dir/file1.csv
 
 {{< alert icon="👉" text="If the destination file path already exists, the file at that path will be overwritten by the file that is moved in its place." />}}
 
+## Moving and renaming directories
+
+Similarly to files, directories can be moved and renamed using the `mv` command.
+
+For instance, a directory `dir1` can be renamed to `dir2` as follows:
+
+```bash
+mv dir1 dir2
+```
+
+![Renaming a directory using the 'mv' command.](mv-dir-rename.png)
+
 <!-- Link definitions -->
 
 [gnu-emacs-reference-card]: https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf
