@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "linux"
-weight: 240
+weight: 260
 toc: true
 ---
 
