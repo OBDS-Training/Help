@@ -118,7 +118,8 @@ ls -ltah ~/.ssh
 
 ### Cheatsheet
 
-Common options are listed below, in alphabetical order of the option flag.
+Common options for the `ls` command are listed below,
+in alphabetical order of the option flag.
 
 | Option | Long option | Descrition |
 |:------:|:----------- | ---------- |
