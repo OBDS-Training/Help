@@ -13,7 +13,7 @@ weight: 240
 toc: true
 ---
 
-## pwd
+## Print working directory
 
 The working directory is the directory where the Bash session is currently
 located, and relative to which commands typed in a Terminal are executed.
@@ -31,7 +31,7 @@ the user's home directory.
 
 {{< alert icon="👉" text="The 'pwd' command is entirely harmless. Do not hesitate to experiment and get comfortable with it!" />}}
 
-## ls
+## List directory contents
 
 Listing the contents of directories is essential to identify files that are
 available for use, as well as directories that can be navigated into.
@@ -114,7 +114,7 @@ ls -ltah ~/.ssh
 
 {{< alert icon="👉" text="The 'ls' command is entirely harmless. Do not hesitate to experiment and get comfortable with it!" />}}
 
-## cd
+## Change directory
 
 Changing the working directory is often essential to run commands in the
 appropriate working directory.
@@ -154,3 +154,39 @@ cd ../../another_directory
 ```
 
 {{< alert icon="👉" text="The 'cd' command is entirely harmless. Do not hesitate to experiment and get comfortable with it!" />}}
+
+## Final advice
+
+Use [Autocompletion]({{< relref "/docs/linux/autocompletion" >}})!
+
+Briefly, the tabulation key (TAB) may be pressed after typing the first few 
+characters of the name of a valid directory, allowing the Bash session to
+predict and automatically complete the name of the directory.
+
+Autocompletion is automatically available for file paths on the CCB cluster,
+saves a lot of manual typing, and avoid typographical errors that often
+go unnoticed and raise errors when executed.
+
+This process can be repeated multiple times within the same command,
+even within the same path: type a few characters, press TAB, press
+type a few more characters, press TAB, etc.
+
+There are two main reasons why nothing might happen when you press TAB
+while autocompleting the path to a directory or file:
+
+1. The path that you have typed so far does not exist.
+2. The path that you have typed so far is ambiguous.
+
+The easiest way to diagnose which scneario you are in is to press TAB
+a second time.
+
+If a number of options appear, matching the characters that you typed so far,
+it means that the path that you have typed so far is ambiguous.
+You need to type more characters manually to disambiguate the path
+before attempting to use autocompletion again.
+
+If nothing appears after having pressed TAB twice, then you likely are
+in the first scenario: the path that you have typed so far does not exist.
+You might want to proofread what you typed so far, but the fastest way
+to fix the path is to type it all from scratch again
+(using autocompletion to avoid typographical errors).
