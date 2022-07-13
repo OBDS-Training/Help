@@ -177,7 +177,7 @@ cd ../../another_directory
 
 Use [Autocompletion]({{< relref "/docs/linux/autocompletion" >}})!
 
-Briefly, the tabulation key (TAB) may be pressed after typing the first few 
+Briefly, the tabulation key (TAB) may be pressed after typing the first few
 characters of the name of a valid directory, allowing the Bash session to
 predict and automatically complete the name of the directory.
 
