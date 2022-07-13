@@ -130,6 +130,16 @@ mv dir1 dir2
 
 ![Renaming a directory using the 'mv' command.](mv-dir-rename.png)
 
+However, if the the new directory already exist, the Bash session
+will then interpret the command as a request to _move_ the first directory
+into the second one.
+
+```bash
+mv dir1 dir2
+```
+
+![Moving a directory using the 'mv' command.](mv-dir-move.png)
+
 <!-- Link definitions -->
 
 [gnu-emacs-reference-card]: https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf
