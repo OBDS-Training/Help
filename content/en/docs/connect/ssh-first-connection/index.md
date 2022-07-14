@@ -1,5 +1,5 @@
 ---
-title: "First SSH connection"
+title: "First connection over SSH"
 description: "Users connecting to the CCB cluster for the first time must use the username and password send to them by email when their account was created."
 lead: "Users connecting to the CCB cluster for the first time must use the username and password send to them by email when their account was created."
 date: 2020-10-06T08:48:57+00:00
@@ -13,9 +13,21 @@ weight: 130
 toc: true
 ---
 
+## What is SSH?
+
+SSH stands for Secure Shell.
+
+This refers to an encrypted network protocol for establishing a secure connection
+to a remote server.
+The connection is materialised as a remote command line login to a Linux system.
+
+The protocol uses a username and password to authenticate a user on the remote system.
+
+It can be used to log into the CCB cluster.
+
 ## Login nodes
 
-The CCB cluster has three login nodes that users can log into:
+The CCB cluster has three login nodes that users can log into using SSH:
 
 - `cbrglogin1.molbiol.ox.ac.uk`
 - `cbrglogin2.molbiol.ox.ac.uk`
