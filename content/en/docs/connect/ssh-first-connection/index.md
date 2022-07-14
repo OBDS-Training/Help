@@ -25,13 +25,22 @@ The protocol uses a username and password to authenticate a user on the remote s
 
 It can be used to log into the CCB cluster.
 
-## Login nodes
+## Choose a login node
 
 The CCB cluster has three login nodes that users can log into using SSH:
 
 - `cbrglogin1.molbiol.ox.ac.uk`
 - `cbrglogin2.molbiol.ox.ac.uk`
 - `cbrglogin3.molbiol.ox.ac.uk`
+
+Here is some guidance to choose a login node:
+
+- Login nodes with more active users are less responsive.
+  If you notice a drop in performance for simple commands (e.g., `ls`),
+  consider logging out and connecting to a different login node.
+- The login node `cbrglogin3.molbiol.ox.ac.uk` has more memory available.
+  If you are testing commands that require larger amounts of memory,
+  consider connecting to that node.
 
 ## Log in with your username and password
 
