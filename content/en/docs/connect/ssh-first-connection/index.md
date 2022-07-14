@@ -38,7 +38,8 @@ Here is some guidance to choose a login node:
 - Login nodes with more active users are less responsive.
   If you notice a drop in performance for simple commands (e.g., `ls`),
   consider logging out and connecting to a different login node.
-- The login node `cbrglogin3.molbiol.ox.ac.uk` has more memory available.
+- The login node `cbrglogin3.molbiol.ox.ac.uk` has more memory available (1TB),
+  relative to only 250G on the other login nodes.
   If you are testing commands that require larger amounts of memory,
   consider connecting to that node.
 
