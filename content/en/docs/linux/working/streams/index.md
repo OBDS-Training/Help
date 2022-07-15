@@ -35,3 +35,21 @@ Some standard streams are commonly referred to in Linux:
 By default, both _stdout_ and _stderr_ write to the terminal.
 However, it is possible to redirect their respective output to
 separate destinations (most commonly, files).
+
+## Redirecting streams
+
+Streams can be redirected to new destinations -- including files -- using
+the symbols `>` and `<`.
+
+The contents of a file can be redirected to the standard input of a command
+using the syntax `command < file`.
+
+For instance:
+
+```bash
+head < file2.csv
+```
+
+![Redirecting a file to the standard input of a command.](stdin.png)
+
+<!-- Link definitions -->
