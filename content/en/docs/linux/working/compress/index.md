@@ -71,5 +71,4 @@ gzip -c file1.txt > compressed.txt.gz
 Many programs support gzip-compressed input files.
 For those programs, there is no need to decompress the files before use.
 
-
 <!-- Link definitions -->

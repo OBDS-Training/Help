@@ -106,7 +106,7 @@ application is closed.
 Redirecting the standard error -- and the standard output, for that matter --
 can be extremely helpful to investigate and diagnose errors and bugs.
 Many command produce significant amounts of information on the standard output
-and standard error, making it a real challenge to identify the source of 
+and standard error, making it a real challenge to identify the source of
 unexpected issues while scrolling through many screens worth of information.
 
 In particular, redirecting the standard output and standard error to different

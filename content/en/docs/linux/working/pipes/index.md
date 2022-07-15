@@ -25,8 +25,7 @@ the standard output of one command to the standard input of another command.
 ## Using the Linux pipe
 
 For instance, the standard output of a command `command1` can be passed to
-the standard input of a command `command2` using the sytanx 
-`command1 | command2`.
+the standard input of a command `command2` using the sytax `command1 | command2`.
 
 {{< alert icon="👉" text="The Linux pipe is read from left to right. The standard output of the command on the left is passed to the standard input of the command on the right." />}}
 
