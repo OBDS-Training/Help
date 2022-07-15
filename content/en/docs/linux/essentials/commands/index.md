@@ -106,7 +106,7 @@ realpath file1.txt
 The `wc <file>` command can be used to count the number of lines, words,
 or bytes in files.
 
-Most commonly, the `wc` command is used with the option `-l` to 
+Most commonly, the `wc` command is used with the option `-l` to
 specifically focus on the number of lines in a given file.
 This is particularly useful for bioinformatics file formats
 where results are reported one per line.
