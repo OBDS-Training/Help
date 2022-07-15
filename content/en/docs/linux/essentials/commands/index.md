@@ -1,5 +1,5 @@
 ---
-title: "Essential Bash commands"
+title: "Built-in Bash commands"
 description: "A cheatsheet of built-in Bash commands."
 lead: "A cheatsheet of built-in Bash commands."
 date: 2020-10-06T08:48:57+00:00
@@ -100,5 +100,25 @@ realpath file1.txt
 ```
 
 ![Resolving the absolute path to a file.](realpath.png)
+
+## wc
+
+The `wc <file>` command can be used to count the number of lines, words,
+or bytes in files.
+
+Most commonly, the `wc` command is used with the option `-l` to 
+specifically focus on the number of lines in a given file.
+This is particularly useful for bioinformatics file formats
+where results are reported one per line.
+
+For instance, the SAM file format reports alignments of sequences
+to a reference genome, one per line, meaning that the number of lines
+indicates the total number of alignments.
+
+```bash
+wc -l file1.txt 
+```
+
+![Counting the number of lines in a file.](wc-l.png)
 
 <!-- Link definitions -->
