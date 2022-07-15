@@ -61,9 +61,19 @@ completes successfully (first) or fails (second):
 
 ```bash
 which echo && echo "Some text"
-ls missing && echo "Some text"
+ls missing && echo "Some more text"
 ```
 
-![Declaring multiple commands in a single statement.](command-and-and.png)
+![Executing a command only when the previous command succeeded.](command-and-and.png)
+
+Conversely, the operator `||` cab be used to execute a command only if the previous
+command fails.
+
+```bash
+which echo || echo "Some text"
+ls missing || echo "Some more text"
+```
+
+![Executing a command only when the previous command failed.](command-or-or.png)
 
 <!-- Link definitions -->
