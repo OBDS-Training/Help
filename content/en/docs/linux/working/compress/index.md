@@ -123,6 +123,20 @@ zcat file1.txt.gz | head
 
 ![Stream the contents of a compressed file.](zcat.png)
 
+## Interactively scroll through compressed files
+
+The `zless` command can be used as an equivalent to the
+[`less`]({{< relref "/docs/linux/files-and-directories/view-and-edit#less" >}})
+command for compressed files.
+
+For instance:
+
+```bash
+zless file1.txt.gz
+```
+
+![Interactively scroll the contents of a compressed file.](zless.png)
+
 ## Final words
 
 Many programs support gzip-compressed input files.
