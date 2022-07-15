@@ -141,36 +141,81 @@ For directories, the permission are better described as follows:
 The `chmod <permissions> <file_or_directory>` command can be used to modify
 the permissions on individual files and directories.
 
-The `chmod` command takes two arguments:
+File permissions can be described in two formats:
+
+- the _alphabetical_ notation,
+  which is more verbose, but often easier to read and write.
+- the _octal_ notation,
+  which is more compact, but often takes more practice
+  to read and write.
+
+### Using alphabetical notation
+
+To change file permissions using the alphabetical notation,
+the `chmod` command takes two arguments:
 
 - the permissions to modify
 - the set of files and directories affected by those changes
 
 The permissions to modify are declared using the following syntax:
 
-- `u` for user, `g` for group, `o` for other
-- `-` for removing permissions, `+` for adding permissions
-- `r` for read, `w` for `write`, `x` for execute
+- `u` for _user_, `g` for _group_, `o` for _other_
+- `-` for _removing_ permissions, `+` for _adding_ permissions
+- `r` for _read_, `w` for _write_, `x` for _execute_ permission
 - `,` for separating multiple sets of changes
 
-For instance, the following command illustrates how the `chmod` command
+For instance, the example below illustrates how the `chmod` command
 can be used to simultaneously:
 
-- remove write permission for the user who owns the file (i.e., `u-w`)
-- add execute permission for the user group assigned to the file (i.e., `g+x`)
-- remove read permission for every other user (i.e., `o-r`)
+- remove _write_ permission for the user who owns the file (i.e., `u-w`)
+- add _execute_ permission for the user group assigned to the file (i.e., `g+x`)
+- remove _read_ permission for every other user (i.e., `o-r`)
 
 ```bash
-chmod u-w,g+x,o-r file1.txt 
+chmod u-w,g+x,o-r file1.txt
 ```
+
+![Changing file permissions using the alphabetical notation](chmod-alphabetical.png)
 
 When the same permissions are applied to multiple groups, the command
 may be simplified by combining the characters representing those groups together.
-In the following example, read, write and execute permissions are all removed
+
+In the example below, read, write, and execute permissions are all removed
 simultaneously from both the user group and other users:
 
 ```bash
 chmod go-rwx file1.txt
 ```
+
+### Using octal notation
+
+To change file permissions using the octal notation,
+the `chmod` command takes two arguments:
+
+- the new set of permissions
+- the set of files and directories affected by those changes
+
+The new set of permissions are declared using the following syntax:
+
+- a triplet of digits indicates the new permission for each of the
+  three types of users (owner, group, other).
+- a value of `4` indicates _read_ permission
+- a value of `2` indicates _write_ permission
+- a value of `1` indicates _execute_ permission
+- for each type of user, values are added together to make a digit
+  between 0 (no permission) and 7 (all permissions).
+
+For instance, the example below illustrates how the `chmod` command
+can be used to simultaneously:
+
+- give _read_, _write_, and _execute_ permission to the owner of that file
+- give only _read_ permission to the group assigned to that file
+- remove all permissions to other users on that file
+
+```bash
+chmod 740 file1.txt 
+```
+
+![Changing file permissions using the octal notation](chmod-octal.png)
 
 <!-- Link definitions -->
