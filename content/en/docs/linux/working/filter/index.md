@@ -38,6 +38,15 @@ Common options for the `grep` command:
 |  `-n`  | `--line-number` | Prefix each match with the number of the line within the file. |
 |  `-h`  | `--no-filename` | When searching across multiple files, suppress the output of filenames. |
 
+For instance, the example below illustrates how the `grep` command can be used
+to print lines that do _not_ contain the pattern `"error"`.
+
+```bash
+grep -v error file.txt
+```
+
+![Printing lines that do not match a pattern in a file.](grep-v.png)
+
 <!-- Link definitions -->
 
 [regular-expression-info]: https://www.regular-expressions.info/quickstart.html
