@@ -22,6 +22,8 @@ can be resolved by combining multiple tools.
 The Linux pipe is represented by the symbol `|` and provides a tool connecting
 the standard output of one command to the standard input of another command.
 
+## Using the Linux pipe
+
 For instance, the standard output of a command `command1` can be passed to
 the standard input of a command `command2` using the sytanx 
 `command1 | command2`.
