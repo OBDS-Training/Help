@@ -1,7 +1,7 @@
 ---
 title: "Linux streams"
-description: "Using streams to pass information between commands."
-lead: "Using streams to pass information between commands."
+description: "Using streams to pass information to and from files."
+lead: "Using streams to pass information to and from files."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
