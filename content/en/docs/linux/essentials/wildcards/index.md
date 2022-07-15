@@ -137,7 +137,12 @@ ls file[[:digit:]].txt
 
 ## Final words
 
-Multiple wildcards can be used in the same pattern, e.g. `file*.*`.
+Multiple wildcards can be used in the same pattern.
+
+For instance:
+
+- `file*.*`
+- `file?.*`
 
 <!-- Link definitions -->
 
