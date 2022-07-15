@@ -121,4 +121,14 @@ wc -l file1.txt
 
 ![Counting the number of lines in a file.](wc-l.png)
 
+Commonly used options for the `wc` command:
+
+| Option | Long option |Description |
+|:------:| ----------- | ---------- |
+|  `-c`  |  `--bytes`  | Prints the byte count. |
+|  `-m`  |  `--chars`  | Prints the character count. |
+|  `-l`  |  `--lines`  | Prints the line count. |
+|  `-L`  |  `--max-line-length`  | Prints the length of the longest line. |
+|  `-w`  |  `--words`  | Prints the word count. |
+
 <!-- Link definitions -->
