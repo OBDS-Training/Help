@@ -26,6 +26,14 @@ in filenames.
 | `[!characters]` | Matches any single character _not_ in a set. |
 | `[[:class:]]` | Matches any character in the specified class. |
 
+Many commands accept groups of files and directories matched using wildcards.
+
+For instance:
+
+- The `rm` command can be used to remove multiple files and directories
+  (remember to use the option `-r` to remove directories using `rm`).
+- The `ls` command can be used to list files and the contents of directories.
+
 ## Examples
 
 ### *
