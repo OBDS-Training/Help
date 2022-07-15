@@ -42,7 +42,29 @@ using the `gzip` command.
 gunzip file1.txt.gz
 ```
 
-![Decompressing a file using the 'gunzip' command.](gzip.png)
+![Decompressing a file using the 'gunzip' command.](gunzip.png)
+
+By default, the original file is removed, and the file extension `.gz`
+is removed from the original file name, to form the name of the new
+compressed file.
+
+## Using standard output
+
+The option `-c` can be used in both commands `gzip` and `gunzip` for major
+benefits:
+
+- The original files are kept unchanged (i.e., not deleted).
+- The compressed or decompressed output is redirected to the standard output of
+  the command, meaning that the symbol `>` can be used to redirect that standard
+  output to any filename (circumventing the default behaviour of both commands).
+
+For instance:
+
+```bash
+gzip -c file1.txt > compressed.txt.gz
+```
+
+![Using the '-c' option of the 'gzip' command.](gzip.png)
 
 ## General advice
 
