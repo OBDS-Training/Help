@@ -52,4 +52,15 @@ head < file2.csv
 
 ![Redirecting a file to the standard input of a command.](stdin.png)
 
+Conversely, the standard output of a command can be redirected to a file
+using the syntax `command > file`.
+
+For instance:
+
+```bash
+echo "Some text" > file.txt
+```
+
+![Redirecting the standard output of a command to a file.](stdout.png)
+
 <!-- Link definitions -->
