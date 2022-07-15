@@ -135,6 +135,12 @@ ls file[[:digit:]].txt
 
 ![Using the '[[:class:]]' wildcard.](bracket-class.png)
 
+In the example above, the class `[[:digit:]]` matched:
+
+- `1` in the file `file1.txt`
+- `2` in the file `file2.txt`
+- `3` in the file `file3.txt`
+
 ## Final words
 
 Multiple wildcards can be used in the same pattern.
