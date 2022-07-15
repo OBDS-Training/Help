@@ -1,5 +1,5 @@
 ---
-title: "Configuration"
+title: "Working in Linux"
 description: ""
 lead: ""
 date: 2020-10-06T08:49:15+00:00
@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "linux"
-    identifier: "profile-and-configuration"
-weight: 230
+    identifier: "working"
+weight: 220
 toc: true
 ---
