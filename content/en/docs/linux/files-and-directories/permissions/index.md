@@ -164,7 +164,7 @@ The permissions to modify are declared using the following syntax:
 - `r` for read, `w` for `write`, `x` for execute
 - `,` for separating multiple sets of changes
 
-For instance, the following command illustrates how the `chmod` command
+For instance, the example below illustrates how the `chmod` command
 can be used to simultaneously:
 
 - remove write permission for the user who owns the file (i.e., `u-w`)
@@ -179,7 +179,7 @@ chmod u-w,g+x,o-r file1.txt
 
 When the same permissions are applied to multiple groups, the command
 may be simplified by combining the characters representing those groups together.
-In the following example, read, write and execute permissions are all removed
+In the example below, read, write and execute permissions are all removed
 simultaneously from both the user group and other users:
 
 ```bash
