@@ -1,7 +1,7 @@
 ---
 title: "Compress and decompress files"
-description: "Compress files using gzip and decompress files using gunzip."
-lead: "Compress files using gzip and decompress files using gunzip."
+description: "Use gzip, gunzip, and tar to compress, decompress, and archive files."
+lead: "Use gzip, gunzip, and tar to compress, decompress, and archive files."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
@@ -48,7 +48,7 @@ By default, the original file is removed, and the file extension `.gz`
 is removed from the original file name, to form the name of the new
 compressed file.
 
-## Using standard output
+## Redirect to standard output
 
 The option `-c` can be used in both commands `gzip` and `gunzip` for major
 benefits:
@@ -66,7 +66,78 @@ gzip -c file1.txt > compressed.txt.gz
 
 ![Using the '-c' option of the 'gzip' command.](gzip.png)
 
-## General advice
+## Archive using tar
+
+The `tar` command stands for _tape archive_.
+
+It is an archiving file format that combines multiple files -- and directories --
+into a single file, called a _tar archive_.
+
+Optionally, tar archives can be further compressed during their creation --
+using, for instance, the `gzip` command.
+
+The `tar` command can be used to create, modify, and extract files that are
+archived in the `.tar` format.
+
+For instance, a directory and a file can be archived together as follows:
+
+```bash
+tar -czvf archive.tar.gz file1.txt dir1
+```
+
+![Archiving files and directories using the 'tar' command.](tar-archive.png)
+
+In particular:
+
+- The option `-c` creates a new archive.
+- The option `-z` further compresses the archive using the `gzip` command.
+- The option `-v` verbosely lists the files processed as they are being archived.
+- The option `-f` declares the name (and location) of the archive file to create.
+
+## Extract from a tar archive
+
+As mentioned above, the `tar` command can also be used to extract files and
+directories from a tar archive.
+
+For instance:
+
+```bash
+tar -xvzf archive.tar.gz
+```
+
+![Extracting files and directories from a tar archive.](tar-extract.png)
+
+## Stream compressed files
+
+The `zcat` command can be used to stream the contents of compressed files
+to the standard output or to the standard input of a downstream commands.
+
+This method is commonly used to bypass the need for a temporary decompressed
+copy of the file.
+
+For instance:
+
+```bash
+zcat file1.txt.gz | head
+```
+
+![Stream the contents of a compressed file.](zcat.png)
+
+## Interactively scroll through compressed files
+
+The `zless` command can be used as an equivalent to the
+[`less`]({{< relref "/docs/linux/files-and-directories/view-and-edit#less" >}})
+command for compressed files.
+
+For instance:
+
+```bash
+zless file1.txt.gz
+```
+
+![Interactively scroll the contents of a compressed file.](zless.png)
+
+## Final words
 
 Many programs support gzip-compressed input files.
 For those programs, there is no need to decompress the files before use.
