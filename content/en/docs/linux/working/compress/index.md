@@ -107,6 +107,22 @@ tar -xvzf archive.tar.gz
 
 ![Extracting files and directories from a tar archive.](tar-extract.png)
 
+## Stream compressed files
+
+The `zcat` command can be used to stream the contents of compressed files
+to the standard output or to the standard input of a downstream commands.
+
+This method is commonly used to bypass the need for a temporary decompressed
+copy of the file.
+
+For instance:
+
+```bash
+zcat file1.txt.gz | head
+```
+
+![Stream the contents of a compressed file.](zcat.png)
+
 ## Final words
 
 Many programs support gzip-compressed input files.
