@@ -1,7 +1,7 @@
 ---
 title: "Compress and decompress files"
-description: "Compress files using gzip and decompress files using gunzip."
-lead: "Compress files using gzip and decompress files using gunzip."
+description: "Use gzip, gunzip, and tar to compress, decompress, and archive files."
+lead: "Use gzip, gunzip, and tar to compress, decompress, and archive files."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
@@ -65,6 +65,34 @@ gzip -c file1.txt > compressed.txt.gz
 ```
 
 ![Using the '-c' option of the 'gzip' command.](gzip.png)
+
+## Use tar
+
+The `tar` command stands for _tape archive_.
+
+It is an archiving file format that combines multiple files -- and directories --
+into a single file, called a _tar archive_.
+
+Optionally, archives can be further compressed during their creation --
+using, for instance, the `gzip` command.
+
+The `tar` command can be used to create, modify, and extract files that are
+archived in the `.tar` format.
+
+For instance, a directory and a file can be archived together as follows:
+
+```bash
+tar -czvf archive.tar.gz file1.txt dir1
+```
+
+![Archiving files and directories using the 'tar' command.](tar-compress.png)
+
+In particular:
+
+- The option `-c` creates a new archive.
+- The option `-z` further compresses the archive using the `gzip` command.
+- The option `-v` verbosely lists the files processed as they are being archived.
+- The option `-f` declares the name (and location) of the archive file to create.
 
 ## General advice
 
