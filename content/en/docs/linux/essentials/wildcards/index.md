@@ -38,11 +38,18 @@ For instance:
 
 ### *
 
+The symbol `*` (asterisk) matches any sequence of one or more characters.
+
 ```bash
 ls *put.txt
 ```
 
 ![Using the '*' wildcard.](asterisk.png)
+
+In the example above, the `*` symbol matched:
+
+- `in` in the file `input.txt`
+- `out` in the file `output.txt`
 
 ### ?
 
