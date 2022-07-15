@@ -48,4 +48,22 @@ between the two approaches is that:
 - Commands combined into a single statement do not demarcate the output of
   consecutive commands.
 
+## Conditional combinations of commands
+
+Commands can be combined logically, to conditionally execute later commands,
+depending on the successful completion of earlier commands.
+
+The operator `&&` can be used to execute a command only if the previous command
+completed succesfully, using the syntax `command1 && command2`.
+
+The example below illustrates the two scenarios, in which the first command either
+completes successfully (first) or fails (second):
+
+```bash
+which echo && echo "Some text"
+ls missing && echo "Some text"
+```
+
+![Declaring multiple commands in a single statement.](command-and-and.png)
+
 <!-- Link definitions -->
