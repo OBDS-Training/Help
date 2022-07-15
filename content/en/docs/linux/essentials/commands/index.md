@@ -123,8 +123,8 @@ wc -l file1.txt
 
 Commonly used options for the `wc` command:
 
-| Option | Long option |Description |
-|:------:| ----------- | ---------- |
+| Option | Long option | Description |
+|:------:| ----------- | ----------- |
 |  `-c`  |  `--bytes`  | Prints the byte count. |
 |  `-m`  |  `--chars`  | Prints the character count. |
 |  `-l`  |  `--lines`  | Prints the line count. |

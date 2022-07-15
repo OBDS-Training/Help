@@ -26,6 +26,18 @@ grep error file.txt
 
 ![Printing lines that match a pattern in a file.](grep.png)
 
+Common options for the `grep` command:
+
+| Option | Long option | Description |
+|:------:| ----------- | ----------- |
+|  `-i`  | `--ignore-case` | Ignore case (i.e., do not distinguish between upper and lower case characters).  |
+|  `-v`  | `--invert-match` | Invert match. Print lines that do not contain a match. |
+|  `-c`  | `--count`   | Print the count of matches, not the matches themselves. |
+|  `-l`  | `--files-with-matches` | Print the name of each file that contans a match, not the matches themselves. |
+|  `-L`  | `--files-without-matches` | Like the `-l` option, but print the name of files that do not contain a match. |
+|  `-n`  | `--line-number` | Prefix each match with the number of the line within the file. |
+|  `-h`  | `--no-filename` | When searching across multiple files, suppress the output of filenames. |
+
 <!-- Link definitions -->
 
 [regular-expression-info]: https://www.regular-expressions.info/quickstart.html
