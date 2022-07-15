@@ -141,7 +141,18 @@ For directories, the permission are better described as follows:
 The `chmod <permissions> <file_or_directory>` command can be used to modify
 the permissions on individual files and directories.
 
-The `chmod` command takes two arguments:
+File permissions can be described in two formats:
+
+- the _alphabetical_ notation,
+  which is more verbose, but often easier to read and write.
+- the _octal_ notation,
+  which is more compact, but often takes more practice
+  to read and write.
+
+### Using alphabetical notation
+
+To change file permissions using the alphabetical notation,
+the `chmod` command takes two arguments:
 
 - the permissions to modify
 - the set of files and directories affected by those changes
@@ -161,8 +172,10 @@ can be used to simultaneously:
 - remove read permission for every other user (i.e., `o-r`)
 
 ```bash
-chmod u-w,g+x,o-r file1.txt 
+chmod u-w,g+x,o-r file1.txt
 ```
+
+![Changing file permissions using the alphabetical notation](chmod-alphabetical.png)
 
 When the same permissions are applied to multiple groups, the command
 may be simplified by combining the characters representing those groups together.
@@ -171,6 +184,18 @@ simultaneously from both the user group and other users:
 
 ```bash
 chmod go-rwx file1.txt
+```
+
+### Using octal notation
+
+To change file permissions using the octal notation,
+the `chmod` command takes two arguments:
+
+- the new set of permissions
+- the set of files and directories affected by those changes
+
+```bash
+chmod u-w,g+x,o-r file1.txt 
 ```
 
 <!-- Link definitions -->
