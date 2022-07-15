@@ -48,7 +48,7 @@ By default, the original file is removed, and the file extension `.gz`
 is removed from the original file name, to form the name of the new
 compressed file.
 
-## Using standard output
+## Redirect to standard output
 
 The option `-c` can be used in both commands `gzip` and `gunzip` for major
 benefits:
@@ -66,14 +66,14 @@ gzip -c file1.txt > compressed.txt.gz
 
 ![Using the '-c' option of the 'gzip' command.](gzip.png)
 
-## Use tar
+## Archive using tar
 
 The `tar` command stands for _tape archive_.
 
 It is an archiving file format that combines multiple files -- and directories --
 into a single file, called a _tar archive_.
 
-Optionally, archives can be further compressed during their creation --
+Optionally, tar archives can be further compressed during their creation --
 using, for instance, the `gzip` command.
 
 The `tar` command can be used to create, modify, and extract files that are
@@ -85,7 +85,7 @@ For instance, a directory and a file can be archived together as follows:
 tar -czvf archive.tar.gz file1.txt dir1
 ```
 
-![Archiving files and directories using the 'tar' command.](tar-compress.png)
+![Archiving files and directories using the 'tar' command.](tar-archive.png)
 
 In particular:
 
@@ -94,7 +94,20 @@ In particular:
 - The option `-v` verbosely lists the files processed as they are being archived.
 - The option `-f` declares the name (and location) of the archive file to create.
 
-## General advice
+## Extract from a tar archive
+
+As mentioned above, the `tar` command can also be used to extract files and
+directories from a tar archive.
+
+For instance:
+
+```bash
+tar -xvzf archive.tar.gz
+```
+
+![Extracting files and directories from a tar archive.](tar-extract.png)
+
+## Final words
 
 Many programs support gzip-compressed input files.
 For those programs, there is no need to decompress the files before use.
