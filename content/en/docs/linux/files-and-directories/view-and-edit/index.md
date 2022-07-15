@@ -65,17 +65,28 @@ tail -n 3 file2.csv
 The `more <file>` command can be used to scroll through a file
 unidirectionally from top to bottom.
 
+![Interactively scrolling through a file using the 'more' command.](more.png)
+
 While the viewer is active in a Terminal application,
 pressing the `Space` bar scrolls down one screen worth down
 the contents of the file.
 
+In the bottom left corner of the Terminal application,
+a status bar indicates the fraction of the file that has been
+scrolled through.
+
 Once the end the file is reached, the interactive viewer
 automatically terminates and returns the Linux prompt to the user.
+
+Alternatively, pressing the `Q` key can be used to close
+the interactive viewer before the end of the file is reached.
 
 ### less
 
 The `less <file>` command provides similar yet more extensive
 functionality over the `more` command ("less is more").
+
+![Interactively scrolling through a file using the 'less' command.](less.png)
 
 While the viewer is active, the `Up` and `Down` arrow keys can be used
 to scroll one line up or down the contents of the file.
@@ -86,7 +97,7 @@ left or right across the contents of the file.
 Similarly to the `more` command, the `Space` bar can be used to scroll
 one screen worth down the contents of the file.
 
-The `Q` key can be pressed to close the interactive viewer
+The `Q` key must be pressed to close the interactive viewer
 (reaching the end of the file will not automatically close the interactive viewer).
 
 ## Editing files in the Terminal
@@ -95,6 +106,10 @@ The `Q` key can be pressed to close the interactive viewer
 
 The `nano <file>` command can be used to open an interactive text editor
 in the Terminal application.
+
+```bash
+nano file2.csv
+```
 
 ![The 'nano' text editor.](nano.png)
 
