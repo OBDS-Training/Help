@@ -19,6 +19,12 @@ The `grep` command can be used to search files and print only lines that
 match a given pattern.
 
 The pattern to search for must be given as a [Regular expression →][regular-expression-info].
+The regular expression does not always need to include special wildcard characters;
+it can be as simple as the exact sequence of characters to search for.
+
+For instance, the example below illustrate how the lines of the file `file.txt`
+that contain exactly the word `error` can be identified and printed in the
+standard output of the Terminal session.
 
 ```bash
 grep error file.txt 
