@@ -1,5 +1,5 @@
 ---
-title: "Filter files"
+title: "Filter file contents"
 description: "Display a subset of the contents of files."
 lead: "Display a subset of the contents of files."
 date: 2020-10-06T08:48:57+00:00
@@ -22,8 +22,8 @@ The pattern to search for must be given as a [Regular expression →][regular-ex
 The regular expression does not always need to include special wildcard characters;
 it can be as simple as the exact sequence of characters to search for.
 
-For instance, the example below illustrate how the lines of the file `file.txt`
-that contain exactly the word `error` can be identified and printed in the
+The example below illustrates how the lines of the file `file.txt`
+that contain exactly the word `error` can be identified and returned to the
 standard output of the Terminal session.
 
 ```bash
@@ -52,6 +52,37 @@ grep -v error file.txt
 ```
 
 ![Printing lines that do not match a pattern in a file.](grep-v.png)
+
+## Extract columns from a file
+
+The `cut` command can be used to extract one or more columns from a file.
+
+In particular:
+
+- The option `-d` defines the delimiter that is used to separate columns.
+  In unspecified, tabulation is used as a delimiter.
+- The option `-f` defines the index (or indices) of the fields to extract.
+
+For instance, the third column of a comma-separated file (comma: `,`)
+can be extracted as follows:
+
+```bash
+cut -f 3 -d , file2.csv
+```
+
+![Extract a column from a file.](cut-f-d.png)
+
+Multiple columns can be declared either as a comma-separated list (e.g., `1,2,4,5,6`)
+or using the hyphen `-` (e.g., `1-2,4-6`).
+
+For instance:
+
+```bash
+cut -f 1,3 -d , file2.csv
+cut -f 1-3 -d , file2.csv
+```
+
+![Extract multiple columns from a file.](cut-range.png)
 
 <!-- Link definitions -->
 
