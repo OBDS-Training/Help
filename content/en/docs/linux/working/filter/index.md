@@ -1,5 +1,5 @@
 ---
-title: "Filter file contents"
+title: "Filter and sort file contents"
 description: "Display a subset of the contents of files."
 lead: "Display a subset of the contents of files."
 date: 2020-10-06T08:48:57+00:00
@@ -44,7 +44,7 @@ Common options for the `grep` command:
 |  `-n`  | `--line-number` | Prefix each match with the number of the line within the file. |
 |  `-h`  | `--no-filename` | When searching across multiple files, suppress the output of filenames. |
 
-For instance, the example below illustrates how the `grep` command can be used
+The example below illustrates how the `grep` command can be used
 to print lines that do _not_ contain the pattern `"error"`.
 
 ```bash
@@ -83,6 +83,53 @@ cut -f 1-3 -d , file2.csv
 ```
 
 ![Extract multiple columns from a file.](cut-range.png)
+
+## Sort file contents
+
+The `sort` command can be used to sort the lines in a file
+according to the values of one or more columns in each line.
+
+In particular:
+
+- The option `-t` defines the delimiter that is used to separate columns.
+  In unspecified, white space characters (including tabulation) are used as
+  field delimiters.
+- The option `--key` declares one or more fields (i.e., columns) to use
+  for sorting.
+  This option can be declared multiple times in the same command,
+  to declare multiple fields to sort by, breaking ties in earlier fields
+  using subsequent fields.
+  The `sort` command is rarely used without the `--key` option,
+  in which case the whole line is used for sorting.
+
+In its simplest form, the option `--key` uses the following syntax:
+
+- First, the numeric index indicating the position of the field to use
+  for sorting.
+  This can be given as a single value (e.g., `2`),
+  or a comma-separated pair of values indicating the 
+  starting field and the ending field indices to use for sorting.
+- Then, one or one or more single-letter ordering options among
+  `bdfgiMhnRrV`, which override global ordering options for that key.
+  Most commonly, the `n` option is used to override the default
+  alphanumerical ordering by numerical ordering.
+
+For instance:
+
+```bash
+sort -t , --key=2 --key=1n file3.csv
+```
+
+![Sort a file using multiple keys.](sort-keys.png)
+
+In particular:
+
+- The options `-t` is used to indicate that the symbol `,`
+  is used as field delimiter.
+- The first option `--key` declares that the second field should be used
+  to order lines, in alphebetical order of that field.
+- The second options `--key` declares that the first field should be used
+  to break ties, in numerical order of that field.
 
 <!-- Link definitions -->
 
