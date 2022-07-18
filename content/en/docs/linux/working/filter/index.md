@@ -107,7 +107,7 @@ In its simplest form, the option `--key` uses the following syntax:
 - First, the numeric index indicating the position of the field to use
   for sorting.
   This can be given as a single value (e.g., `2`),
-  or a comma-separated pair of values indicating the 
+  or a comma-separated pair of values indicating the
   starting field and the ending field indices to use for sorting.
 - Then, one or one or more single-letter ordering options among
   `bdfgiMhnRrV`, which override global ordering options for that key.
