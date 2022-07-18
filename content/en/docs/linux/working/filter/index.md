@@ -185,13 +185,17 @@ sort file4.txt | uniq -u
 
 ![Report unique lines in a file.](uniq-u.png)
 
-### Other options
+### Cheatsheet
 
-Ignore case.
+Common options for the `uniq` command are listed below,
+in alphabetical order of the option flag.
 
-```bash
-uniq -i file4.txt
-```
+| Option | Long option | Descrition |
+|:------:|:----------- | ---------- |
+|  `-c`  | `--count`   | Prefix lines by the number of (consecutive) occurrences. |
+|  `-d`  | `--repeated` | Only print duplicate lines, one for each group. |
+|  `-i`  | `--ignore-case` | Ignore differences in case when comparing. |
+|  `-u`  | `--unique`  | Only print unique lines. |
 
 <!-- Link definitions -->
 
