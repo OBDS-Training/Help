@@ -131,6 +131,34 @@ In particular:
 - The second options `--key` declares that the first field should be used
   to break ties, in numerical order of that field.
 
+## Remove duplicated rows
+
+The `uniq` command can be used to remove duplicated lines
+(i.e., display one occurence of each unique line),
+or count the number of occurences of each unique line in a file.
+
+The `uniq` command assumes that the file is sorted and only detects duplicated
+lines that are adjacent to each other.
+The command `sort` is commonly used to sort the contents of a file, passing the
+standard output of the `sort` command into the standard input of the `uniq` command
+using the Linux pipe `|`.
+
+For instance:
+
+```bash
+sort file4.txt | uniq
+```
+
+![Report one occurence of each unique line in a file..](sort-uniq.png)
+
+```bash
+uniq file4.txt
+uniq –c file4.txt
+uniq –u file4.txt
+uniq –i file1.txt
+```
+
+
 <!-- Link definitions -->
 
 [regular-expression-info]: https://www.regular-expressions.info/quickstart.html
