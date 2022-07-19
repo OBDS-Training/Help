@@ -78,6 +78,26 @@ In particular:
 - The option `-name` is not given, meaning that no filter is applied on the basename
   of directories reported; in that case, all directories are reported.
 
+## Execute a command on hits
+
+The option `-exec` can be used to execute a command on each hit from the search.
+
+For instance:
+
+```bash
+find ~/ccb_demo -type d -exec echo directory: {} \;
+```
+
+![Execute a command on search results.](find-exec.png)
+
+In particular:
+
+- The option `-exec` is used to run the command `echo directory: {}`,
+  where `{}` is a placeholder that is replaced by each hit in the search
+  results prior to executing the command.
+- The syntax `\;` is essential to mark the end of the command given to
+  the `-exec` option.
+
 ## Cheatsheet
 
 Common options for the `find` command are listed below:
