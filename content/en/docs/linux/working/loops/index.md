@@ -64,7 +64,7 @@ In particular:
 
 ### Iterate over integer values
 
-The curly braces `{}` and the `seq` command can be used to rapidly generate 
+The curly braces `{}` and the `seq` command can be used to rapidly generate
 regular sequences of integer values to iterate over.
 
 The syntax `{start..end}` can be used to generate a sequence of integers
