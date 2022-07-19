@@ -80,17 +80,27 @@ In particular:
 
 ## Cheatsheet
 
-Common options for the `uniq` command are listed below,
-in alphabetical order of the option flag.
+Common options for the `find` command are listed below:
 
 | Option | Descrition |
 |:------:| ---------- |
-| `-type` | TODO |
-| `-name` | TODO |
 | `-maxdepth` | With `-maxdepth levels`, descend at most `levels` (a non-negative integer) levels of directories below the command line arguments. |
 | `-mindepth` | With `-mindepth levels`, do  not  apply  any  tests  or actions at levels less than `levels` (a non-negative integer). |
-| `-regextype` | With `-regextype type`, use a `type` of regex sytax among the avaialble choices: `emacs` (this is the default), `posix-awk`, `posix-basic`, `posix-egrep` and `posix-extended`. |
+| `-regextype` | With `-regextype type`, use a `type` of regex sytax among the available choices: `emacs` (this is the default), `posix-awk`, `posix-basic`, `posix-egrep` and `posix-extended`. |
 |  `-L`  | Follow symbolic links. When find examines or prints information about files, the information used shall be taken from the properties  of the file to which the link points, not from the link itself. |
+
+For instance:
+
+```bash
+find ~/ccb_demo -mindepth 1 -maxdepth 3 -regextype posix-extended -L
+```
+
+Common options related to tests (i.e., filters) are listed below:
+
+| Option | Descrition |
+|:------:| ---------- |
+| `-type` | With `-type c`, returns files of type `c`. Commonly used types are: `d` for directory, `f` for file, and `l` for symbolic links. |
+| `-name` | With `-name pattern`, returns files whose basename matches `pattern`. |
 
 ## Final words
 
