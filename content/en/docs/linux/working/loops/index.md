@@ -15,8 +15,12 @@ toc: true
 
 ## Motivation
 
-Sets of commands can be enclosed in programmatical loops,
-that are repeated until all inputs are processed or a certain condition is met.
+When repeatedly executing the same set of commands on a series of inputs,
+loops can be used to:
+
+- Define a set of input.
+- Define a set of commands.
+- Execute the set of commands on the set of inputs.
 
 ## The for loop
 
@@ -113,12 +117,49 @@ do
 done
 ```
 
-## The while loop
+### Iterate over files
 
-The `while` loop takes a conditional statement, and repeats a set of commands
-indefinitely while the statement remains true.
-The loops terminates only when the statement is false at end of an iteration.
+The `for` loop can be used to iterate over files, with the iterator variable
+taking the value of each filename during each iteration.
 
-{{< alert icon="👉" text="A 'while' loop can run indefinitely if the condition never becomes false." />}}
+While the list of filenames to process can be typed in manually, wildcards are
+often used to match groups of files by pattern.
+
+For instance:
+
+```bash
+for file in *.txt
+do
+  wc -l $file
+done
+```
+
+![Using wildcards to iterate over files.](for-file-txt.png)
+
+Multiple patterns can be given in a single expression, as each pattern
+automatically expands into the corresponding list of filenames.
+
+```bash
+for file in *.txt *.csv
+do
+  wc -l $file
+done
+```
+
+## Final words
+
+When writing a new loop, consider testing it on a small set of inputs
+before executing it on the full set of inputs,
+as a small set of inputs will run much more quickly during the testing phase.
+
+Consider adding commands that display informative messages during the
+execution of the loop:
+
+- The `echo` command can be used to print messages on the standard output.
+- This may help for debugging (e.g., identifying the iteration when an issue occured).
+- This may help tracking the progress of the loop
+  (e.g., printing the number of iterations so far, or the name of the file being processed).
+
+![Using multiple wildcards to iterate over multiple sets of files.](for-file-txt-csv.png)
 
 <!-- Link definitions -->
