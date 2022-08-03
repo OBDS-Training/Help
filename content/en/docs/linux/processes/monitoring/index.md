@@ -94,10 +94,10 @@ Common options for the `ps` command are listed below:
 |:------:| ---------- |
 |  `-e`  | Select all processes.  Identical to `-A`. |
 |  `-f`  | Do full-format listing (i.e., displays additional information). |
-| `-u <userlist>` | This selects the processes whose effective user name or ID is in <userlist>. |
+| `-u <user>` | This selects the processes whose effective user name or ID is <user>. |
 
-For instance, replace `<username>` by any valid username and run the command below
-to display only the processes for the selected user in full format:
+For instance, replace `<user>` by your own username and run the command below
+to display only your processes in full format:
 
 ```bash
 ps -f -u <username>
