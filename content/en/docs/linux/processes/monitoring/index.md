@@ -82,6 +82,10 @@ htop
 
 ![Example output of the 'htop' command.](htop.png)
 
+An annotated example output of the `htop` command is presented below.
+
+![Annotated example output of the 'htop' command.](htop-annotated.png)
+
 ## Cheatsheet
 
 Common options for the `ps` command are listed below:
