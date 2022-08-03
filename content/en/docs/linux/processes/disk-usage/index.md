@@ -28,7 +28,7 @@ and remain within their disk usage quota or request an increase to their quota
 Refer to the [Help]({{< relref "/docs/help/contact" >}}) section for ways to
 contact system administrators and request increase to your quotas.
 
-## How to monitor disk usage?
+## How to monitor disk usage?
 
 The `du` command can be used to estimate file space usage.
 
