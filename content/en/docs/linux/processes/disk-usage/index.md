@@ -28,4 +28,36 @@ and remain within their disk usage quota or request an increase to their quota
 Refer to the [Help]({{< relref "/docs/help/contact" >}}) section for ways to
 contact system administrators and request increase to your quotas.
 
+## How to monitor disk usage?
+
+The `du` command can be used to estimate file space usage.
+
+The option `-h` is commonly used to display values in human-readable form
+(i.e., with units).
+
+By default, the `du` command reports the size of each directory in the working
+directory.
+
+For instance:
+
+```bash
+du -h
+```
+
+![Example output for the 'du -h' command.](du-h.png)
+
+The option `-s` is commonly used to summarise the total disk space usage across
+all the contents of the directory.
+
+Moreover, the `du` command can be given the path to a target directory,
+instead of the working directory.
+
+For instance:
+
+```bash
+du -hs ~/ccb_demo
+```
+
+![Example output for the 'du -hs' command.](du-hs.png)
+
 <!-- Link definitions -->
