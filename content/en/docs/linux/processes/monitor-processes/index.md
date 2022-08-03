@@ -86,6 +86,48 @@ An annotated example output of the `htop` command is presented below.
 
 ![Annotated example output of the 'htop' command.](htop-annotated.png)
 
+## Terminate a process
+
+### kill
+
+Processed can be terminated (often said 'killed'), either by users
+-- including system administrators -- or by the system itself.
+
+Common reasons for terminating processes include:
+
+- They are taking too long (e.g., froze, entered an infinite loop).
+- They are using too many resources (e.g., memory, open file connections).
+- They are no longer functioning properly.
+
+The `kill` command can be used to terminate processes specified by their
+`PID` (**P**rocess **ID**entifier).
+
+```bash
+sleep 30 &
+ps
+kill <PID>
+```
+
+![Killing a process by pid.](kill.png)
+
+### killall
+
+The `killall` command can be used to terminate all processes by name.
+
+For instance, the code below launches a series of `sleep` commands,
+and then terminates all of them by name, without the need to specify
+their respective `PID`.
+
+```bash
+sleep 30 &
+sleep 40 &
+sleep 50 &
+ps
+killall sleep
+```
+
+![Killing processes name.](killall.png)
+
 ## Cheatsheet
 
 Common options for the `ps` command are listed below:
