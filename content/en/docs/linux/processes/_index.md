@@ -1,5 +1,5 @@
 ---
-title: "Configuration"
+title: "Processes and disk usage"
 description: ""
 lead: ""
 date: 2020-10-06T08:49:15+00:00
@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "linux"
-    identifier: "profile-and-configuration"
-weight: 240
+    identifier: "processes"
+weight: 230
 toc: true
 ---
