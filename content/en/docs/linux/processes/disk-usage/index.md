@@ -1,0 +1,31 @@
+---
+title: "Monitor disk usage"
+description: "A brief introduction to monitoring disk usage."
+lead: "A brief introduction to monitoring disk usage."
+date: 2020-10-06T08:48:57+00:00
+lastmod: 2020-10-06T08:48:57+00:00
+draft: false
+images: []
+menu:
+  docs:
+    parent: "processes"
+weight: 232
+toc: true
+---
+
+## Why monitoring disk usage?
+
+CCB accounts are subject to charging as a result of the costs associated with the
+necessary storage and computing facilities.
+
+To ensure fair usage of the shared disk resources, the CCB cluster enforces quotas
+that restrict the amount of disk space that users may utilise to store files for
+their various projects.
+
+Users are encouraged to regularly check their disk usage, to manage their files
+and remain within their disk usage quota or request an increase to their quota
+(at an additional cost).
+[Contact]({{< relref "/docs/help/contact" >}}) system administrators for more
+information.
+
+<!-- Link definitions -->

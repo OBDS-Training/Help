@@ -1,5 +1,5 @@
 ---
-title: "Monitoring processes"
+title: "Monitor processes"
 description: "A brief introduction to monitoring processes on the CCB cluster."
 lead: "A brief introduction to monitoring processes on the CCB cluster."
 date: 2020-10-06T08:48:57+00:00
