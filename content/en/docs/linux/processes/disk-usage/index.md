@@ -25,7 +25,7 @@ their various projects.
 Users are encouraged to regularly check their disk usage, to manage their files
 and remain within their disk usage quota or request an increase to their quota
 (at an additional cost).
-[Contact]({{< relref "/docs/help/contact" >}}) system administrators for more
-information.
+Refer to the [Help]({{< relref "/docs/help/contact" >}}) section for ways to
+contact system administrators and request increase to your quotas.
 
 <!-- Link definitions -->
