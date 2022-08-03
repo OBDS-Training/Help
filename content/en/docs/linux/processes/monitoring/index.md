@@ -49,14 +49,47 @@ In particular:
 - `TIME` -- CPU runtime.
 - `CMD` -- Process name.
 
+## Real-time monitoring
+
+The commands `top` and `htop` can be used to display a dynamic real-time view of a running system.
+
+### top
+
+The `top` command can be used to monitor processes and resource usage in real time.
+
+Information is displayed as a table that can be filtered and sorted.
+
+Above the table, a header displays system-wide information
+(e.g., total number of processes, memory available).
+
+```bash
+top
+```
+
+![Example output of the 'top' command.](top.png)
+
+### htop
+
+The `htop` command can be used to launch an interactive process viewer.
+
+Similarly to the `top` command, informatio is displayed as a table that can be filtered
+and sorted, as well as a header that displays system-wide information
+(e.g., total number of processes, memory available, CPU usage).
+
+```bash
+htop
+```
+
+![Example output of the 'htop' command.](htop.png)
+
 ## Cheatsheet
 
 Common options for the `ps` command are listed below:
 
 | Option | Descrition |
 |:------:| ---------- |
-| `-e` | Select all processes.  Identical to `-A`. |
-| `-f` | Do full-format listing (i.e., displays additional information). |
+|  `-e`  | Select all processes.  Identical to `-A`. |
+|  `-f`  | Do full-format listing (i.e., displays additional information). |
 | `-u <userlist>` | This selects the processes whose effective user name or ID is in <userlist>. |
 
 For instance, replace `<username>` by any valid username and run the command below

@@ -132,4 +132,18 @@ If you have more than one process running in the _background_:
 - Type `fg` followed by the integer number next to the command that you want to
   bring to the _foreground_ in the output of the `jobs` command (e.g., `fg 2`).
 
+{{< alert icon="👉" text="In the output of the 'jobs' command, the symbol '+' indicates the job that would be brought to the foreground by default; the symbol '-' indicates the second job that would be brought to the foreground by default." />}}
+
+## Cheatsheet
+
+Common options for the `jobs` command are listed below:
+
+| Option | Descrition |
+|:------:| ---------- |
+|  `-l`  | Show the `pid` in addition to the basic information. |
+|  `-p`  | Only show the `pid`. |
+|  `-n`  | Only show processes that have changed status since the last notification was printed. |
+|  `-r`  | Only show running processes. |
+|  `-s`  | Only show stopped processes. |
+
 <!-- Link definitions -->
