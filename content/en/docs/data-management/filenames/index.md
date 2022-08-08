@@ -51,6 +51,21 @@ Filenames can included a limited set of characters, including:
 - Digits.
 - `-` (dash), `_` (underscore).
 
+## Symbols not allowed in filenames
+
+Some characters are not allowed or strongly discouraged in filenames,
+due to their special meaning in Linux.
+
+Do not use the ` ` (space) symbol in filenames.
+Instead, use the `_` (underscore) symbol.
+
+{{< alert icon="👉" text="Quoting filenames that contain space can sometimes help the shell to recognise the full filename (e.g., 'my file.txt'). However, it is just best to avoid the issue altogether." />}}
+
+
+
+Do not put spaces into your file or directory names
+Use underscore or dash to separate words e.g. file_name.txt
+
 
 <!-- Link definitions -->
 
