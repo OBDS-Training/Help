@@ -71,6 +71,8 @@ The `echo` command can be used to display the value of `$USER`.
 echo $USER
 ```
 
+![The 'USER' environment variable.](user.png)
+
 For instance, users create a directory named after their own username
 as follows.
 This is particularly useful to use a consistent naming of personal
@@ -82,7 +84,48 @@ mkdir $USER
 
 ## $PATH
 
-TODO
+The `$PATH` environment variable is unquestionably one of the most important
+environment variables.
+
+The `$PATH` is stored as a colon-separated (`:` symbol) character string that
+represents the list of directories that are searched -- in the given order --
+to find executable files that are invoked by users and their scripts.
+
+As such:
+
+- Commands may fail if the directory where they are stored is not listed
+  in the `$PATH`.
+- Users may need to modify their `$PATH` to add directories that contain
+  commands they wish to use.
+- Users may need to modify their `$PATH` to remove directories that contain
+  command they do not wish to use (e.g., when a command is defined in multiple
+  directories).
+
+```bash
+echo $PATH
+```
+
+![The 'PATH' environment variable.](path.png)
+
+Whenever possible, we recommend using the `module` command to add and remove
+programs (i.e., modules) from the `$PATH`.
+
+For instance:
+
+```bash
+module rm git/2.31.1
+```
+
+![Modify the 'PATH' environment variable using the module command.](module.png)
+
+As an alternative, users may not need to modify their `$PATH` if they provide the full path to the executable file that they wish to run.
+However, this approach requires many more keystrokes, and is more prone to typographical mistakes.
+
+For instance:
+
+```bash
+/package/git/2.31.1/libexec/git-core/git status
+```
 
 ## $TMP
 
