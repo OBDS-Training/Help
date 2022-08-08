@@ -136,6 +136,8 @@ alias la='ls -alhF'
 alias rm='rm -i'
 ```
 
+{{< alert icon="👉" text="If you decide to create your own aliases, be mindful of overriding any existing command name, as aliases take precedence over commands with the same name." />}}
+
 ### Modules
 
 The next chunk of code uses the `module` command to put a version of the `git`
