@@ -72,4 +72,45 @@ module list
 
 ![List modules currently loaded.](module-list.png)
 
+## Load modules
+
+The commands `module load` and `module add` can both be used to load modules
+(one or more module per command).
+
+For instance:
+
+```bash
+module load fastqc
+```
+
+![Load a module without specifying the version.](module-load-default.png)
+
+Multiple versions may be available for the same module name
+(e.g., `fastqc/0.11.5`, `fastqc/0.11.9`).
+
+In those cases, we recommend specifying explicly the version that you wish to load.
+
+For instance:
+
+```bash
+module load fastqc/0.11.9
+```
+
+![Load a module.](module-add.png)
+
+{{< alert icon="👉" text="Some modules depend on each other. The 'module load' command will automatically load dependencies (if they are not loaded already)." />}}
+
+## Unload modules
+
+The commands `module unload` and `module rm` can both be used to unload modules
+(one or more module per command).
+
+```bash
+module unload fastqc/0.11.9
+```
+
+![Unload a module.](module-rm.png)
+
+{{< alert icon="👉" text="Some modules depend on each other. The 'module unload' command will automatically attempt to unload dependencies (if no other loaded module depends on them)." />}}
+
 <!-- Link definitions -->
