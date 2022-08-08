@@ -61,6 +61,11 @@ successfully created.
 
 ![Generating an SSH key pair.](ssh-keygen-screenshot.png)
 
+In particular:
+
+- The private key is located at `~/.ssh/id_rsa`.
+- The public key is located at `~/.ssh/id_rsa.pub`.
+
 {{< alert icon="👉" text="You can ignore the key's randomart." />}}
 
 ## Adding the public key on the CCB cluster
