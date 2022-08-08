@@ -33,6 +33,11 @@ In this section, we will discuss:
 
 With a particular focus on genomics data sets and pipelines.
 
+## Prerequisites
+
+Refer to the section [Files and directories]({{< relref "/docs/linux/files-and-directories" >}})
+for essential knowledge and commands to manage files and directories.
+
 <!-- Link definitions -->
 
 [10.1371/journal.pcbi.1000424]: https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424
