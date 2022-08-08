@@ -127,8 +127,4 @@ For instance:
 /package/git/2.31.1/libexec/git-core/git status
 ```
 
-## $TMP
-
-TODO
-
 <!-- Link definitions -->
