@@ -94,9 +94,13 @@ fi
 
 ### Aliases
 
-Within that `if` block, the following chunk of code creates aliases,
+The next chunk of code uses the `alias` command to create aliases, which are
 essentially shortcuts that condense arbitrarily complex (sequences of) commands
 accessible as single-word keywords.
+
+While the `alias` command can be used to define shortcuts interactively in the Bash session,
+aliases are most commonly defined in the `~/.bashrc` file, to make them available as soon as
+users open a new shell.
 
 In this example:
 
@@ -119,7 +123,7 @@ alias R='R --no-save'
 
 ### Modules
 
-The following chunk of code uses the `module` command to put a version of the `git`
+The next chunk of code uses the `module` command to put a version of the `git`
 program on the `PATH` that is more recent than the version originally installed with
 the operating system.
 
