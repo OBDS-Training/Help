@@ -98,19 +98,19 @@ Within that `if` block, the following chunk of code creates aliases,
 essentially shortcuts that condense arbitrarily complex (sequences of) commands
 accessible as single-word keywords.
 
-First, we change the meaning of the `emacs` command to automatically apply the
-option `-nw`.
-This force the Emacs editor to open within the terminal rather than attempting to
-open it as a GUI (i.e., windowed) application.
+In this example:
 
-Then, we change the meaning of the `R` command to automatically apply the
-option `--no-save`.
-This forces the R program to discard the workspace at the end of each session instead of
-offering to save the workspace to a file.
-Large workspaces
--- that contain many objects or large data sets --
-can significantly increase the time that it takes for R sessions to start and end
-(up to several minutes).
+- We change the meaning of the `emacs` command to automatically apply the
+  option `-nw` (synonym to `--no-window-system`).
+  This force the Emacs editor to open within the terminal rather than attempting to
+  open it as a GUI (i.e., windowed) application.
+- We change the meaning of the `R` command to automatically apply the option `--no-save`.
+  This forces the R program to discard the workspace at the end of each session instead of
+  offering to interactively save the workspace to a file.
+  Large workspaces
+  -- that contain many objects or large data sets --
+  can significantly increase the time that it takes for R sessions to start and end
+  (up to several minutes).
 
 ```bash
 alias emacs='emacs -nw'
@@ -126,5 +126,7 @@ the operating system.
 ```bash
 module load git/2.31.1
 ```
+
+{{< alert icon="🛑" text="Some modules produce output messages when they are loaded. If you are an X2Go user, do not load those modules from your '~/.bashrc' file, as any output message produced during by the login shell will interfere with X2Go." />}}
 
 <!-- Link definitions -->
