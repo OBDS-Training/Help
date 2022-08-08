@@ -97,7 +97,7 @@ account on the CCB cluster.
 ## Configuring the SSH client
 
 Having set up the SSH key pair on your own computer and the CCB cluster,
-you need to configure the SSH client so that it uses the private key
+you still need to configure the SSH client so that it uses the private key
 whenever you invoke the `ssh` command, to prove your identity to the CCB cluster,
 and _vice versa_.
 
