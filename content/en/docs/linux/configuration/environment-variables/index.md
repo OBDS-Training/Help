@@ -127,4 +127,23 @@ For instance:
 /package/git/2.31.1/libexec/git-core/git status
 ```
 
+## $TMP
+
+The `$TMP` environment variable is not set by default.
+
+If set, some programs expect the value of this variable to be a character string
+indicating the location of an existing directory that can be used to store temporary
+files during their execution.
+
+We recommend defining that environment variable in the `~/.bashrc` file.
+
+In the example below, we define `$TMP` interactively at the prompt
+only for demonstration purposes:
+
+```bash
+export TMP="/home/$USER/tmp"
+```
+
+![Defining the 'TMP' environment variable.](tmp.png)
+
 <!-- Link definitions -->
