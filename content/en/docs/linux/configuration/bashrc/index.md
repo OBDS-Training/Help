@@ -94,9 +94,9 @@ fi
 
 ### Aliases
 
-The next chunk of code uses the `alias` command to create aliases, which are
-essentially shortcuts that condense arbitrarily complex (sequences of) commands
-accessible as single-word keywords.
+The next chunk of code uses the `alias` command to create aliases.
+Aliases are essentially shortcuts that condense arbitrarily complex (sequences of) commands
+as single-word keywords, reducing keystrokes and improving speed and efficiency.
 
 While the `alias` command can be used to define shortcuts interactively in the Bash session,
 aliases are most commonly defined in the `~/.bashrc` file, to make them available as soon as
