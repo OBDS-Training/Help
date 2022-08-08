@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "conda"
-weight: 400
+weight: 500
 toc: true
 ---
 
