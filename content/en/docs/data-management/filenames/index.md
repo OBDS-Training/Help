@@ -59,6 +59,8 @@ due to their special meaning in Linux.
 Do not use the ` ` (space) symbol in filenames.
 Instead, use the `_` (underscore) or `-` (dash) symbols.
 
+For instance, do not use `my file.txt`; use `my_file.txt` instead.
+
 {{< alert icon="👉" text="Quoting filenames that contain space can sometimes help the shell to recognise the full filename (e.g., 'my file.txt'). However, it is just best to avoid the issue altogether." />}}
 
 Avoid using the following special symbols as well:
