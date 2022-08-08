@@ -8,14 +8,14 @@ draft: false
 images: []
 menu:
   docs:
-    parent: "profile-and-configuration"
-weight: 221
+    parent: "configuration"
+weight: 220
 toc: true
 ---
 
 ## Motivation
 
-Every time you connect to the CCB cluster, you are given a new session in a
+Every time you open a new shell on the CCB cluster, you are given a new session in a
 Bash environment in your Terminal application.
 
 In those new sessions, you may find yourself repetitively typing the same set of
@@ -30,9 +30,12 @@ However, you want to be mindful of the commands that you add in this file, as
 the automatic execution of those commands may have unintended consequences on the
 running of other programs (e.g., remote desktop applications).
 
-New accounts on the CCB cluster are created with a initial `~/.bashrc` file.
+New accounts on the CCB cluster are created with a initial copy of `~/.bashrc` file.
 It is common for the file to evolve over time, as many programs suggest
 additions as part of their installation and setup procedures.
+
+The `~/.bashrc` file is a hidden file -- its name starts with a `.` (dot) symbol --
+so it will only be listed by the `ls` command with the `-a` option.
 
 In this page, we provide an example that contains elements specific to the WIMM
 CCB cluster, as well as aliases and optional elements that may not be relevant to
@@ -53,26 +56,19 @@ if [ -f /etc/bashrc ]; then
         . /etc/bashrc
 fi
 
-# Non-interactive shells inherit the path and other variables
-# from the calling shell, so this setup is not needed.
-# prevents conda env being reset when calling P.run()
-if [[ $PS1 ]]; then
+# User specific aliases and functions
+alias emacs='emacs -nw'
+alias R='R --no-save'
 
-    # User specific aliases and functions
-    alias emacs='emacs -nw'
-    alias R='R --no-save'
+# Set umask for default file permissions
+umask 002
 
-    # Set umask for default file permissions
-    umask 002
-
-    ### Load environment modules
-    # Load the latest version of Git (system version is old)
-    module load git/2.31.1
-
-fi # if PS1
+### Load environment modules
+# Load the latest version of Git (system version is old)
+module load git/2.31.1
 ```
 
-{{< alert icon="👉" text="Carefully consider any difference between the contents below and the initial contents of the '.bashrc' file and whether you take responsibility for editing or deleting any of the original contents. This documentation may occasionally be out of date with respect to current best practices and the contents of the initial '.bashrc' file are carefully reviewed and updated by system administrators." />}}
+{{< alert icon="👉" text="If you decide to edit you '~/.bashrc' file, carefully consider any difference between the contents below and the initial contents of the file and whether you take responsibility for any edit. This documentation may occasionally be out of date with respect to current best practices and the contents of the initial file have been carefully reviewed by system administrators." />}}
 
 ## Explanation
 
@@ -83,10 +79,9 @@ all the lines that start with the `#` symbol are purely comments
 that are only added for information purposes and future reference,
 without any impact on the functionality of the file.
 
-### The central bashrc file
+### /etc/bashrc
 
-With that said, the first chunk of code
--- repeated below --
+The first chunk of code -- repeated below --
 executes a script that sets up system-wide functions and aliases.
 That script is exclusively and safely managed by system administrators, and
 it is highly recommended to keep this as the first bit of code in your `~/.bashrc`
@@ -98,22 +93,7 @@ if [ -f /etc/bashrc ]; then
 fi
 ```
 
-### Interactive sessions
-
-Next, an `if` statement is used to ensure that certain commands are only executed
-in interactive Bash session.
-
-For instance,
-interactive session are those that are launched in your Terminal every time
-that you log into the CCB cluster, in contrast to non-interactive session
-that are launched when you submit jobs to the queue manager on the cluster
-(more on cluster jobs in a later section of this documentation).
-
-```bash
-if [[ $PS1 ]]; then
-    <... commands ...>
-fi
-```
+{{< alert icon="👉" text="The 'if ... then' block ensures that the file exists before attempting to execute it." />}}
 
 ### Aliases
 

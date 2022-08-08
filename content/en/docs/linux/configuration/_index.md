@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "linux"
-    identifier: "profile-and-configuration"
+    identifier: "configuration"
 weight: 240
 toc: true
 ---

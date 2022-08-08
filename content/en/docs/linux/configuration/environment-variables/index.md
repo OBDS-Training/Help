@@ -8,8 +8,8 @@ draft: false
 images: []
 menu:
   docs:
-    parent: "profile-and-configuration"
-weight: 220
+    parent: "configuration"
+weight: 221
 toc: true
 ---
 
