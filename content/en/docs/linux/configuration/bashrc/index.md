@@ -9,7 +9,7 @@ images: []
 menu:
   docs:
     parent: "configuration"
-weight: 220
+weight: 250
 toc: true
 ---
 
@@ -94,9 +94,13 @@ fi
 
 ### Aliases
 
-Within that `if` block, the following chunk of code creates aliases,
-essentially shortcuts that condense arbitrarily complex (sequences of) commands
-accessible as single-word keywords.
+The next chunk of code uses the `alias` command to create aliases.
+Aliases are essentially shortcuts that condense arbitrarily complex (sequences of) commands
+as single-word keywords, reducing keystrokes and improving speed and efficiency.
+
+While the `alias` command can be used to define shortcuts interactively in the Bash session,
+aliases are most commonly defined in the `~/.bashrc` file, to make them available as soon as
+users open a new shell.
 
 In this example:
 
@@ -117,9 +121,26 @@ alias emacs='emacs -nw'
 alias R='R --no-save'
 ```
 
+Other common aliases include:
+
+- `la`, to list all files (including hidden files) in long form,
+  with human readable file sizes, and file type indicators.
+
+```bash
+alias la='ls -alhF'
+```
+
+- Overriding the `rm` command to force an interactive prompt before every removal.
+
+```bash
+alias rm='rm -i'
+```
+
+{{< alert icon="👉" text="If you decide to create your own aliases, be mindful of overriding any existing command name, as aliases take precedence over commands with the same name." />}}
+
 ### Modules
 
-The following chunk of code uses the `module` command to put a version of the `git`
+The next chunk of code uses the `module` command to put a version of the `git`
 program on the `PATH` that is more recent than the version originally installed with
 the operating system.
 

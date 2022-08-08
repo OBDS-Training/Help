@@ -61,6 +61,11 @@ successfully created.
 
 ![Generating an SSH key pair.](ssh-keygen-screenshot.png)
 
+In particular:
+
+- The private key is located at `~/.ssh/id_rsa`.
+- The public key is located at `~/.ssh/id_rsa.pub`.
+
 {{< alert icon="👉" text="You can ignore the key's randomart." />}}
 
 ## Adding the public key on the CCB cluster
@@ -92,7 +97,7 @@ account on the CCB cluster.
 ## Configuring the SSH client
 
 Having set up the SSH key pair on your own computer and the CCB cluster,
-you need to configure the SSH client so that it uses the private key
+you still need to configure the SSH client so that it uses the private key
 whenever you invoke the `ssh` command, to prove your identity to the CCB cluster,
 and _vice versa_.
 

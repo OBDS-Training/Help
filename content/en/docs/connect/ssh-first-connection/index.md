@@ -21,7 +21,8 @@ This refers to an encrypted network protocol for establishing a secure connectio
 to a remote server.
 The connection is materialised as a remote command line login to a Linux system.
 
-The protocol uses a username and password to authenticate a user on the remote system.
+At its simplest, the protocol uses a username and password to authenticate
+a user on the remote system.
 
 It can be used to log into the CCB cluster.
 
