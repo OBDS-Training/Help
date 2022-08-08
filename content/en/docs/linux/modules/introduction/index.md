@@ -1,5 +1,5 @@
 ---
-title: "What are modules?"
+title: "Using environment modules"
 description: "A brief introduction to environment modules."
 lead: "A brief introduction to environment modules."
 date: 2020-10-06T08:48:57+00:00
@@ -13,7 +13,7 @@ weight: 241
 toc: true
 ---
 
-## Motivation
+## What are modules?
 
 Environment modules provide a central installation of software available
 to multiple users on the same computer system.
