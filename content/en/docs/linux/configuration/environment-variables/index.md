@@ -51,6 +51,8 @@ The `echo` command can be used to display the value of `$HOME`.
 echo $HOME
 ```
 
+![The 'HOME' environment variable.](home.png)
+
 The `$HOME` environment variable can also be used in commands.
 For instance, users can list the contents of their home directory as follows.
 
@@ -77,5 +79,13 @@ directories that is guaranteed to avoid any conflict with other usernames.
 ```bash
 mkdir $USER
 ```
+
+## $PATH
+
+TODO
+
+## $TMP
+
+TODO
 
 <!-- Link definitions -->
