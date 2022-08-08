@@ -51,7 +51,7 @@ Filenames can included a limited set of characters, including:
 - Digits.
 - `-` (dash), `_` (underscore).
 
-## Symbols not allowed in filenames
+## Symbols to avoid in filenames
 
 Some characters are not allowed or strongly discouraged in filenames,
 due to their special meaning in Linux.
