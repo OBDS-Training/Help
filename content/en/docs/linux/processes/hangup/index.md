@@ -56,7 +56,9 @@ nohup wc -l file.txt > stdout.txt 2> stderr.txt &
 
 In particular:
 
-- The `nohup` command is used to make the command immune to the `HUP` signal.
+- The `nohup` command is used to make the command immune to the `HUP` signal;
+  the command will continue to run even in the event of network connection loss
+  problems.
 - The `wc` command is used to count the number of lines in the file `file.txt`.
 - The standard output of the command is redirected to the file `stdout.txt`.
 - The standard error of the command is redirected to the file `stderr.txt`.
