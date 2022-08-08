@@ -1,7 +1,7 @@
 ---
-title: "Bash environment variables"
-description: "Bash environment variables."
-lead: "Bash environment variables."
+title: "Environment variables"
+description: "A brief introduction to environment variables."
+lead: "A brief introduction to environment variables."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
@@ -15,8 +15,19 @@ toc: true
 
 ## Motivation
 
+A variable is a named place in a computer's memory that stores a particular
+piece of information (e.g., number, string).
+
+Environment variables are variables defined and available in the shell's environment.
+Those variables can be accessed by any program that runs in the shell.
+They can be accessed using the `$` (dollar) symbol, followed by the name of the
+environment variable (e.g., `$USER`).
+
 Once logged into the CCB cluster, a number of environment variables are set
 in the Bash session.
+Existing environment variables can be modified, and new environment variables
+can be defined at runtime,
+including from the `~/.bashrc` file while the login shell is executed.
 
 Some environment variables are identical for all users on the cluster,
 other are derived from the username,
