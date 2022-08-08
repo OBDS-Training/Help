@@ -121,6 +121,21 @@ alias emacs='emacs -nw'
 alias R='R --no-save'
 ```
 
+Other common aliases include:
+
+- `la`, to list all files (including hidden files) in long form,
+  with human readable file sizes, and file type indicators.
+
+```bash
+alias la='ls -alhF'
+```
+
+- Overriding the `rm` command to force an interactive prompt before every removal.
+
+```bash
+alias rm='rm -i'
+```
+
 ### Modules
 
 The next chunk of code uses the `module` command to put a version of the `git`
