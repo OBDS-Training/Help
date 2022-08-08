@@ -57,15 +57,21 @@ Some characters are not allowed or strongly discouraged in filenames,
 due to their special meaning in Linux.
 
 Do not use the ` ` (space) symbol in filenames.
-Instead, use the `_` (underscore) symbol.
+Instead, use the `_` (underscore) or `-` (dash) symbols.
 
 {{< alert icon="👉" text="Quoting filenames that contain space can sometimes help the shell to recognise the full filename (e.g., 'my file.txt'). However, it is just best to avoid the issue altogether." />}}
 
+Avoid using the following special symbols as well:
 
-
-Do not put spaces into your file or directory names
-Use underscore or dash to separate words e.g. file_name.txt
-
+- `%` (percentage)
+- `$` (dollar sign)
+- `£` (pound)
+- `"` (double quotation mark)
+- `'` (single quotation mark)
+- `/` (forward slash)
+- `\` (back slash)
+- `|` (pipe)
+- `=` (equal sign)
 
 <!-- Link definitions -->
 
