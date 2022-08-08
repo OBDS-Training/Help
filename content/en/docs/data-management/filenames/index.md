@@ -22,6 +22,9 @@ differ only by the case-sensitivity of their filenames.
 
 ![Example of filenames that differ only by case-sensitive characters](case-sensitive.png)
 
+Exclusively using lowercase characters generally makes thigs easier and less confusing
+to remember.
+
 ## Unicity within directories
 
 File names must be unique within each directory.
@@ -74,6 +77,14 @@ Avoid using the following special symbols as well:
 - `\` (back slash)
 - `|` (pipe)
 - `=` (equal sign)
+
+## Readability
+
+Use distinctive, human-readable names that give an indication of the content.
+
+Follow a consistent pattern that is both user and machine-friendly to parse
+and process (e.g. `sample1-replicate1-read1.fastq.gz`).
+
 
 <!-- Link definitions -->
 
