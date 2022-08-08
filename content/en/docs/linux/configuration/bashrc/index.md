@@ -60,9 +60,6 @@ fi
 alias emacs='emacs -nw'
 alias R='R --no-save'
 
-# Set umask for default file permissions
-umask 002
-
 ### Load environment modules
 # Load the latest version of Git (system version is old)
 module load git/2.31.1
@@ -119,21 +116,6 @@ can significantly increase the time that it takes for R sessions to start and en
 alias emacs='emacs -nw'
 alias R='R --no-save'
 ```
-
-### File permissions
-
-The following chunk of code controls the default permissions that are set on
-any file or directory that you create on the CCB cluster.
-The value of `002` sets the permissions to:
-
-* read, write, and execute for you and your user group
-* read and write for every other user
-
-```bash
-umask 002
-```
-
-{{< alert icon="👉" text="The home directory and project directories that you are given access to have strict permissions. As such, other users do not have access to your home directory: they cannot see the list of files in your home directory nor their contents." />}}
 
 ### Modules
 
