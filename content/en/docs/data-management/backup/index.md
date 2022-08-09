@@ -133,6 +133,51 @@ are commonly used in downstream analyses and would take a long time to regenerat
 Data should be backed up at an interval determined by how often the data changes,
 how valuable it is, and how long it takes to perform the backup.
 
+## How do I perform a backup?
+
+The first thing to know is that backups are not run automatically on the CCB cluster.
+Users are responsible for performing the backup of their own data.
+
+The `rsync` command is one of the handiest and most reliable backup tools available
+on the CCB cluster.
+
+The `rsync` program is a utility for efficiently transferring and synchronizing files
+between a computer and a storage drive and across networked computers by comparing
+the modification times and sizes of files.
+In other words, calls to the `rsync` command will only transfer files that were modified
+since the previous backup, saving valuable time during subsequent backups.
+
+A typical backup using the `rsync` command looks as follows:
+
+```bash
+rsync -avzh /directory/to/backup username@remote:/backup/directory
+```
+
+In particular:
+
+- The option `-a` enables the _archive_ mode enabling all of the following options:
+  + `-r` -- Recursively backup the target directory.
+  + `-l` -- Copy symlinks as symlinks (i.e., not the target files themselves).
+  + `-p` -- Preserve permissions.
+  + `-t` -- Preserve modification times.
+  + `-g` -- Preserve group.
+  + `-o` -- Preserve owner.
+  + `-D` -- Preserve device files special files.
+- The option `-v` make the command verbose (i.e., prints informative messages as it runs).
+- The option `-z` compresses files as it is transferred, reducing the amount of data being transmitted.
+- The option `-h` outputs numbers in a more human-readable format (i.e., with units).
+- The first positional argument represents the path to the directory that you wish to back up.
+- The second positional argument describes the path to the directory on the remote computer
+  where you wish to make a backup copy of the original data:
+
+If you use the command above as template:
+
+- Replace `/directory/to/backup` by the path to the directory that you wish to back up.
+- Replace `username` by your username on the remote computer.
+- Replace `remote` by the URL of the remote computer.
+- Replace `/backup/directory` by the path to the directory in which you want to create
+  or update the backup.
+
 <!-- Link definitions -->
 
 [bcf-file-format]: https://emea.illumina.com/informatics/sequencing-data-analysis/sequence-file-formats.html
