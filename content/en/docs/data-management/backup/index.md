@@ -1,5 +1,5 @@
 ---
-title: "Backing up data"
+title: "Back up your work"
 description: "A brief introduction to best practices in backing up files."
 lead: "A brief introduction to best practices in backing up files."
 date: 2020-10-06T08:48:57+00:00
@@ -61,6 +61,26 @@ output files is a top priority to back up.
 We recommend creating a separate [GitHub][github-com] repository for each project,
 and using that repository to maintain an up-to-date backup copy of each script and
 notebook for the associated project.
+
+### Environment specifications
+
+The version of programs used in scripts and notebooks should be recorded and backed up.
+
+We describe the use of environment modules in the section
+[Using environment modules]({{< relref "/docs/linux/modules" >}}).
+When using environment modules, we recommend writing scripts that explicitly load the
+version of the module that you wish to use, and back up those scripts.
+
+We also recommend the use of package management systems described in the following sections:
+
+- [Conda]({{< relref "/docs/conda" >}}).
+
+Package managers can be used to automate the process of installing, upgrading, configuring,
+and removing computer programs in a consistent manner.
+
+In addition, package managers generally include functionality to export the list of programs
+installed in an environment as a text file detailing the name and version of each program
+installed in the environment.
 
 ## Which files should NOT be backed up?
 
