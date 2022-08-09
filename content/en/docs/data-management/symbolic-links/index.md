@@ -48,4 +48,27 @@ Briefly:
 ln -s target_file.txt link_file.txt
 ```
 
+## How to use symbolic links
+
+Symbolic links can be used in place of the original target file.
+
+Often, symbolic links stored in the working directory offer a shorter
+alternative to longer file paths to target files located elsewhere
+in the filesystem.
+
+For instance:
+
+```bash
+ln -s /path/to/target/file.txt link.txt
+cat /path/to/target/file.txt
+cat link.txt
+```
+In particular:
+
+- The `ln -s` command is used to create a symbolic link.
+- The two `cat` commands are entirely equivalent;
+  the first command directly accesses the original file,
+  while the second command follows the symbolic link
+  ultimately accessing the same target file.
+
 <!-- Link definitions -->
