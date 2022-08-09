@@ -19,7 +19,7 @@ toc: true
 
 A _hard link_ is an additional name for an existing file.
 
-A _symbolic link_ (also called _soft link_) is a file that contains
+A _symbolic link_ (also called _soft link_ or abbreviated _symlinks_) is a file that contains
 a pointer to a target file or directory.
 
 ### Consequences
