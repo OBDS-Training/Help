@@ -133,6 +133,12 @@ are commonly used in downstream analyses and would take a long time to regenerat
 Data should be backed up at an interval determined by how often the data changes,
 how valuable it is, and how long it takes to perform the backup.
 
+## How many backup copies should I make?
+
+One backup copy on a reliable computer is often sufficient.
+
+However, it is a good idea to back up key data in more than one place, if possible.
+
 ## How do I perform a backup?
 
 The first thing to know is that backups are not run automatically on the CCB cluster.
