@@ -58,9 +58,9 @@ as well as code executed in a similar way on personal computers
 In particular, all code that is necessary to transform raw data into
 output files is a top priority to back up.
 
-We recommend creating one [GitHub][github-com] repository for each project,
-and using that repository to maintain an up-to-date backup copy of each
-scripts and notebook for the associated project.
+We recommend creating a separate [GitHub][github-com] repository for each project,
+and using that repository to maintain an up-to-date backup copy of each script and
+notebook for the associated project.
 
 ## Which files should NOT be backed up?
 
