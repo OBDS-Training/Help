@@ -80,6 +80,15 @@ Better yet, the commands executed to download those data sets
 should be saved in a script or notebook that is backed up with
 the analysis code (see above, [Analysis code](#analysis-code)).
 
+### Shared files
+
+Sometimes, large files re-used across many projects
+(e.g., reference genome sequences and annotations,
+some publicly available data sets) are downloaded by system administrators
+and stored in a shared location accessible by all users of the CCB cluster.
+
+Those shared resources should not be backed up by individual users.
+
 ## How often should data be backed up?
 
 Data should be backed up at an interval determined by how often the data changes,
