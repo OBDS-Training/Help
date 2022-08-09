@@ -13,10 +13,34 @@ weight: 302
 toc: true
 ---
 
-## What is a backup?
+## Backups and archives
 
-A backup is a copy of important data that is stored in an alternative location,
+### What is a backup?
+
+A _backup_ is a copy of important data that is stored in an alternative location,
 so that it can be recovered the original data is deleted or becomes corrupted.
+
+### What is an archive?
+
+An _archive_ is a copy of a completed project that has been stored on a remote
+computer for long-term storage with limited access.
+
+Computer systems used to archive data often have reduced cost for disk usage
+over long periods of time, but longer access time to retrieve data.
+
+Several commercial third-party services are available to archive large amounts of data
+(e.g., Amazon Glacier).
+
+{{< alert icon="👉" text="Before using third-party systems, check with funders if they allow data to be hosted externally." />}}
+
+Several public data repositories store research data at no cost, including:
+
+- [European Nucleotide Archive (ENA) - EMBL-EBI][ena-home]
+- [ArrayExpress - EMBL-EBI][arrayexpress-home]
+- [Gene Expression Omnibus (GEO) - NCBI][ncbi-geo]
+- [Short Read Archive (SRA) - NCBI][sra-home]
+
+{{< alert icon="👉" text="Archived data should be carefully organised and annotated with comprehensive metadata for traceability and discoverability." />}}
 
 ## Where should a backup be made?
 
@@ -194,3 +218,6 @@ If you use the command above as template:
 [ncbi-geo]: https://www.ncbi.nlm.nih.gov/geo/
 [ensembl-ftp-download]: http://www.ensembl.org/info/data/ftp/index.html/
 [ucsc-genome-browser]: https://hgdownload.soe.ucsc.edu/downloads.html
+[ena-home]: https://www.ebi.ac.uk/ena/browser/home
+[sra-home]: https://www.ncbi.nlm.nih.gov/sra
+[arrayexpress-home]: https://www.ebi.ac.uk/arrayexpress/
