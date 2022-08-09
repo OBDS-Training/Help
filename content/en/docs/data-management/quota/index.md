@@ -44,10 +44,25 @@ may approach or exceed their allowed quota, and take preventive action, includin
 We describe how to monitor disk usage in the section
 [Monitor disk usage]({{< relref "/docs/linux/processes/disk-usage#how-to-monitor-disk-usage" >}}).
 
+For instance:
+
 ```bash
 du -hs ccb_demo
 ```
 
-![Example output for the 'du -hs' command.](du-hs.png)
+![Monitor disk usage using the 'du -hs' command.](du-hs.png)
+
+## How to monitor your quota usage?
+
+The `quota` command can be used to query your current quota usage and total allowance,
+across all directories, files, and projects.
+
+The option `-s` displays values in human-readable format (i.e, with units).
+
+```bash
+quota -s
+```
+
+![Monitor disk quota usage using the 'quota -s' command.](quota-s.png)
 
 <!-- Link definitions -->
