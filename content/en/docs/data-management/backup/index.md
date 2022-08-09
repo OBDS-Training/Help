@@ -93,6 +93,21 @@ However, users should make sure that they are fully familiar with any
 pre-processing that may have been applied to those files (if any), and
 keep a record for the accurate reporting of their materials and methods.
 
+### Output files
+
+Output files are the result of running programs -- through scripts and notebooks --
+on files that contain experimental raw data.
+
+Output files do not need to be backed up, as they can be regenerated from the
+experimental raw data and the analysis code that were backed up
+(see above, [Which files should be backed up?](#which-files-should-be-backed-up)).
+
+With that said, it can be beneficial to make copies of some key output files that
+are commonly used in downstream analyses and would take a long time to regenerate
+(e.g., RNA-seq count matrix).
+
+{{< alert icon="👉" text="A backup of key output files does not contribute toward reproducibility, but can provide a continuity plan in the event of lost or corrupted files, while those files are being regenerated from backed up raw data, scripts and notebooks." />}}
+
 ## How often should data be backed up?
 
 Data should be backed up at an interval determined by how often the data changes,
