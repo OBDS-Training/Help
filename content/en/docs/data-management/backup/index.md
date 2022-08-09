@@ -186,13 +186,13 @@ rsync -avzh /directory/to/backup username@remote:/backup/directory
 In particular:
 
 - The option `-a` enables the _archive_ mode enabling all of the following options:
-  + `-r` -- Recursively backup the target directory.
-  + `-l` -- Copy symlinks as symlinks (i.e., not the target files themselves).
-  + `-p` -- Preserve permissions.
-  + `-t` -- Preserve modification times.
-  + `-g` -- Preserve group.
-  + `-o` -- Preserve owner.
-  + `-D` -- Preserve device files special files.
+  - `-r` -- Recursively backup the target directory.
+  - `-l` -- Copy symlinks as symlinks (i.e., not the target files themselves).
+  - `-p` -- Preserve permissions.
+  - `-t` -- Preserve modification times.
+  - `-g` -- Preserve group.
+  - `-o` -- Preserve owner.
+  - `-D` -- Preserve device files special files.
 - The option `-v` make the command verbose (i.e., prints informative messages as it runs).
 - The option `-z` compresses files as it is transferred, reducing the amount of data being transmitted.
 - The option `-h` outputs numbers in a more human-readable format (i.e., with units).

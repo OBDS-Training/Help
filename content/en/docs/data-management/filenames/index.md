@@ -59,7 +59,7 @@ Filenames can included a limited set of characters, including:
 Some characters are not allowed or strongly discouraged in filenames,
 due to their special meaning in Linux.
 
-Do not use the ` ` (space) symbol in filenames.
+Do not use the ` ` (space) symbol in filenames.
 Instead, use the `_` (underscore) or `-` (dash) symbols.
 
 For instance, do not use `my file.txt`; use `my_file.txt` instead.

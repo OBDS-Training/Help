@@ -63,6 +63,7 @@ ln -s /path/to/target/file.txt link.txt
 cat /path/to/target/file.txt
 cat link.txt
 ```
+
 In particular:
 
 - The `ln -s` command is used to create a symbolic link.

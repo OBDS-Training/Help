@@ -16,7 +16,7 @@ toc: true
 ## Citation
 
 > "Someone unfamiliar with your project should be able to look at your computer files and understand in detail what you did and why."
-> 
+>
 > -- A Quick Guide to Organizing Computational Biology Projects - William Stafford Noble
 ([Article →][10.1371/journal.pcbi.1000424])
 
