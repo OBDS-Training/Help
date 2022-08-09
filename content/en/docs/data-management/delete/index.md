@@ -15,10 +15,13 @@ toc: true
 
 ## Which files can be deleted?
 
-If you perform multiple steps of processing on a file
-(e.g., filtering, sorting, annotation),
-generating and storing multiple copies of that file at the various steps
-of processing, you should consider deleting all but the final copy of
+Many bioinformatics workflows involve multiple steps of processing
+on certain files (e.g., filtering, sorting, annotation).
+
+Those steps generate and store multiple copies of those files
+at the various steps of processing.
+
+In such cases, you should consider deleting all but the final copy of
 that file.
 
 For instance:
@@ -41,7 +44,11 @@ In particular:
 
 - The `rm` command is used to delete all files except for the final `example1.sorted.bam`.
 
+{{< alert icon="👉" text="You should keep intermediate files as long as necessary for debugging purposes. only delete intermediate files when you are sure that you will not need them anymore." />}}
+
 ## Which files should not be deleted?
+
+### Small files
 
 It is usually unecessary to delete small intermediate files.
 
