@@ -64,7 +64,21 @@ notebook for the associated project.
 
 ## Which files should NOT be backed up?
 
-TODO
+### Publicly available data sets
+
+Data sets obtained from stable public websites
+(e.g.,
+[NCBI GEO][ncbi-geo],
+[Ensembl FTP Download][ensembl-ftp-download],
+[UCSC Genome Downloads][ucsc-genome-browser])
+do not need to be backed up.
+
+Instead, the source of those data sets should be recorded,
+so that they may be downloaded again if lost or corrupted.
+
+Better yet, the commands executed to download those data sets
+should be saved in a script or notebook that is backed up with
+the analysis code (see above, [Analysis code](#analysis-code)).
 
 ## How often should data be backed up?
 
@@ -78,3 +92,6 @@ how valuable it is, and how long it takes to perform the backup.
 [rstudio-desktop]: https://www.rstudio.com/products/rstudio/
 [jupyter-org]: https://jupyter.org/
 [github-com]: https://github.com/
+[ncbi-geo]: https://www.ncbi.nlm.nih.gov/geo/
+[ensembl-ftp-download]: http://www.ensembl.org/info/data/ftp/index.html/
+[ucsc-genome-browser]: https://hgdownload.soe.ucsc.edu/downloads.html
