@@ -48,6 +48,6 @@ We describe how to monitor disk usage in the section
 du -hs ccb_demo
 ```
 
-![Example output for the &lsquo;du -h&rsquo; command.](du-hs.png)
+![Example output for the 'du -hs' command.](du-hs.png)
 
 <!-- Link definitions -->
