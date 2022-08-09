@@ -89,6 +89,10 @@ and stored in a shared location accessible by all users of the CCB cluster.
 
 Those shared resources should not be backed up by individual users.
 
+However, users should make sure that they are fully familiar with any
+pre-processing that may have been applied to those files (if any), and
+keep a record for the accurate reporting of their materials and methods.
+
 ## How often should data be backed up?
 
 Data should be backed up at an interval determined by how often the data changes,
