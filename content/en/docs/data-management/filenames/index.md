@@ -1,5 +1,5 @@
 ---
-title: "Naming files"
+title: "Name files carefully"
 description: "A brief introduction to best practices in naming files."
 lead: "A brief introduction to best practices in naming files."
 date: 2020-10-06T08:48:57+00:00
