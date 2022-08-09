@@ -41,4 +41,11 @@ In particular:
 
 - The `rm` command is used to delete all files except for the final `example1.sorted.bam`.
 
+## Which files should not be deleted?
+
+It is usually unecessary to delete small intermediate files.
+
+The benefit of disk space recovered is usually negligible against the time
+and effort necessary to regenerate those files if necessary.
+
 <!-- Link definitions -->
