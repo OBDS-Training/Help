@@ -21,11 +21,11 @@ associated with published work.
 
 For instance:
 
-- [FTP Download - Ensembl][ensembl-ftp]
-- [ArrayExpress - EMBL-EBI][arrayexpress]
-- [ENA Browser - European Nucleotide Archive - EMBL-EBI][ena-browser]
-- [Gene Expression Omnibus - NCBI][geo]
-- [Home - SRA - NCBI][sra]
+- [FTP Download - Ensembl →][ensembl-ftp]
+- [ArrayExpress - EMBL-EBI →][arrayexpress]
+- [ENA Browser - European Nucleotide Archive - EMBL-EBI →][ena-browser]
+- [Gene Expression Omnibus - NCBI →][geo]
+- [Home - SRA - NCBI →][sra]
 
 It is often necessary to download data files from those public repositories onto
 the CCB cluster before they can be used by programs running on the CCB cluster.
