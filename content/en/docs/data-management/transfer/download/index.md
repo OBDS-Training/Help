@@ -102,6 +102,47 @@ In particular:
 - `-J` ensures that `-O` respects the basename of the original file on the remote computer,
   instead of extracting a basename from the URL (useful when the two are different).
 
+## Verify integrity of downloads
+
+### Principle
+
+On occasions, files can be corrupted during their transfer.
+
+Several commands -- including `md5sum` and `sha256sum` -- can be used to rapidly
+verify whether downloaded files match their original copy on the remote computer.
+
+For those commands to be of any use, the remote provider of the downloaded files
+must have run the command themselves on their side, and made available the output
+of the command for each file of interest (as well as instructions to properly
+use those outputs).
+
+If that is the case, users can then run the same command on their own copy
+of the downloaded files, and compare the output with that of the provider.
+
+### Manual comparison
+
+In some cases, providers display the output of the command on their website.
+
+For instance:
+
+![Output of the 'md5sum' command displayed on the miniconda website.](miniconda-md5.png)
+
+In those case, users should run the command on the downloaded file,
+and manually compare the output of the command to the value displayed on the website
+for the corresponding file.
+
+For instance:
+
+![Output of the 'sha256sum' command run on a Miniconda installer file.](sha256sum.png)
+
+At that point, rather than visually comparing each character between the two outputs,
+we recommend copying the output of the command in the Terminal and searching for that
+string of characters on the web page.
+If the two strings match, most web browser will highlight the corresponding value
+on the web page.
+
+![Search for the output of the 'sha256sum' command on the miniconda website.](miniconda-match.png)
+
 <!-- Link definitions -->
 
 [ensembl-ftp]: http://www.ensembl.org/info/data/ftp/index.html/
