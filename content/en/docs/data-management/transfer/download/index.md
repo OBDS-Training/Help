@@ -19,6 +19,14 @@ Public data repositories provide platforms for distributing commonly used refere
 data sets (e.g., reference genomes, gene annotations), as well as experimental data sets
 associated with published work.
 
+For instance:
+
+- [FTP Download - Ensembl][ensembl-ftp]
+- [ArrayExpress - EMBL-EBI][arrayexpress]
+- [ENA Browser - European Nucleotide Archive - EMBL-EBI][ena-browser]
+- [Gene Expression Omnibus - NCBI][geo]
+- [Home - SRA - NCBI][sra]
+
 It is often necessary to download data files from those public repositories onto
 the CCB cluster before they can be used by programs running on the CCB cluster.
 
@@ -95,3 +103,9 @@ In particular:
   instead of extracting a basename from the URL (useful when the two are different).
 
 <!-- Link definitions -->
+
+[ensembl-ftp]: http://www.ensembl.org/info/data/ftp/index.html/
+[arrayexpress]: https://www.ebi.ac.uk/arrayexpress/
+[ena-browser]: https://www.ebi.ac.uk/ena/browser
+[geo]: https://www.ncbi.nlm.nih.gov/geo/
+[sra]: https://www.ncbi.nlm.nih.gov/sra
