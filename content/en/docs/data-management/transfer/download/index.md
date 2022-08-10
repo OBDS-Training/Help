@@ -133,6 +133,10 @@ for the corresponding file.
 
 For instance:
 
+```bash
+sha256sum Miniconda3-latest-Linux-x86_64.sh 
+```
+
 ![Output of the 'sha256sum' command run on a Miniconda installer file.](sha256sum.png)
 
 At that point, rather than visually comparing each character between the two outputs,
@@ -150,12 +154,7 @@ that can be downloaded itself.
 
 The contents of that file typically looks as shown below:
 
-```txt
-90cc35374d52b2870f705448029cbc04  ./file.txt
-ca260e0426f72e9d87ebd353ec38e15c  ./file.TXT
-7843dd7d0a2c53b0df37ca8189672992  ./Miniconda3-latest-Linux-x86_64.sh
-6f96eb9fb1643a1cd7d83bcaa15d72aa  ./Mus_musculus.GRCm38.dna.primary_assembly.fa.gz
-```
+![Example contents of an MD5 file.](md5_file.png)
 
 In particular:
 
@@ -168,7 +167,11 @@ The `md5sum` command will then run for each file listed in the file, and automat
 compare the value obtained for the downloaded file to the reference value listed in the
 file (corresponding to the `md5sum` command run on the original file on the remote computer).
 
-For instance, with a file of MD5 sums called `md5.out`:
+For instance:
+
+```bash
+md5sum -c md5.out
+```
 
 ![Output of the 'md5sum' command run on file of MD5 sums.](md5sum-c.png)
 
