@@ -143,6 +143,35 @@ on the web page.
 
 ![Search for the output of the 'sha256sum' command on the miniconda website.](miniconda-match.png)
 
+### Check MD5 sums in a file
+
+In some cases, providers make the output of the `md5sum` command available as a file
+that can be downloaded itself.
+
+The contents of that file typically looks as shown below:
+
+```txt
+90cc35374d52b2870f705448029cbc04  ./file.txt
+ca260e0426f72e9d87ebd353ec38e15c  ./file.TXT
+7843dd7d0a2c53b0df37ca8189672992  ./Miniconda3-latest-Linux-x86_64.sh
+6f96eb9fb1643a1cd7d83bcaa15d72aa  ./Mus_musculus.GRCm38.dna.primary_assembly.fa.gz
+```
+
+In particular:
+
+- The first column displays the MD5 sum for a specific file.
+- The second column display the path to that file
+  (relative to the working directory where the `md5sum` command was run from).
+
+Users in possession of that file can give it to the options `-c` of the `md5sum` command.
+The `md5sum` command will then run for each file listed in the file, and automatically
+compare the value obtained for the downloaded file to the reference value listed in the
+file (corresponding to the `md5sum` command run on the original file on the remote computer).
+
+For instance, with a file of MD5 sums called `md5.out`:
+
+![Output of the 'md5sum' command run on file of MD5 sums.](md5sum-c.png)
+
 <!-- Link definitions -->
 
 [ensembl-ftp]: http://www.ensembl.org/info/data/ftp/index.html/
