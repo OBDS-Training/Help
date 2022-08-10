@@ -108,7 +108,7 @@ In particular:
 
 On occasions, files can be corrupted during their transfer.
 
-Several commands -- including `md5sum` and `sha256sum` -- can be used to rapidly
+Several commands -- including `md5sum`, `sha256sum`, and `sum` -- can be used to rapidly
 verify whether downloaded files match their original copy on the remote computer.
 
 For those commands to be of any use, the remote provider of the downloaded files
