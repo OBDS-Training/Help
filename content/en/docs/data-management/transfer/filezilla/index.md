@@ -33,7 +33,9 @@ connect to using FileZilla.
 
 A profile stores all the information necessary to connect to a remote computer.
 When a profile is correctly set up, users can select a profile and click the
-`Connect` button, saving time and avoiding typographical mistakes.
+`Connect` button -- instead of the `Quickconnect` button associated with the fields
+`Host:`, `Username:`, `Password:` and `Port:` -- saving time and avoiding typographical
+mistakes.
 
 The FileZilla Site Manager can be open from the menu as follows:
 
@@ -95,6 +97,78 @@ When prompted to select a filename for the converted key file:
 - Click the `Save` button.
 
 ![Prompt to choose a filename and location for the converted key file.](filezilla-save-converted-key.png)
+
+## Connect to a remote computer
+
+Open the Site Manager of the FileZilla Client as follows:
+
+- Click of `File`.
+- In the menu, click on `Site Manager...`.
+
+![The FileZilla Site Manager.](filezilla-site-manager.png)
+
+{{< alert icon="👉" text="A keyboard shortcut specific to your operating system may be available to open the Site Manager more rapidly (e.g., on macOS, press the 'Command' and 'S' keys simultaneously)." />}}
+
+In the Site Manager:
+
+- Select the profile that you wish to use.
+- Click the `Connect` button.
+
+Status messages in the panel at the top of the FileZilla Client should display
+information reporting successes and failures during the connection.
+
+When succesfully connected, the panel on the right of the FileZilla Client should
+display a file explorer view of the filesystem on the remote computer.
+
+The panel on the left of the FileZilla Client should continue to display
+a file explorer view of the filesystem on the local computer.
+
+![Example view of the FileZilla Client (main window).](filezilla.png)
+
+## Navigate filesystems
+
+While connected to a remote computer, users can use the two file explorers
+to navigate the local and remote filesystems, respectively.
+
+Each file explorer panel -- local and remote -- are sub-divided in two panels:
+
+- The top panel displays the filesystem as a hierarchical tree, where directories
+  can be expanded and collapsed, to show and hide their contents, respectively.
+- The bottom panel displays detailed information about the contents of the
+  directory currently selected in the top panel.
+
+Both panels -- top and bottom -- can be used to navigate the corresponding
+filesystem.
+
+## Transfer files
+
+While connected to a remote computer, users can transfer files and directories
+between the local and remote computer using drag-and-drop between the left and
+right panels (in either direction).
+
+When using drag-and-drop, make sure to release the click button only when the cursor
+is an area that corresponds exactly to the directory in which you want to transfer
+the data.
+
+Consider the example below.
+
+![Example view of the FileZilla Client (main window).](filezilla-drop-areas.png)
+
+- Dropping an item from the left into the red area on the right would copy it into
+  the parent directory of the currently active directory on the right (i.e, next to
+  the active directory on the right).
+- Dropping an item from the left into the green area would copy it into the directory `dir1`.
+- Dropping an item from the left into the blue area would copy it into the currently active
+  directory on the right (in this case, `~/ccb_demo`).
+
+## Move files between remote directories
+
+While we recommend using the command line to move files within the remote filesystem,
+it is possible to drag-and-drop files within the panel that displays the file explorer
+on the remote computer (i.e., the panel on the right).
+
+Importantly, using drag-and-drop within a panel does not make a copy of the item, but
+moves it from one location to another.
 
 <!-- Link definitions -->
 
