@@ -1,7 +1,7 @@
 ---
 title: "Searching for files"
-description: "Search for files in a directory hierarchy using the command line."
-lead: "Search for files in a directory hierarchy using the command line."
+description: "Search for files in a hierarchy or directories using the command line."
+lead: "Search for files in a hierarchy or directories using the command line."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false

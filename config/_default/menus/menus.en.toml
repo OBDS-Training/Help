@@ -54,7 +54,7 @@
 
 [[main]]
   name = "Docs"
-  url = "docs/connect/introduction/"
+  url = "docs/connect/first-steps/introduction"
 # url = "docs/1.0/prologue/introduction/"
   weight = 10
 
@@ -72,20 +72,48 @@
   name = "Get Started"
   weight = 30
   identifier = "get-started"
-  url = "docs/connect/introduction/"
+  url = "docs/connect/first-steps/introduction"
 
 [[main]]
   name = "Connect to CCB"
   weight = 31
   identifier = "connect"
-  url = "docs/connect/introduction/"
+  url = "docs/connect/first-steps/introduction"
   parent = "get-started"
 
 [[main]]
   name = "Linux command line"
   weight = 32
-  identifier = "bash"
+  identifier = "linux"
   url = "docs/linux/essentials/introduction"
+  parent = "get-started"
+
+[[main]]
+  name = "Data management"
+  weight = 33
+  identifier = "data-management"
+  url = "docs/data-management/organise-and-backup/philosophy"
+  parent = "get-started"
+
+[[main]]
+  name = "Slurm"
+  weight = 34
+  identifier = "slurm"
+  url = "docs/slurm/hpc-resources"
+  parent = "get-started"
+
+[[main]]
+  name = "Conda"
+  weight = 35
+  identifier = "conda"
+  url = "docs/conda/introduction"
+  parent = "get-started"
+
+[[main]]
+  name = "Pipelines"
+  weight = 36
+  identifier = "pipelines"
+  url = "docs/pipelines/drmaa"
   parent = "get-started"
 
 [[main]]
