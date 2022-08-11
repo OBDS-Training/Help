@@ -18,9 +18,23 @@ toc: true
 This page introduces commands that are completely safe and purely display information
 that may be used by users to get help or explore the environment of the CCB cluster
 
+## echo
+
+The `echo` command can be used to print a message or the value of a variable.
+
+For instance:
+
+```bash
+echo 'Hello, world!'
+```
+
+![Print a message using the 'echo' command.](echo.png)
+
 ## man
 
 The `man <page>` command can be used to print the reference manual page `<page>`.
+
+In many cases, `<page>` is the name of the command that you wish to execute.
 
 For instance, the reference manual page for the command `pwd` can be displayed as follows:
 
@@ -30,9 +44,9 @@ man pwd
 
 ![Manual page for the 'pwd' command.](man-pwd.png)
 
-{{< alert icon="👉" text="The manual page is open in an interactive viewer in the Terminal application. To close that interactive viewer, press the `Q` key." />}}
+{{< alert icon="👉" text="The manual page is open in an interactive viewer in the Terminal application. To close that interactive viewer, press the 'Q' key." />}}
 
-Incidentally -- perhaps confusingly -- the reference manual page for the command `man` is opened as follows:
+Incidentally, the reference manual page for the command `man` is opened as follows:
 
 ```bash
 man man
@@ -40,10 +54,8 @@ man man
 
 The ability to access, read, and understand manual pages is one of the first essential skills
 to develop as a Bash user.
-A lot of information and advice on Bash commands, tips and tricks, is available throughout the Internet.
-However, the manual pages accessed through the `man` command correspond to the current version
-of each command available on the CCB cluster, and should be considered as the absolute
-reference above any other source of information.
+
+{{< alert icon="👉" text="A lot of information and advice on Bash commands, tips and tricks, is available throughout the Internet. However, the manual pages accessed through the 'man' command correspond to the current version of each command available on the CCB cluster, and should be considered as the absolute reference above any other source of information." />}}
 
 ## type
 
