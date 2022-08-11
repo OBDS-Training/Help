@@ -1,7 +1,7 @@
 ---
-title: "Iterating over files"
-description: "Loops can be used to iterate over lists of files and directories."
-lead: "Loops can be used to iterate over lists of files and directories."
+title: "Loop over items and files"
+description: "Loops can be used to iterate over lists of items, files and directories."
+lead: "Loops can be used to iterate over lists of items, files and directories."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
