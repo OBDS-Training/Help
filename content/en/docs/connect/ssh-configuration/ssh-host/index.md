@@ -28,8 +28,13 @@ page [Set up an SSH key pair]({{< relref "ssh-key-pair#configuring-the-ssh-clien
 
 ## Configure a remote host
 
-On your personal computer, open the file `~/.ssh/config`,
-replace `<username>` by your own username and add the following lines:
+On your personal computer, open the file `~/.ssh/config`.
+You may do so using any text editor of your choice, including
+graphical applications (e.g., [Sublime Text][sublime-text])
+or Terminal text editors such as those listed in the section
+[Editing files in the Terminal]({{< relref "/docs/linux/files-and-directories/view-and-edit#editing-files-in-the-terminal" >}}).
+
+Add the following lines in the file, making sure to replace `<username>` by your own username:
 
 ```bash
 Host ccb1
@@ -60,7 +65,7 @@ More information about fields that may be configured is available on the page
 
 ## Connect to a configured remote host
 
-You can now log into the CCB cluster using any of the following commands,
+You should now be able to log into the CCB cluster using any of the following commands,
 to connect to the corresponding remote host:
 
 ```bash
@@ -82,3 +87,4 @@ Once the connection is established, the prompt of the remote host appears
 <!-- Link definitions -->
 
 [ssh-config]: https://linux.die.net/man/5/ssh_config
+[sublime-text]: https://www.sublimetext.com/
