@@ -127,7 +127,7 @@ To save edits made to a file:
   from the editor.
 - When prompted whether to 'Save modified buffer', press `Y` to confirm.
 - When prompted for the 'File Name to Write', immediately press the
-  Return key to use the current file name.
+  `Return` key to use the current file name.
 
 ![Saving changes in the 'nano' text editor.](nano-save.png)
 
@@ -145,7 +145,7 @@ To save the new version of the file under a different name:
 - When prompted whether to 'Save modified buffer', press `Y` to confirm.
 - When prompted for the 'File Name to Write',
   edit the file name as needed,
-  and press the Return key to write the modified file under the new filename.
+  and press the `Return` key to write the modified file under the new filename.
   The original file will be left unchanged.
 
 ### emacs
@@ -199,7 +199,7 @@ To save edits made to a file:
 
 - Press the `:` key to open a prompt for commands within the editor.
   Then, type `wq` to _write_ the file and _quit_ the application
-  (press the Return key to execute the command).
+  (press the `Return` key to execute the command).
 
 ![Saving changes in the 'vim' text editor.](vim-save.png)
 
