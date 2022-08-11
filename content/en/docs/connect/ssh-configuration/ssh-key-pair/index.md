@@ -43,18 +43,18 @@ is recommended, while larger values generally give additional strength to the
 key.
 
 When prompted for a filename, do not type anything, and immediately press the
-Return key to accept the default filename and location.
+`Return` key to accept the default filename and location.
 
 When prompted for a passphrase, we recommended typing a password that is
 secret yet memorable to you. This passphrase will be the last line of defense
 if anyone were to maliciously acquire your private SSH key file.
-Alternatively, you can press the Return key immediately without entering a
+Alternatively, you can press the `Return` key immediately without entering a
 passphrase, leaving your SSH key pair unprotected.
 
 {{< alert icon="👉" text="For privacy and security reasons, the Terminal will not display your passphrase as you type it." />}}
 
 When prompted to confirm your passphrase, type the same passphrase and press
-the Return key.
+the `Return` key.
 
 Finally, the Terminal should display a message indicating that the key pair was
 successfully created.
@@ -74,7 +74,7 @@ Finally, the public key
 -- generated and saved as a file on your own computer --
 needs to be copied to your account on the CCB cluster,
 so that the CCB cluster can prove its identity to the client
-(see [Motivation]({{< relref "#motivation" >}}) section above).
+(see above, [Motivation](#motivation)).
 
 Conceptually, the command that you type in the Terminal on your personal computer
 should be structured as follows:
@@ -88,7 +88,8 @@ login nodes (see [General information]({{< relref "/docs/connect/first-steps/ssh
 
 If the public key indeed does not exist on your CCB cluster account yet,
 you will be prompted for your password.
-Type it, and press the Return key.
+Type it, and press the `Return` key.
+
 This adds the public key to the file `~/.ssh/authorized_keys` on your
 account on the CCB cluster.
 
@@ -101,7 +102,12 @@ you still need to configure the SSH client so that it uses the private key
 whenever you invoke the `ssh` command, to prove your identity to the CCB cluster,
 and _vice versa_.
 
-Open (or create) the file `~/.ssh/config` on your personal computer.
+Open (or create) the file `~/.ssh/config` _on your personal computer_.
+You may do so using any text editor of your choice, including
+graphical applications (e.g., [Sublime Text][sublime-text])
+or Terminal text editors such as those listed in the section
+[Editing files in the Terminal]({{< relref "/docs/linux/files-and-directories/view-and-edit#editing-files-in-the-terminal" >}}).
+
 In that file, add the following lines:
 
 ```bash
@@ -188,3 +194,4 @@ The screenshot below demonstrates the `ssh` command in action.
 [ssh-config-linux]: https://linux.die.net/man/5/ssh_config
 [ssh-config-openbds]: https://man.openbsd.org/ssh_config
 [usekeychain-technical-note]: https://developer.apple.com/library/archive/technotes/tn2449/_index.html
+[sublime-text]: https://www.sublimetext.com/
