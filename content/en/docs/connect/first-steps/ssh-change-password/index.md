@@ -8,8 +8,8 @@ draft: false
 images: []
 menu:
   docs:
-    parent: "connect"
-weight: 140
+    parent: "first-steps"
+weight: 104
 toc: true
 ---
 
@@ -26,7 +26,7 @@ connection to the CCB cluster.
 ## Instructions
 
 First, log into the CCB cluster as demonstrated on the page
-[First SSH connection]({{< relref "/docs/connect/ssh-first-connection" >}}).
+[First SSH connection]({{< relref "/docs/connect/first-steps/ssh-first-connection" >}}).
 
 Next, type the command `passwd` and press the Return key.
 Then, follow the instructions returned by the command in the Terminal.

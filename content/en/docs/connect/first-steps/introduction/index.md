@@ -8,7 +8,7 @@ draft: false
 images: []
 menu:
   docs:
-    parent: "connect"
+    parent: "first-steps"
 weight: 100
 toc: true
 ---
@@ -26,7 +26,7 @@ For further reading, trusted sources of information are listed on the page
 ## Who this documentation is for
 
 This documentation is written for members of staff entitled to hold a CCB account.
-Find out more on the page [Apply for an account]({{< relref "/docs/connect/apply" >}}).
+Find out more on the page [Apply for an account]({{< relref "/docs/connect/first-steps/apply" >}}).
 
 ## How to use this documentation
 

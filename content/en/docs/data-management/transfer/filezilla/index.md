@@ -50,7 +50,7 @@ In particular:
 - Type a short yet descriptive name for the profile.
 - In the field `Protocol:`, choose `SFTP - SSH File Transfer Protocol`.
 - In the field `Host:`, type the URL of one of the login nodes
-  (see [General information]({{< relref "/docs/connect/ssh-first-connection#login-nodes" >}})).
+  (see [General information]({{< relref "/docs/connect/first-steps/ssh-first-connection#login-nodes" >}})).
 - You may leave the field `Port:` empty.
 - In the field `Logon Type:`
   - Choose `Key file` if you have created an SSH Key pair

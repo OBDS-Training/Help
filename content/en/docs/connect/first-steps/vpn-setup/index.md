@@ -8,8 +8,8 @@ draft: false
 images: []
 menu:
   docs:
-    parent: "connect"
-weight: 120
+    parent: "first-steps"
+weight: 102
 toc: true
 ---
 
