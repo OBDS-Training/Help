@@ -16,9 +16,9 @@ toc: true
 ## Motivation
 
 Once logged into the CCB cluster, a number of Slurm commands can be used to query
-resources available and the current workload.
+resources available and the current workload, and submit jobs to the queue.
 
-In this page, we provide a cheatsheet of the most commonly used commands
+In this page, we provide a guide to the most commonly used commands
 along with a brief description of their purpose and advice on best practices.
 
 ## Partitions
