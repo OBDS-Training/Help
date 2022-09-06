@@ -18,7 +18,7 @@ toc: true
 ### Motivation
 
 Microsoft Windows does not have a built-in Terminal emulator
-(The MS Windows Command Prompt `cmd.exe` is a command-line interpreter 
+(The MS Windows Command Prompt `cmd.exe` is a command-line interpreter
 that does not include many of the commands needed to connect to
 the CCB cluster).
 
@@ -53,7 +53,7 @@ In particular, during the execution of the installer:
 Once the installer has completed successfully:
 
 - Open the Windows Start Menu.
-- In the Windows Start Menu find and launch `Git Bash`. 
+- In the Windows Start Menu find and launch `Git Bash`.
 - In the Git Bash for Windows Terminal emulator, type `git` and press the `Return` key.
 
 This should display a help message listing the main subcommands of the Git program.
