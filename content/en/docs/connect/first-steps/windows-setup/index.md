@@ -41,12 +41,35 @@ On the next page, click on the first link
 
 ### Run the installer
 
-Double-click on the installer file that you just downloaded.
+Double-click on the installer file that you just downloaded
+and progress through the screens of the installation program.
 
-In particular, during the execution of the installer:
+Notably:
 
-- In the screen 'Choosing the default editor used by Git', choose 'Use Atom as Git's default editor'.
-- Leave all other options to their default choice, unless you have specific reasons not to.
+- Scroll through the license. Click 'Next'.
+- Leave the destination loation of the installation to the default value. Click 'Next'.
+- Leave the selected components to the default choices. Click 'Next'.
+- Leave the name of the Start Menu folder to the default value. Click 'Next'.
+- Set the default editor for Git to a program that is installed on your computer and that you are comfortable with.
+  We recommend [Atom][atom-editor], [Notepad++][notepad-plus-plus] or [Visual Studio Code][visual-studio-code]
+  as lightweight programs suitable for this purpose. Click 'Next'.
+- Let Git decide the name for the initial branch in newly created repositories. Click 'Next'.
+- Let the Git installer adjust your PATH environment.
+  You want to be able to use Git from Git Bash, the Command Prompt and the Windows PowerShell
+  as well as third-party software looking for Git in PATH (e.g., RStudio Desktop). Click 'Next'.
+- Leave the installer use the bundled OpenSSH. Click 'Next'.
+- Leave the installer use the OpenSSL library. Click 'Next'.
+- Leave the installer checkout Windows-style, commit Unix-style line endings. Click 'Next'.
+- Leave the installer use MinTTY.
+- Leave the default behaviour of `gt pull` to the default value. Click 'Next'.
+- Leave the credential manager to the default value. Click 'Next'.
+- Leave the extra options to their default choices. Click 'Next'.
+- Leave the experimental options unselected. Click 'Install'.
+
+When the installer successfully completes, click 'Finish'.
+
+You may be presented with the Release Notes of the program, which you may choose to read
+before you close them.
 
 ### Test your installation
 
@@ -59,3 +82,7 @@ Once the installer has completed successfully:
 This should display a help message listing the main subcommands of the Git program.
 
 <!-- Link definitions -->
+
+[atom-editor]: https://atom.io/
+[notepad-plus-plus]: https://notepad-plus-plus.org/
+[visual-studio-code]: https://code.visualstudio.com/
