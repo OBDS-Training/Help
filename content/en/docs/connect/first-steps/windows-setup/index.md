@@ -44,27 +44,49 @@ On the next page, click on the first link
 Double-click on the installer file that you just downloaded
 and progress through the screens of the installation program.
 
+{{< alert icon="👉" text="The various screens of the installer programs are subject to change. As such, we provide guidance below for indicative purposes only." />}}
+
 Notably:
 
-- Scroll through the license. Click 'Next'.
-- Leave the destination loation of the installation to the default value. Click 'Next'.
-- Leave the selected components to the default choices. Click 'Next'.
-- Leave the name of the Start Menu folder to the default value. Click 'Next'.
-- Set the default editor for Git to a program that is installed on your computer and that you are comfortable with.
-  We recommend [Atom][atom-editor], [Notepad++][notepad-plus-plus] or [Visual Studio Code][visual-studio-code]
-  as lightweight programs suitable for this purpose. Click 'Next'.
-- Let Git decide the name for the initial branch in newly created repositories. Click 'Next'.
-- Let the Git installer adjust your PATH environment.
+- Scroll to the bottom of the license.
+  Click 'Next'.
+- Leave the destination location for the installation to the default value.
+  Click 'Next'.
+- Leave the selected components to the default choices.
+  Click 'Next'.
+- Leave the name of the Start Menu folder to be created to the default value.
+  Click 'Next'.
+- Set the default editor for Git to a text editor program that is installed on your computer
+  and that you are comfortable with.
+  We recommend
+  [Atom][atom-editor],
+  [Notepad++][notepad-plus-plus] or
+  [Visual Studio Code][visual-studio-code]
+  as lightweight programs suitable for this purpose.
+  Click 'Next'.
+- Leave the default choice letting Git decide the name for the initial branch
+  in newly created repositories.
+  Click 'Next'.
+- Leave the default choice adjusting your PATH environment.
   You want to be able to use Git from Git Bash, the Command Prompt and the Windows PowerShell
-  as well as third-party software looking for Git in PATH (e.g., RStudio Desktop). Click 'Next'.
-- Leave the installer use the bundled OpenSSH. Click 'Next'.
-- Leave the installer use the OpenSSL library. Click 'Next'.
-- Leave the installer checkout Windows-style, commit Unix-style line endings. Click 'Next'.
-- Leave the installer use MinTTY.
-- Leave the default behaviour of `gt pull` to the default value. Click 'Next'.
-- Leave the credential manager to the default value. Click 'Next'.
-- Leave the extra options to their default choices. Click 'Next'.
-- Leave the experimental options unselected. Click 'Install'.
+  as well as third-party software looking for Git in PATH (e.g., RStudio Desktop).
+  Click 'Next'.
+- Leave the default choice using the bundled OpenSSH.
+  Click 'Next'.
+- Leave the default choice using the OpenSSL library.
+  Click 'Next'.
+- Leave the default choice using checkout Windows-style, commit Unix-style line endings.
+  Click 'Next'.
+- Leave the default choice using MinTTY.
+  Click 'Next'.
+- Leave the default behaviour of `git pull` to the default value.
+  Click 'Next'.
+- Leave the credential manager to the default value.
+  Click 'Next'.
+- Leave the extra options to their default choices.
+  Click 'Next'.
+- Leave the experimental options unselected.
+  Click 'Install'.
 
 When the installer successfully completes, click 'Finish'.
 
@@ -76,7 +98,7 @@ before you close them.
 Once the installer has completed successfully:
 
 - Open the Windows Start Menu.
-- In the Windows Start Menu find and launch `Git Bash`.
+- In the Windows Start Menu find and launch 'Git Bash'.
 - In the Git Bash for Windows Terminal emulator, type `git` and press the `Return` key.
 
 This should display a help message listing the main subcommands of the Git program.
