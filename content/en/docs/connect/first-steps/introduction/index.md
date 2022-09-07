@@ -45,7 +45,7 @@ and your own experience, especially with respect to new versions of software pac
 available.
 
 If you notice any significant difference between this documentation and your own experience,
-please [Contact]({{< relref "contact" >}}) us to resolve the issue and update the documentation
+please [Contact us]({{< relref "contact" >}}) to resolve the issue and update the documentation
 where necessary.
 
 ## Go further
