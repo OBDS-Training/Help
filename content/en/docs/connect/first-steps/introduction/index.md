@@ -55,7 +55,7 @@ the navigation menu on the left to explore specific topics or use the various ch
 available.
 
 An auto-completing search bar is also available at the top of the page to search the website
-by key words.
+by keywords.
 
 ## Contact us
 
