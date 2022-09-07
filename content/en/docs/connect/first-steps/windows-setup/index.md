@@ -99,7 +99,7 @@ before you close them.
 Once the installer has completed successfully:
 
 - Open the Windows Start Menu.
-- In the Windows Start Menu find and launch `Git Bash`.
+- In the Windows Start Menu find and launch 'Git Bash'.
 - In the Git Bash for Windows Terminal emulator, type `git` and press the `Return` key.
 
 This should display a help message listing the main subcommands of the Git program.
