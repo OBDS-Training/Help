@@ -46,7 +46,6 @@ and progress through the screens of the installation program.
 
 {{< alert icon="👉" text="The various screens of the installer programs are subject to change. As such, we provide guidance below for indicative purposes only." />}}
 
-
 Notably:
 
 - Scroll to the bottom of the license.
