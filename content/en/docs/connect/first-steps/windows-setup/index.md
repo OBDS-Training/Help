@@ -13,15 +13,28 @@ weight: 103
 toc: true
 ---
 
-## Install VSCode
+## Install Visual Studio Code (VSCode)
 
-- Download from website.
-- Run installer.
-- Go to 'Extension' tab on the left.
-  - Install 'Python'. (screenshot)
-  - Install 'Live Share Extension Pack'. (screenshot)
+### Download the installer file
+
+In your web browser, navigate to <https://code.visualstudio.com/download>.
+
+### Run the installer
+
+Double-click on the installer file that you just downloaded
+and progress through the screens of the installation program.
+
+### Install VSCode extensions
+
+Launch VSCode.
+
+Click on the 'Extension' tab on the left.
+
+- Install 'Python'. (screenshot)
 
 ![Install the 'Python' extension.](vscode-extension-python.png)
+
+- Install 'Live Share Extension Pack'. (screenshot)
 
 ![Install the 'Live Share Extension Pack' extension.](vscode-extension-liveshare.png)
 
@@ -113,12 +126,16 @@ This should display a help message listing the main subcommands of the Git progr
 
 ## Install Anaconda navigator
 
-Download the installer file from the [Anaconda website][anaconda-download].
+In your web browser, navigate to <https://www.anaconda.com/>.
 
 ### Run the installer
 
-- Run installer.
-- Install for all users.
+Double-click on the installer file that you just downloaded
+and progress through the screens of the installation program.
+
+{{< alert icon="👉" text="The various screens of the installer programs are subject to change. As such, we provide guidance below for indicative purposes only." />}}
+
+- Install for all users (needs administrator rights).
 - Accept all defaults.
 
 ### Test your installation
@@ -131,7 +148,4 @@ click 'Yes' to update.
 
 <!-- Link definitions -->
 
-[atom-editor]: https://atom.io/
-[notepad-plus-plus]: https://notepad-plus-plus.org/
 [visual-studio-code]: https://code.visualstudio.com/
-[anaconda-download]:https://www.anaconda.com/
