@@ -64,7 +64,7 @@ Notably:
   Click 'Next'.
 - Leave the destination location for the installation to the default value.
   Click 'Next'.
-- Leave the selected components to the default choices.
+- Select 'Add a Git Bash Profile to Windows Terminal' in addition to the components selected by default.
   Click 'Next'.
 - Leave the name of the Start Menu folder to be created to the default value.
   Click 'Next'.
@@ -87,7 +87,7 @@ Notably:
   Click 'Next'.
 - Leave the default choice using the OpenSSL library.
   Click 'Next'.
-- Leave the default choice using checkout Windows-style, commit Unix-style line endings.
+- Select 'Checkout as-is, commit Unix-style line endings'.
   Click 'Next'.
 - Leave the default choice using MinTTY.
   Click 'Next'.
