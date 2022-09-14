@@ -113,10 +113,21 @@ This should display a help message listing the main subcommands of the Git progr
 
 ## Install Anaconda navigator
 
-- Download from [website][anaconda-download].
+Download the installer file from the [Anaconda website][anaconda-download].
+
+### Run the installer
+
 - Run installer.
 - Install for all users.
 - Accept all defaults.
+
+### Test your installation
+
+- Open the Windows Start Menu.
+- In the Windows Start Menu find and launch 'Anaconda Navigator (Anaconda3)'.
+
+If prompted about a new version of Anaconda Navigator available,
+click 'Yes' to update.
 
 <!-- Link definitions -->
 
