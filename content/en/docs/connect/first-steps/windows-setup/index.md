@@ -70,11 +70,7 @@ Notably:
   Click 'Next'.
 - Set the default editor for Git to a text editor program that is installed on your computer
   and that you are comfortable with.
-  We recommend
-  [Atom][atom-editor],
-  [Notepad++][notepad-plus-plus] or
-  [Visual Studio Code][visual-studio-code]
-  as lightweight programs suitable for this purpose.
+  We recommend [Visual Studio Code][visual-studio-code].
   Click 'Next'.
 - Leave the default choice letting Git decide the name for the initial branch
   in newly created repositories.
@@ -115,8 +111,16 @@ Once the installer has completed successfully:
 
 This should display a help message listing the main subcommands of the Git program.
 
+## Install Anaconda navigator
+
+- Download from [website][anaconda-download].
+- Run installer.
+- Install for all users.
+- Accept all defaults.
+
 <!-- Link definitions -->
 
 [atom-editor]: https://atom.io/
 [notepad-plus-plus]: https://notepad-plus-plus.org/
 [visual-studio-code]: https://code.visualstudio.com/
+[anaconda-download]:https://www.anaconda.com/
