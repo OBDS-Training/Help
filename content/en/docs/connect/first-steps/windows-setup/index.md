@@ -13,6 +13,18 @@ weight: 103
 toc: true
 ---
 
+## Install VSCode
+
+- Download from website.
+- Run installer.
+- Go to 'Extension' tab on the left.
+  - Install 'Python'. (screenshot)
+  - Install 'Live Share Extension Pack'. (screenshot)
+
+![Install the 'Python' extension.](vscode-extension-python.png)
+
+![Install the 'Live Share Extension Pack' extension.](vscode-extension-liveshare.png)
+
 ## Install Git Bash for Windows
 
 ### Motivation
