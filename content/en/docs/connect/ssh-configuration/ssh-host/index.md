@@ -41,10 +41,6 @@ Host ccb1
     Hostname cbrglogin1.molbiol.ox.ac.uk
     User <username>
 
-Host ccb2
-    Hostname cbrglogin2.molbiol.ox.ac.uk
-    User <username>
-
 Host ccb3
     Hostname cbrglogin3.molbiol.ox.ac.uk
     User <username>
@@ -70,7 +66,6 @@ to connect to the corresponding remote host:
 
 ```bash
 ssh ccb1
-ssh ccb2
 ssh ccb3
 ```
 

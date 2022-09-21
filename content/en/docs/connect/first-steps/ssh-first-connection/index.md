@@ -28,10 +28,9 @@ It can be used to log into the CCB cluster.
 
 ## Choose a login node
 
-The CCB cluster has three login nodes that users can log into using SSH:
+The CCB cluster has two login nodes that users can log into using SSH:
 
 - `cbrglogin1.molbiol.ox.ac.uk`
-- `cbrglogin2.molbiol.ox.ac.uk`
 - `cbrglogin3.molbiol.ox.ac.uk`
 
 Here is some guidance to choose a login node:
