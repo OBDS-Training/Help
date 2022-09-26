@@ -54,7 +54,7 @@ and progress through the screens of the installation program.
 
 ### Test your installation
 
-- In the Launchpad, find and launch 'Anaconda Navigator (Anaconda3)'.
+- In the Launchpad, find and launch 'Anaconda-Navigator'.
 
 If prompted about a new version of Anaconda Navigator available,
 click 'Yes' to update.
