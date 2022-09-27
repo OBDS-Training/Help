@@ -19,10 +19,24 @@ toc: true
 
 In your web browser, navigate to <https://code.visualstudio.com/download>.
 
-### Run the installer
+Click on the button 'Mac', making sure that it matches the version of your operating system.
 
-Double-click on the installer file that you just downloaded
-and progress through the screens of the installation program.
+![Download Visual Studio Code for macOS](vscode-download.png)
+
+You may be redirected to another web page.
+However, the download should start automatically.
+
+### Unpack and install the application
+
+In Finder, navigate to the downloaded file.
+This should be a ZIP archive.
+
+Double-click on the downloaded ZIP file to extract its contents.
+This should be a file called 'Visual Studio Code.app'.
+
+Drag and drop the file 'Visual Studio Code.app' into your 'Applications' folder.
+
+You may then delete the ZIP archive that you downloaded.
 
 ### Install VSCode extensions
 
@@ -30,11 +44,11 @@ Launch VSCode.
 
 Click on the 'Extension' tab on the left.
 
-- Install 'Python'. (screenshot)
+- Search for the extension named 'Python' and install it.
 
 ![Install the 'Python' extension.](vscode-extension-python.png)
 
-- Install 'Live Share Extension Pack'. (screenshot)
+- Search for the extension named 'Live Share Extension Pack' and install it.
 
 ![Install the 'Live Share Extension Pack' extension.](vscode-extension-liveshare.png)
 
@@ -49,7 +63,6 @@ and progress through the screens of the installation program.
 
 {{< alert icon="👉" text="The various screens of the installer programs are subject to change. As such, we provide guidance below for indicative purposes only." />}}
 
-- Install for all users (needs administrator rights).
 - Accept all defaults.
 
 ### Test your installation
