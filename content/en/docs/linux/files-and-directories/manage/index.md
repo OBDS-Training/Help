@@ -187,7 +187,17 @@ rm -r dir1
 
 {{< alert icon="👉" text="The option '-r' must be used even if the directory is empty." />}}
 
-As a safer alternative, the `rmdir` command can be used to remove empty directories.
+{{< alert icon="🛑" text="Do not use the 'rm -r' before first running the corresponding 'ls -R' command and checking the contents of the directory that you are about to remove." />}}
+
+It is possible to verbosely display the list of files and directories that are removed
+by the `rm` command using the option `-v`.
+
+![Removing a directory verbosely using the 'rm -rv' command.](rm-rv-dir.png)
+
+{{< alert icon="👉" text="While the option '-v' can be useful to display and record the name of files and directories that were deleted, it will not help you recover files that were deleted unintentionally. Files are deleted immediately and permanently." />}}
+
+As a safer alternative, the `rmdir` command can be used to remove only empty directories.
+The command will raise an error when attempting to remove a directories that are not empty.
 
 In the example below, the `rmdir` command is asked to remove two directories.
 However, one of those directories is not empty, and only the empty directory is
