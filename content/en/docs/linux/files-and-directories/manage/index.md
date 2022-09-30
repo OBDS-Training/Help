@@ -218,7 +218,7 @@ in alphabetical order of the option flag.
 |:------:|:----------- | ---------- |
 |  `-i`  | `--interactive` | Interactively prompt the user for confirmation before deleting files. Without this option, files are silently deleted. |
 |  `-r`  | `--recursive` | Recursively delete directories. This option is required to delete directories. |
-|  `-f`  | `--force`   | Do not prompt and ignore errors due to nonexistent files. This overrides the `-i` option. |
+|  `-f`  | `--force`   | Do not prompt and ignore errors due to nonexistent files. This overrides the `-i` option. Use with extreme care. |
 |  `-v`  | `--verbose` | Display informative messages as deletions are performed. |
 
 <!-- Link definitions -->
