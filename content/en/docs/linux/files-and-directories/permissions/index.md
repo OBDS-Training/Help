@@ -175,12 +175,12 @@ The permissions to modify are declared using the following syntax:
 For instance, the example below illustrates how the `chmod` command
 can be used to simultaneously:
 
-- remove _write_ permission for the user who owns the file (i.e., `u-w`)
-- add _execute_ permission for the user group assigned to the file (i.e., `g+x`)
+- add _execute_ permission for the user who owns the file (i.e., `u-w`)
+- remove _write_ permission for the user group assigned to the file (i.e., `g+x`)
 - remove _read_ permission for every other user (i.e., `o-r`)
 
 ```bash
-chmod u-w,g+x,o-r file1.txt
+chmod u+x,g-w,o-r file1.txt
 ```
 
 ![Changing file permissions using the alphabetical notation](chmod-alphabetical.png)
