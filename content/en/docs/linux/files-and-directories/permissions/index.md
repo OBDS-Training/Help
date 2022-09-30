@@ -141,6 +141,14 @@ For directories, the permission are better described as follows:
 The `chmod <permissions> <file_or_directory>` command can be used to modify
 the permissions on individual files and directories.
 
+Most commonly, changes in file permissions are made to:
+
+- Make script files executable.
+- Make valuable files (e.g., raw sequencing data) read-only,
+  to avoid accidentally deleting them.
+
+{{< alert icon="🛑" text="Do not change file permissions to give other users access to your own files and directories. Instead, contact the system administrators to request project directories that are set up with shared access for collaborators." />}}
+
 File permissions can be described in two formats:
 
 - the _alphabetical_ notation,
@@ -167,12 +175,12 @@ The permissions to modify are declared using the following syntax:
 For instance, the example below illustrates how the `chmod` command
 can be used to simultaneously:
 
-- remove _write_ permission for the user who owns the file (i.e., `u-w`)
-- add _execute_ permission for the user group assigned to the file (i.e., `g+x`)
+- add _execute_ permission for the user who owns the file (i.e., `u+x`)
+- remove _write_ permission for the user group assigned to the file (i.e., `g-w`)
 - remove _read_ permission for every other user (i.e., `o-r`)
 
 ```bash
-chmod u-w,g+x,o-r file1.txt
+chmod u+x,g-w,o-r file1.txt
 ```
 
 ![Changing file permissions using the alphabetical notation](chmod-alphabetical.png)
