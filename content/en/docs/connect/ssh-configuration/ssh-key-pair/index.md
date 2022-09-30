@@ -32,13 +32,13 @@ To create the SSH key pair, open a Terminal session on your personal computer
 (i.e., not logged into the CCB cluster), and type:
 
 ```bash
-ssh-keygen -t ecdsa -b 512
+ssh-keygen -t ecdsa -b 521
 ```
 
 In particular:
 
 - The option `-t ecdsa` is important to specify the type of SSH key pair.
-- The option `-b 512` indicates the number of bits in the key; a minimum of 2048
+- The option `-b 521` indicates the number of bits in the key; a minimum of 2048
 is recommended, while larger values generally give additional strength to the
 key.
 
