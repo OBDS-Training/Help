@@ -69,6 +69,8 @@ ln file1.txt link1.csv
 
 ![Creating a hard link using the 'ln' command.](ln-hard.png)
 
+{{< alert icon="🛑" text="Do not create hard links on the CCB cluster. If you think you need a hard link, contact system administrators first to enquire. " />}}
+
 ## Creating soft links
 
 Soft links are created using the same command `ln` as hard links,
