@@ -187,7 +187,7 @@ rm -r dir1
 
 {{< alert icon="👉" text="The option '-r' must be used even if the directory is empty." />}}
 
-{{< alert icon="🛑" text="Do not use the 'rm -r' before first running the corresponding 'ls -R' command and checking the contents of the directory that you are about to remove." />}}
+{{< alert icon="🛑" text="Do not use the 'rm -r' before first running the corresponding 'ls -R' command and checking the contents of the directory that you are about to remove. We make this recommendation even more strongly when wildcard symbols are used." />}}
 
 It is possible to verbosely display the list of files and directories that are removed
 by the `rm` command using the option `-v`.
