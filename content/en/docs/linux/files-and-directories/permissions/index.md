@@ -175,8 +175,8 @@ The permissions to modify are declared using the following syntax:
 For instance, the example below illustrates how the `chmod` command
 can be used to simultaneously:
 
-- add _execute_ permission for the user who owns the file (i.e., `u-w`)
-- remove _write_ permission for the user group assigned to the file (i.e., `g+x`)
+- add _execute_ permission for the user who owns the file (i.e., `u+x`)
+- remove _write_ permission for the user group assigned to the file (i.e., `g-w`)
 - remove _read_ permission for every other user (i.e., `o-r`)
 
 ```bash
