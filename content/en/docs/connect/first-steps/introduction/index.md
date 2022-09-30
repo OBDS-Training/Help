@@ -21,11 +21,12 @@ on the cluster.
 
 This documentation focuses on introductory scenarios and simple use cases.
 For further reading, trusted sources of information are listed on the page
-[Links to external resources]({{< relref "/docs/help/links" >}}).
+[Links to external resources]({{< relref "/docs/help/links" >}})
+which can be found in the main help section.
 
 ## Who this documentation is for
 
-This documentation is written for members of staff entitled to hold a CCB account.
+This documentation is mainly intended for people with a CCB account.
 Find out more on the page [Apply for an account]({{< relref "/docs/connect/first-steps/apply" >}}).
 
 ## How to use this documentation
