@@ -110,6 +110,20 @@ In that file, add the following lines:
 ```bash
 Host *
     IdentityFile ~/.ssh/id_ecdsa
+    Port 22
+    Protocol 2
+    TCPKeepAlive yes
+    ServerAliveInterval 300
+    ServerAliveCountMax 2
+    ForwardX11 yes
+    ForwardX11Trusted yes
+    ForwardAgent yes
+    Compression yes
+    XAuthLocation /opt/X11/bin/xauth
+    # macOS only
+    AddKeysToAgent yes
+    UseKeychain yes
+    PubkeyAuthentication yes
 ```
 
 {{< alert icon="👉" text="Do not include the lines after '# macOS only' if you are a Windows or Linux user." />}}
@@ -140,6 +154,7 @@ using the `ssh` command.
   agent (if any) is forwarded to the remote machine.
 - The field `Compression` specifies whether to use compression.
 - The field `XAuthLocation` specifies the full pathname of the `xauth` program.
+- The field `PubkeyAuthentication` specifies whether to try public key authentication using SSH keys.
 
 More information about fields that may be configured is available on the page
 [ssh_config(5) - Linux man page →][ssh-config-linux].
