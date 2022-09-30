@@ -1,7 +1,7 @@
 ---
-title: "Built-in Bash commands"
-description: "A cheatsheet of built-in Bash commands."
-lead: "A cheatsheet of built-in Bash commands."
+title: "Helpful commands"
+description: "A cheatsheet of helpful Bash commands."
+lead: "A cheatsheet of helpful Bash commands."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
