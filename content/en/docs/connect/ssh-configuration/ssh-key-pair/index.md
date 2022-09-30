@@ -32,24 +32,21 @@ To create the SSH key pair, open a Terminal session on your personal computer
 (i.e., not logged into the CCB cluster), and type:
 
 ```bash
-ssh-keygen -t rsa -b 4096
+ssh-keygen -t ecdsa -b 521
 ```
 
 In particular:
 
-- The option `-t rsa` is important to generate the right type of SSH key pair.
-- The option `-b 4096` indicates the number of bits in the key; a minimum of 2048
+- The option `-t ecdsa` is important to specify the type of SSH key pair.
+- The option `-b 521` indicates the number of bits in the key; a minimum of 2048
 is recommended, while larger values generally give additional strength to the
 key.
 
 When prompted for a filename, do not type anything, and immediately press the
 `Return` key to accept the default filename and location.
 
-When prompted for a passphrase, we recommended typing a password that is
-secret yet memorable to you. This passphrase will be the last line of defense
-if anyone were to maliciously acquire your private SSH key file.
-Alternatively, you can press the `Return` key immediately without entering a
-passphrase, leaving your SSH key pair unprotected.
+When prompted for a passphrase, CCB policy requires a 16 character passphrase.
+Private keys without a password are strictly prohibited.
 
 {{< alert icon="👉" text="For privacy and security reasons, the Terminal will not display your passphrase as you type it." />}}
 
@@ -63,8 +60,8 @@ successfully created.
 
 In particular:
 
-- The private key is located at `~/.ssh/id_rsa`.
-- The public key is located at `~/.ssh/id_rsa.pub`.
+- The private key is located at `~/.ssh/id_ecdsa`.
+- The public key is located at `~/.ssh/id_ecdsa.pub`.
 
 {{< alert icon="👉" text="You can ignore the key's randomart." />}}
 
@@ -80,7 +77,7 @@ Conceptually, the command that you type in the Terminal on your personal compute
 should be structured as follows:
 
 ```bash
-ssh-copy-id <username>@<remote>
+ssh-copy-id -i ~/.ssh/id_ecdsa <username>@<remote>
 ```
 
 Replace `<username>` by your own username, and `<remote>` by one of the
@@ -112,20 +109,7 @@ In that file, add the following lines:
 
 ```bash
 Host *
-    IdentityFile ~/.ssh/id_rsa
-    Port 22
-    Protocol 2
-    TCPKeepAlive yes
-    ServerAliveInterval 300
-    ServerAliveCountMax 2
-    ForwardX11 yes
-    ForwardX11Trusted yes
-    ForwardAgent yes
-    Compression yes
-    XAuthLocation /opt/X11/bin/xauth
-    # macOS only
-    AddKeysToAgent yes
-    UseKeychain yes
+    IdentityFile ~/.ssh/id_ecdsa
 ```
 
 {{< alert icon="👉" text="Do not include the lines after '# macOS only' if you are a Windows or Linux user." />}}
@@ -174,10 +158,8 @@ More information on the field `UseKeychain` is available on the page
 
 ## Log in using your SSH key pair
 
-You can now log into the CCB cluster using the same `ssh` command as before,
-without the need to type in your account password.
-However, if you have set a passphrase on your SSH key pair, you will be
-prompted to type this passphrase when the SSH key pair is used.
+You can now log into the CCB cluster using the same `ssh` command as before.
+You will be prompted to type your SSH passphrase when the SSH key pair is used.
 
 ```bash
 ssh <username>@<remote>
