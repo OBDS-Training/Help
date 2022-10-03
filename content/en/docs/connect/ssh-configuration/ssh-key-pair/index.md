@@ -136,7 +136,6 @@ More information about fields that may be configured is available on the page
 
 {{< alert icon="👉" text="We recommend keeping your SSH configuration file as simple and minimal as possible unless you identify the need for further configuration." />}}
 
-
 ## Log in using your SSH key pair
 
 You can now log into the CCB cluster using the same `ssh` command as before.
