@@ -44,7 +44,10 @@ We recommend leaving all options to their default values.
 
 The `RGui` application should open with an R Console.
 
+![The R GUI app.](r-gui.png)
+
 You can close the application.
+If prompted, do not save the workspace image.
 
 ## Install RStudio Desktop IDE
 
@@ -69,6 +72,8 @@ Once the installer has completed successfully:
 - In the Windows Start Menu find and launch 'RStudio'.
 
 The `RStudio` application should open.
+
+![The RStudio Desktop app.](rstudio.png)
 
 <!-- Link definitions -->
 
