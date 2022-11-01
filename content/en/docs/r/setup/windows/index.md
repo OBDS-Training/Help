@@ -1,15 +1,15 @@
 ---
-title: "Setup Python on Windows"
-description: "Setting up Python on Windows."
-lead: "Setting up Python on Windows."
+title: "Setup R on Windows"
+description: "Setting up R on Windows."
+lead: "Setting up R on Windows."
 date: 2020-10-06T08:49:31+00:00
 lastmod: 2020-10-06T08:49:31+00:00
 draft: false
 images: []
 menu:
   docs:
-    parent: "python"
-weight: 601
+    parent: "r"
+weight: 701
 toc: true
 ---
 
@@ -17,14 +17,10 @@ toc: true
 
 Instructions on this page should be followed in order to produce the desired effects, namely:
 
-- Visual Studio Code (VSCode) must be installed before Git Bash,
-  so that VSCode may be specified as the default editor for Git.
-- Git Bash must be installed before Anaconda Navigator,
-  so that Anaconda Navigator may detect Git Bash on the system path.
-- VSCode must be installed before Anaconda Navigator,
-  so that VSCode may be launched from Anaconda Navigator.
+- [R][r-cran] must be installed before the [RStudio IDE][rstudio-download],
+  so that the [RStudio IDE][rstudio-download] detects at least one version of [R][r-cran].
 
-## Install Visual Studio Code
+## Install R
 
 ### Download the installer file
 
@@ -41,13 +37,9 @@ Launch VSCode.
 
 Click on the 'Extension' tab on the left.
 
-- Install 'Python'.
+- Install 'Python'. (screenshot)
 
-![Install the 'Python' extension.](vscode-extension-python.png)
-
-- Install 'Live Share Extension Pack'.
-
-![Install the 'Live Share Extension Pack' extension.](vscode-extension-liveshare.png)
+- Install 'Live Share Extension Pack'. (screenshot)
 
 ## Install Git Bash for Windows
 
@@ -69,8 +61,6 @@ all the commands that you will need to connect to the CCB cluster.
 In your web browser, navigate to <https://git-scm.com/downloads>.
 
 In the 'Downloads' section, click on 'Windows'.
-
-![Downloads page for the git-scm website.](git-scm-downloads.png)
 
 On the next page, click on the first link
 'Click here to download the latest 32-bit version of Git for Windows'.
@@ -158,3 +148,6 @@ If prompted about a new version of Anaconda Navigator available,
 click 'Yes' to update.
 
 <!-- Link definitions -->
+
+[r-cran]: https://www.r-project.org/
+[rstudio-download]: https://www.rstudio.com/products/rstudio/download/
