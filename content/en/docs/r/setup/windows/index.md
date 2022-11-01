@@ -42,7 +42,7 @@ We recommend leaving all options to their default values.
 
 - Double-click on the desktop icon `R x.x.x`.
 
-The `RGui` application should open.
+The `RGui` application should open with an R Console.
 
 <!-- Link definitions -->
 
