@@ -44,6 +44,15 @@ We recommend leaving all options to their default values.
 
 The `RGui` application should open with an R Console.
 
+## Install RStudio Desktop IDE
+
+In your web browser, navigate to <https://www.rstudio.com/products/rstudio/download/>.
+
+On the web page, click on the button 'Download'
+in the column 'RStudio Desktop - Open Source License - Free'.
+
+![Download RStudio Desktop.](rstudio-download.png)
+
 <!-- Link definitions -->
 
 [r-cran]: https://www.r-project.org/
