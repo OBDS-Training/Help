@@ -41,11 +41,11 @@ Launch VSCode.
 
 Click on the 'Extension' tab on the left.
 
-- Install 'Python'. (screenshot)
+- Install 'Python'.
 
 ![Install the 'Python' extension.](vscode-extension-python.png)
 
-- Install 'Live Share Extension Pack'. (screenshot)
+- Install 'Live Share Extension Pack'.
 
 ![Install the 'Live Share Extension Pack' extension.](vscode-extension-liveshare.png)
 
