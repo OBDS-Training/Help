@@ -31,6 +31,8 @@ On the web page, click on the link 'Download R-x.x.x for Windows'
 
 ![Download R for Windows.](r-download.png)
 
+This should download an excutable file to your computer.
+
 ### Run the installer
 
 Double-click on the installer file that you just downloaded
@@ -49,18 +51,24 @@ The `RGui` application should open with an R Console.
 You can close the application.
 If prompted, do not save the workspace image.
 
-## Install RStudio Desktop IDE
+## Install RStudio Desktop
 
-In your web browser, navigate to <https://www.rstudio.com/products/rstudio/download/>.
+### Download the installer file
 
-On the web page, click on the button 'Download'
-in the column 'RStudio Desktop - Open Source License - Free'.
+In your web browser, navigate to <https://posit.co/download/rstudio-desktop/>.
 
-![Download RStudio Desktop.](rstudio-download.png)
+Scroll past "Step 1: Install R" (which was demonstrated above for Windows).
 
-On the next page, click on the button 'DOWNLOAD RSTUDIO FOR WINDOWS'.
+On the web page, click on the button 'Download RStudio Desktop for Windows'.
 
-![Download RStudio Desktop for Windows.](rstudio-download-2.png)
+![Download RStudio Desktop.](rstudio-download-for-windows.png)
+
+This should download an excutable file to your computer.
+
+### Run the installer
+
+Double-click on the installer file that you just downloaded
+and progress through the screens of the installation program.
 
 We recommend leaving all options to their default values.
 
