@@ -38,7 +38,9 @@ good functioning.
 In this page, we describe some of the built-in environment variables,
 with a brief description of their purpose and advice on best practices.
 
-## $HOME
+## Built-in variables
+
+### $HOME
 
 The `$HOME` environment variable is set for each user to their own
 home directory.
@@ -60,7 +62,7 @@ For instance, users can list the contents of their home directory as follows.
 ls $HOME
 ```
 
-## $USER
+### $USER
 
 The `$USER` environment variable is set for each user to their own
 username.
@@ -82,7 +84,7 @@ directories that is guaranteed to avoid any conflict with other usernames.
 mkdir $USER
 ```
 
-## $PATH
+### $PATH
 
 The `$PATH` environment variable is unquestionably one of the most important
 environment variables.
@@ -126,6 +128,32 @@ For instance:
 ```bash
 /package/git/2.31.1/libexec/git-core/git status
 ```
+
+### $TMPDIR
+
+The `$TMPDIR` environment variable is set globally to the location of a directory that user should use to store temporary files.
+
+For instance, users can create new temporary directories and files in that directory as follows:
+
+```bash
+mkdir $TMPDIR/new_temp_dir
+touch $TMPDIR/new_temp_file
+```
+
+![The 'TMPDIR' environment variable.](tmpdir.png)
+
+Note that `$TMPDIR` is the same for all users.
+To avoid clashes of directories and file names with other users, we recommend creating and using the subdirectory with your own username first.
+
+For instance:
+
+```bash
+mkdir $TMPDIR/$USER
+mkdir $TMPDIR/$USER/new_temp_dir
+touch $TMPDIR/$USER/new_temp_dir/new_temp_file
+```
+
+## Custom variables
 
 ## $TMP
 
