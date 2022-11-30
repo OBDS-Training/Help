@@ -9,16 +9,18 @@ images: []
 menu:
   docs:
     parent: "r"
-weight: 701
+weight: 702
 toc: true
 ---
 
 ## Motivation
 
-Instructions on this page should be followed in order to produce the desired effects, namely:
+Instructions on this page should be followed in order to produce the desired
+effects, namely:
 
-- [R][r-cran] must be installed before the [RStudio IDE][rstudio-download],
-  so that the [RStudio IDE][rstudio-download] detects at least one version of [R][r-cran].
+- [R][r-cran] must be installed before the [RStudio IDE][rstudio-download], so
+  that the [RStudio IDE][rstudio-download] detects at least one version of
+  [R][r-cran].
 
 ## Install R
 
@@ -26,8 +28,8 @@ Instructions on this page should be followed in order to produce the desired eff
 
 In your web browser, navigate to <https://cran.r-project.org/bin/windows/base/>.
 
-On the web page, click on the link 'Download R-x.x.x for Windows'
-(where `x.x.x` is the latest version of R available for Windows).
+On the web page, click on the link 'Download R-x.x.x for Windows' (where `x.x.x`
+is the latest version of R available for Windows).
 
 ![Download R for Windows.](r-download.png)
 
@@ -35,8 +37,8 @@ This should download an excutable file to your computer.
 
 ### Run the installer
 
-Double-click on the installer file that you just downloaded
-and progress through the screens of the installation program.
+Double-click on the installer file that you just downloaded and progress through
+the screens of the installation program.
 
 We recommend leaving all options to their default values.
 
@@ -48,8 +50,7 @@ The `RGui` application should open with an R Console.
 
 ![The R GUI app.](r-gui.png)
 
-You can close the application.
-If prompted, do not save the workspace image.
+You can close the application. If prompted, do not save the workspace image.
 
 ## Install RStudio Desktop
 
@@ -67,8 +68,8 @@ This should download an excutable file to your computer.
 
 ### Run the installer
 
-Double-click on the installer file that you just downloaded
-and progress through the screens of the installation program.
+Double-click on the installer file that you just downloaded and progress through
+the screens of the installation program.
 
 We recommend leaving all options to their default values.
 
