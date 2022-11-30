@@ -72,12 +72,35 @@ The `tmux` command launches an open-source terminal multiplexer for Unix-like op
 It allows multiple terminal sessions to be accessed simultaneously in a single window.
 It is useful for running more than one command-line program at the same time.
 
-The `tmux` command alone starts a new tmux session:
+To start your first tmux session on the CCB cluster, type `tmux` in the Terminal application, while logged into the CCB cluster:
 
 ```bash
 tmux
 ```
 
 ![The 'tmux' command starts a new session.](tmux.png)
+
+The green banner at the bottom indicates that the user is now in a tmux session.
+At this point, users can then work in that terminal session like any other Bash session.
+
+However, a benefit of the tmux session is that it will continue to exist and keep running commands alive even if the connection between the client and the CCB cluster is lost, or users close the Terminal application.
+
+For instance:
+
+- Close the Terminal application.
+- If prompted, click 'Terminate' to force-quit the application.
+- Open a new Terminal application.
+- Log into the CCB cluster.
+- Type `tmux attach` (or, in abbreviated form, `tmux a`).
+
+```bash
+tmux attach
+```
+
+The very same tmux session will be attached to the new Bash session and users can pick up their work where they left off.
+
+A 'Tmux Cheat Sheet & Quick Reference' is available at <https://tmuxcheatsheet.com/>.
+
+For more details, search search "tmux tutorial" in a search engine or YouTube.
 
 <!-- Link definitions -->
