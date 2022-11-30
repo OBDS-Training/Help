@@ -155,7 +155,16 @@ touch $TMPDIR/$USER/new_temp_dir/new_temp_file
 
 ## Custom variables
 
-## $TMP
+### Motivation
+
+Environment variables are not restricted to built-in variable names.
+Users can define any number of custom environment variable names.
+
+Some programs expect users to define additional environment variables, controlling the behaviour of the program without passing arguments explicitly on the command line.
+
+Expert users may also define custom environment variables for their own purposes (e.g., store a value commonly used on the command line or in their own scripts).
+
+### $TMP
 
 The `$TMP` environment variable is not set by default.
 
