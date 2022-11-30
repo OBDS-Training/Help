@@ -29,6 +29,8 @@ running, potentially resulting in lost work for users.
 
 ## How to run commands immune to loss of connection?
 
+### nohup
+
 The `nohup` command can be used to run a command that is immune to the `HUP` signal.
 
 The process launched by the `nohup` command will ignore any `HUP` signal, and
@@ -62,5 +64,20 @@ In particular:
 - The `wc` command is used to count the number of lines in the file `file.txt`.
 - The standard output of the command is redirected to the file `stdout.txt`.
 - The standard error of the command is redirected to the file `stderr.txt`.
+
+### tmux
+
+The `tmux` command launches an open-source terminal multiplexer for Unix-like operating systems.
+
+It allows multiple terminal sessions to be accessed simultaneously in a single window.
+It is useful for running more than one command-line program at the same time.
+
+The `tmux` command alone starts a new tmux session:
+
+```bash
+tmux
+```
+
+![The 'tmux' command starts a new session.](tmux.png)
 
 <!-- Link definitions -->
