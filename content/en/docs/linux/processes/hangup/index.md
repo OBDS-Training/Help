@@ -99,6 +99,30 @@ tmux attach
 
 The very same tmux session will be attached to the new Bash session and users can pick up their work where they left off.
 
+Sometimes, users may wish to effectively terminate one tmux session and start another (e.g., to reset the state of their Bash session).
+To do so, terminate the Bash session running in the current tmux session using any of the logout methods described in the section [Log out]({{< relref "/docs/connect/first-steps/ssh-first-connection#log-out" >}}).
+
+For instance:
+
+```bash
+logout
+```
+
+Do so until you fully exit the tmux session (i.e., the green banner at the bottom of the Terminal application has disappeared).
+You should see a the message `[exited]`, indicating that you have exited the tmux session.
+
+![Terminating Bash sessions in a tmux session.](tmux-exited.png)
+
+Then, start a new tmux session using the `tmux` command:
+
+```bash
+tmux
+```
+
+{{< alert icon="👉" text="Avoid creating multiple tmux sessions in parallel. Use 'tmux a' to attach any existing session where possible. Only create a new session using 'tmux' when 'tmux a' returns the message 'no sessions'." />}}
+
+![Message when no tmux sessions exist.](tmux-no-sessions.png)
+
 A 'Tmux Cheat Sheet & Quick Reference' is available at <https://tmuxcheatsheet.com/>.
 
 For more details, search search "tmux tutorial" in a search engine or YouTube.
