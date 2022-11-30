@@ -113,4 +113,27 @@ module unload fastqc/0.11.9
 
 {{< alert icon="👉" text="Some modules depend on each other. The 'module unload' command will automatically attempt to unload dependencies (if no other loaded module depends on them)." />}}
 
+## Purge modules
+
+The command `module purge` can be used to unload all loaded module and reset everything to the original state.
+
+{{< alert icon="👉" text="In this instance, \"original state\" also reverts any 'module' command executed in the '~/.bashrc' file." />}}
+
+For instance:
+
+```bash
+module list
+module load R-base/4.2.0
+module list
+module purge
+module list
+```
+
+In particular:
+
+- The first call to `module list` reports a module that was loaded in the user's `~/.bashrc` file.
+- The command `module purge` unloads all modules; both those loaded in the user's `~/.bashrc` and those loaded interactively on the command line.
+
+![Purge modules.](module-purge.png)
+
 <!-- Link definitions -->
