@@ -113,7 +113,7 @@ module unload fastqc/0.11.9
 
 {{< alert icon="👉" text="Some modules depend on each other. The 'module unload' command will automatically attempt to unload dependencies (if no other loaded module depends on them)." />}}
 
-## Reset original state
+## Purge modules
 
 The command `module purge` can be used to unload all loaded module and reset everything to the original state.
 
