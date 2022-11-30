@@ -9,9 +9,11 @@ images: []
 menu:
   docs:
     parent: "python"
-weight: 600
+weight: 601
 toc: true
 ---
+
+{{< alert icon="👉" text="This section does not involve the CCB cluster at all. Instead, it provides a guide for installing a working Python environment on the macOS operating system." />}}
 
 ## Install Visual Studio Code (VSCode)
 
