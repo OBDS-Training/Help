@@ -127,4 +127,52 @@ A 'Tmux Cheat Sheet & Quick Reference' is available at <https://tmuxcheatsheet.c
 
 For more details, search search "tmux tutorial" in a search engine or YouTube.
 
+### Emacs
+
+Emacs is a family of text editors that are characterized by their extensibility.
+
+The command `emacs` launches the application.
+
+```bash
+emacs
+```
+
+![The Emacs text editor.](emacs.png)
+
+The Emacs editor can be configured to persist in the event of a connection loss, independently of tmux sessions.
+
+To do so, the Emacs daemon -- a program that runs continuously as a background process -- must run in the Bash session.
+
+To automatically start the Emacs daemon in every new Bash session, add the following lines to the `~/.bashrc` file.
+
+```bash
+export ALTERNATE_EDITOR=""
+alias emacs="emacsclient --tty"
+```
+
+Then, launch the Emacs application.
+
+```bash
+emacs
+```
+
+At this point, users can then work in that Emacs session without fear of losing work in the event a connection loss.
+
+For instance:
+
+- Type anything in the Emacs application.
+- Close the Terminal application.
+- If prompted, click 'Terminate' to force-quit the application.
+- Open a new Terminal application.
+- Log into the CCB cluster.
+- Type `emacs`.
+
+The very same Emacs session will be restored in the new Bash session and users can pick up their work where they left off.
+
+We do recommend regularly saving your work in the Emacs text editor (i.e., saving the contents of the buffer to a file).
+
+A ‘GNU Emacs Reference Card’ is available at <https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf>.
+
+For more details, search search "emacs tutorial" in a search engine or YouTube.
+
 <!-- Link definitions -->
