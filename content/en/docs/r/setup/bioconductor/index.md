@@ -9,17 +9,19 @@ images: []
 menu:
   docs:
     parent: "r"
-weight: 702
+weight: 703
 toc: true
 ---
 
 ## Motivation
 
-The Bioconductor project provides many R packages focused on the analysis of biological assays.
+The Bioconductor project provides many R packages focused on the analysis of
+biological assays.
 
 ## Install BiocManager
 
-Instructions are available on the [main Bioconductor website][bioconductor-install].
+Instructions are available on the [main Bioconductor
+website][bioconductor-install].
 
 Briefly, first launch RStudio.
 
@@ -32,24 +34,29 @@ if (!require("BiocManager", quietly = TRUE))
 
 ## RTools
 
-When running the command above, you may be prompted with the following warning message:
+When running the command above, you may be prompted with the following warning
+message:
 
 ![Rtools.](rtools-warning.png)
 
-In which case, please navigate to <https://cran.rstudio.com/bin/windows/Rtools/>.
+In which case, please navigate to
+<https://cran.rstudio.com/bin/windows/Rtools/>.
 
 ![Rtools.](rtools.png)
 
-Click on the link 'RTools x.x' (where `x.x` is a version of RTools).
-In particular, select a version of RTools that matches the version of R that you are currently using.
+Click on the link 'RTools x.x' (where `x.x` is a version of RTools). In
+particular, select a version of RTools that matches the version of R that you
+are currently using.
 
 {{< alert icon="👉" text="The version of R currently active can be displayed in the RStudio console typing 'R.version.string'. For instance:" />}}
 
 ![R.version.string](r-version-string.png)
 
-On the next page, click on the link to download the RTools installer (e.g., this is 'Rtools42 installer' for RTools 4.2).
+On the next page, click on the link to download the RTools installer (e.g., this
+is 'Rtools42 installer' for RTools 4.2).
 
-Then, double-click on the installer file that you just downloaded and progress through the screens of the installation program.
+Then, double-click on the installer file that you just downloaded and progress
+through the screens of the installation program.
 
 We recommend leaving all options to their default values.
 
