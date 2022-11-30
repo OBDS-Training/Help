@@ -58,7 +58,7 @@ people with edit access to a directory allows any one of them to delete all the
 files with a single mistyped command. As such, we recommend **against** trying
 to "fix" this.
 
-## How do I join an existing collaboration project
+## How do I join an existing collaboration project
 
 Please ask the PI in charge of the project to contact us via
 <genmail@molbiol.ox.ac.uk> and ask for your username to be added.
