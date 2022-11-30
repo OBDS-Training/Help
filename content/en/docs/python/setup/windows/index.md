@@ -9,9 +9,11 @@ images: []
 menu:
   docs:
     parent: "python"
-weight: 601
+weight: 602
 toc: true
 ---
+
+{{< alert icon="👉" text="This section does not involve the CCB cluster at all. Instead, it provides a guide for installing a working Python environment on the Windows operating system." />}}
 
 ## Motivation
 
