@@ -1,6 +1,7 @@
 ---
 title: "Delete intermediate files"
-description: "A brief introduction to best practices in deleting intermediate files."
+description:
+  "A brief introduction to best practices in deleting intermediate files."
 lead: "A brief introduction to best practices in deleting intermediate files."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
@@ -9,20 +10,19 @@ images: []
 menu:
   docs:
     parent: "organise-and-backup"
-weight: 304
+weight: 305
 toc: true
 ---
 
 ## Which files can be deleted?
 
-Many bioinformatics workflows involve multiple steps of processing
-on certain files (e.g., filtering, sorting, annotation).
+Many bioinformatics workflows involve multiple steps of processing on certain
+files (e.g., filtering, sorting, annotation).
 
-Those steps generate and store multiple copies of those files
-at the various steps of processing.
+Those steps generate and store multiple copies of those files at the various
+steps of processing.
 
-In such cases, you should consider deleting all but the final copy of
-that file.
+In such cases, you should consider deleting all but the final copy of that file.
 
 For instance:
 
@@ -42,7 +42,8 @@ rm example1.sam example1.bam
 
 In particular:
 
-- The `rm` command is used to delete all files except for the final `example1.sorted.bam`.
+- The `rm` command is used to delete all files except for the final
+  `example1.sorted.bam`.
 
 {{< alert icon="👉" text="You should keep intermediate files as long as necessary for debugging purposes. only delete intermediate files when you are sure that you will not need them anymore." />}}
 
@@ -52,7 +53,7 @@ In particular:
 
 It is usually unecessary to delete small intermediate files.
 
-The benefit of disk space recovered is usually negligible against the time
-and effort necessary to regenerate those files if necessary.
+The benefit of disk space recovered is usually negligible against the time and
+effort necessary to regenerate those files if necessary.
 
 <!-- Link definitions -->
