@@ -30,7 +30,7 @@ data.
 Each collaboration project has its own project space in the `/project/`
 directory. Here’s an example of a project with just two members:
 
-```
+```txt
 /project/ccbadmin/
                  /dtooke/
                  /emacmahon/
