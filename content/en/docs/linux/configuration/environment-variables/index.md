@@ -159,17 +159,19 @@ touch $TMPDIR/$USER/new_temp_dir/new_temp_file
 
 The `$TMP` environment variable is not set by default.
 
-If set, some programs expect the value of this variable to be a character string
+Some programs may expect the value of this variable to be a character string
 indicating the location of an existing directory that can be used to store temporary
 files during their execution.
 
-We recommend defining that environment variable in the `~/.bashrc` file.
+We recommend setting the value of `$TMP` to `$TMPDIR`.
+
+We also recommend defining that environment variable in the `~/.bashrc` file, so that the environment variable is immediately set in every Bash session.
 
 In the example below, we define `$TMP` interactively at the prompt
 only for demonstration purposes:
 
 ```bash
-export TMP="/home/$USER/tmp"
+export TMP="$TMPDIR"
 ```
 
 ![Defining the 'TMP' environment variable.](tmp.png)
