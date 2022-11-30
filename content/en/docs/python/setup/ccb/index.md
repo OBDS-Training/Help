@@ -13,8 +13,24 @@ weight: 600
 toc: true
 ---
 
-## Header
+## Overview
 
-Text
+As well as the standard Python versions that you would normally expect, the CCB
+cluster administrators additionally preinstalled hundreds of additional packages
+available for all to use. These are available via the `python-cbrg` module.
+
+## Basic usage
+
+If you just want to get up and running with set of commonly used bioinformatics
+packages curated by the CCB cluster administrators, you can do so with a single
+command:
+
+```bash
+module load python-cbrg
+```
+
+![Load the 'python-cbrg' module.](module-load-python-cbrg.png)
+
+{{< alert icon="👉" text="The Spyder IDE is included in the standard Python installations." />}}
 
 <!-- Link definitions -->
