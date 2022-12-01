@@ -74,4 +74,16 @@ In particular:
   accesses the original file, while the second command follows the symbolic link
   ultimately accessing the same target file.
 
+## Best practices
+
+Relative links should be used to create links _within_ the project directory. In
+that way, links will remain valid even in the event that the project directory
+is moved.
+
+Absolute links should be used only to link to files outside the project
+directory. Most commonly, absolute links are used to link to shared resources in
+stable locations (e.g., genome sequence, gene annotations).
+
+![Usage of absolute and relative links in projects.](project-links.png)
+
 <!-- Link definitions -->
