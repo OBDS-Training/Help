@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 841.9 467.2" style="enable-background:new 0 0 841.9 467.2;" xml:space="preserve">
+<style type="text/css">
+	.st0{font-family:'Courier';}
+	.st1{font-size:12px;}
+	.st2{enable-background:new    ;}
+	.st3{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#FF0000;stroke-width:0.5;stroke-miterlimit:10;}
+	.st5{fill:#FF0000;}
+	.st6{font-family:'ArialMT';}
+	.st7{fill:none;stroke:#009245;stroke-width:0.5;stroke-miterlimit:10;}
+	.st8{fill:#009245;}
+</style>
+<text transform="matrix(1 0 0 1 305.0369 184.573)" class="st0 st1">___/</text>
+<text transform="matrix(1 0 0 1 330.9788 202.1594)" class="st0 st1">data/</text>
+<text transform="matrix(1 0 0 1 330.9784 237.3324)" class="st0 st1">scripts/</text>
+<text transform="matrix(1 0 0 1 352.3572 219.7462)" class="st0 st1">genome.gtf.gz</text>
+<text transform="matrix(1 0 0 1 356.1819 254.9191)" class="st2"><tspan x="0" y="0" class="st0 st1">script</tspan><tspan x="43.2" y="0" class="st0 st1">.</tspan><tspan x="50.6" y="0" class="st0 st1">R</tspan></text>
+<rect x="151.9" y="43" class="st3" width="626.8" height="75.9"/>
+<text transform="matrix(1 0 0 1 357.2259 272.505)" class="st2"><tspan x="0" y="0" class="st0 st1">script</tspan><tspan x="43.2" y="0" class="st0 st1">.</tspan><tspan x="50.6" y="0" class="st0 st1">py</tspan></text>
+<text transform="matrix(1 0 0 1 305.0373 80.6028)" class="st0 st1">___/</text>
+<text transform="matrix(1 0 0 1 281.9286 62.6518)" class="st0 st1">/databank/</text>
+<text transform="matrix(1 0 0 1 330.9784 100.7934)" class="st0 st1">Homo_sapiens.GRCh38.86.gtf</text>
+<g>
+	<g>
+		<line class="st4" x1="132" y1="97.5" x2="319.4" y2="97.5"/>
+		<g>
+			<path class="st5" d="M322.4,97.5c-1.4,0.5-3.2,1.4-4.3,2.4l0.9-2.4l-0.9-2.4C319.3,96.1,321,97,322.4,97.5z"/>
+		</g>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 46.8325 140.056)"><tspan x="0" y="0" class="st5 st6 st1">absolute link</tspan><tspan x="29.8" y="14.4" class="st5 st0 st1">/</tspan></text>
+<text transform="matrix(1 0 0 1 282.4447 166.9864)" class="st0 st1">/project/</text>
+<text transform="matrix(1 0 0 1 331.4948 290.0922)" class="st0 st1">workflow_step_1/</text>
+<text transform="matrix(1 0 0 1 357.2257 307.6787)" class="st0 st1">output_file_1</text>
+<text transform="matrix(1 0 0 1 332.6961 326.6469)" class="st0 st1">workflow_step_2/</text>
+<text transform="matrix(1 0 0 1 358.427 344.2334)" class="st0 st1">input_file_2</text>
+<text transform="matrix(1 0 0 1 357.7535 363.5597)" class="st0 st1">output_file_2</text>
+<line class="st4" x1="132" y1="97.5" x2="132" y2="216.3"/>
+<line class="st4" x1="344" y1="216.3" x2="132" y2="216.3"/>
+<g>
+	<g>
+		<line class="st7" x1="317.4" y1="304.6" x2="346.3" y2="304.6"/>
+		<g>
+			<path class="st8" d="M349.3,304.6c-1.4,0.5-3.2,1.4-4.3,2.4l0.9-2.4l-0.9-2.4C346.1,303.2,347.9,304.1,349.3,304.6z"/>
+		</g>
+	</g>
+</g>
+<line class="st7" x1="317.4" y1="304.6" x2="317.4" y2="341.3"/>
+<line class="st7" x1="349.3" y1="341.3" x2="317.4" y2="341.3"/>
+<rect x="151.9" y="151.5" class="st3" width="626.8" height="261.3"/>
+<rect x="26.7" y="25.6" class="st3" width="782.1" height="417.4"/>
+<text transform="matrix(1 0 0 1 241.6626 320.4192)"><tspan x="0" y="0" class="st8 st6 st1">relative link</tspan><tspan x="22.8" y="14.4" class="st8 st0 st1">./</tspan></text>
+<text transform="matrix(1 0 0 1 458.8822 219.7455)" class="st5 st0 st1">=&gt; /databank/___/Homo_sapiens.GRCh38.86.gtf</text>
+<text transform="matrix(1 0 0 1 458.8813 343.3906)" class="st8 st0 st1">=&gt; ../workflow_step_1/output_file_1</text>
+</svg>
