@@ -45,6 +45,8 @@ Several public data repositories store research data at no cost, including:
 
 ## Where should a backup be made?
 
+### General advice
+
 A backup copy should be made a computer that is different and preferably
 physically distant from the computer where the original data files exist.
 
@@ -54,6 +56,18 @@ affecting specifically the computer where the original data is stored.
 A distant location ensure the survival of the data in the event of destructive
 events affecting all computers in the location of the computer where the
 original data is stored.
+
+### WIMM Keep
+
+The WIMM Keep services are provided by the WIMM IT team.
+
+The key purpose of WIMM Keep is to provide low-cost reliable and secure place to
+store your research data for long periods. The service is designed to provide
+the most reliable service but not the fastest performance. We recommend that you
+use the WIMM Keep to store data that you need to keep but not actively working
+
+The WIMM Keep services are documented on [this page →][wimm-keep] (SSO login
+required).
 
 ## Which files should be backed up?
 
@@ -229,3 +243,4 @@ If you use the command above as template:
 [ena-home]: https://www.ebi.ac.uk/ena/browser/home
 [sra-home]: https://www.ncbi.nlm.nih.gov/sra
 [arrayexpress-home]: https://www.ebi.ac.uk/arrayexpress/
+[wimm-keep]: https://gatekeeper.imm.ox.ac.uk/index.cgi/about
