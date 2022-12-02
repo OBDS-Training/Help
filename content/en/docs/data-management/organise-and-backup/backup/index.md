@@ -17,9 +17,12 @@ toc: true
 
 ### What is a backup?
 
-A _backup_ is a copy of important data that is stored in an alternative
-location, so that it can be recovered the original data is deleted or becomes
-corrupted.
+A _backup_ is a copy of important data that is stored at regular intervals of
+time in an alternative location, so that it can be recovered the original data
+is deleted or becomes corrupted.
+
+See below [Where should a backup be
+made?]({{< relref "#where-should-a-backup-be-made" >}}).
 
 ### What is an archive?
 
@@ -56,6 +59,33 @@ affecting specifically the computer where the original data is stored.
 A distant location ensure the survival of the data in the event of destructive
 events affecting all computers in the location of the computer where the
 original data is stored.
+
+### HFS backup service
+
+The [HFS backup service][hfs-backup-service-intro] provides two separate ways of
+backing up data on desktop machines, laptops and multi-user machines and
+servers. They have different features and benefits. You can choose which is most
+suitable for your purpose.
+
+### Single-user machine
+
+The [HFS CrashPlan (Code42) Cloud Backup Service][crashplan] has been selected
+by the University as the recommended tool for securing backups of university
+data on personal, single-user computers like your desktop and laptop at work and
+at home.
+
+### Shared computers
+
+The [HFS on-site disk-based backup service][hfs-on-site] is an on-premise,
+disk-based backup architecture which brings with it improved performance and
+service to the backup of the University's information assets.
+
+WIMM IT services recommend this method for backing up data primarily stored on
+shared computers.
+
+## Where can I archive data?
+
+### General advice
 
 ### WIMM Keep
 
@@ -244,3 +274,7 @@ If you use the command above as template:
 [sra-home]: https://www.ncbi.nlm.nih.gov/sra
 [arrayexpress-home]: https://www.ebi.ac.uk/arrayexpress/
 [wimm-keep]: https://gatekeeper.imm.ox.ac.uk/index.cgi/about
+[hfs-backup-service-intro]:
+  https://help.it.ox.ac.uk/an-introduction-to-the-universitys-hfs-backup-service
+[crashplan]: https://help.it.ox.ac.uk/hfs-code42-cloud-backup-service
+[hfs-on-site]: https://help.it.ox.ac.uk/hfs-on-site-disk-based-backup-service
