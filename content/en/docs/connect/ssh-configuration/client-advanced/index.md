@@ -41,11 +41,7 @@ Host *
     TCPKeepAlive yes
     ServerAliveInterval 300
     ServerAliveCountMax 2
-    ForwardX11 yes
-    ForwardX11Trusted yes
-    ForwardAgent yes
     Compression yes
-    XAuthLocation /opt/X11/bin/xauth
 ```
 
 See the [Cheatsheet](#cheatsheet) section below for information about individual settings.
@@ -60,10 +56,8 @@ Host *
     TCPKeepAlive yes
     ServerAliveInterval 300
     ServerAliveCountMax 2
-    ForwardX11 yes
-    ForwardX11Trusted yes
-    ForwardAgent yes
     Compression yes
+    # Unix systems
     XAuthLocation /opt/X11/bin/xauth
     # macOS only
     AddKeysToAgent yes
@@ -82,15 +76,10 @@ See the [Cheatsheet](#cheatsheet) section below for information about individual
 | `IdentityFile` | Path to the private SSH key file on your personal computer. |
 | `Port` | Port number to connect on the remote host (default: 22). |
 | `Protocol` | Protocol version of SSH to use. |
-| `TCPKeepAlive` | Whether TCP keepaline messages are regularly sent, which is useful to notice it the connection dies at any point. |
+| `TCPKeepAlive` | Whether TCP keepalive messages are regularly sent, which is useful to notice if the connection dies at any point. |
 | `ServerAliveInterval` | Timeout interval in seconds after which the client will request a response from the server if no data has been received recently. |
 | `ServerAliveCountMax` | Number of server alive messages which may be sent to the server without receiving any reply before `ssh` disconnects from the server. |
-| `ForwardX11` | Whether X11 connections will be automatically redirected over the secure channel of the `ssh` connection. |
-| `ForwardX11Trusted` | Whether remote X11 clients are given full access to the original X11 display. |
-| `ForwardAgent` | Whether the connection to the authentication agent (if any) is forwarded to the remote machine. |
 | `Compression` | Whether to use compression. |
-| `XAuthLocation` | Full pathname of the `xauth` program. |
-| `PubkeyAuthentication` | Whether to try public key authentication using SSH keys. |
 
 ### macOS settings
 
@@ -98,6 +87,8 @@ See the [Cheatsheet](#cheatsheet) section below for information about individual
 |:------:| :----------- |
 | `AddKeysToAgent` | Whether keys should be automatically added to a running `ssh-agent`. |
 | `UseKeychain` | Whether passphrases are stored in the keychain. |
+| `PubkeyAuthentication` | Whether to try public key authentication using SSH keys. |
+| `XAuthLocation` | Full pathname of the `xauth` program. |
 
 More information about fields that may be configured for macOS is available on the page
 [OpenBSD manual page server →][ssh-config-openbds].
