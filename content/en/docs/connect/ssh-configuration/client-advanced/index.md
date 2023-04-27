@@ -57,7 +57,6 @@ Host *
     ServerAliveInterval 300
     ServerAliveCountMax 2
     Compression yes
-    # Unix systems
     XAuthLocation /opt/X11/bin/xauth
     # macOS only
     AddKeysToAgent yes
